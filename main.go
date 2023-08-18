@@ -6,6 +6,8 @@ import (
 	"encoding/xml"
 	"fmt"
 	"io"
+	"kursRates/dateutil"
+	"kursRates/models"
 	"log"
 	"net/http"
 	"os"
@@ -15,36 +17,6 @@ import (
 	"github.com/gorilla/mux"
 )
 
-type DBItem struct {
-	ID    int    `json:"id"`
-	Title string `json:"title"`
-	Code  string `json:"code"`
-	Value string `json:"value"`
-	Date  string `json:"date"`
-}
-
-type Rates struct {
-	XMLName xml.Name       `xml:"rates"`
-	Items   []CurrencyItem `xml:"item"`
-	Date    string         `xml:"date"`
-}
-
-type CurrencyItem struct {
-	Title string `xml:"fullname"`
-	Code  string `xml:"title"`
-	Value string `xml:"description"`
-}
-
-func saveToDatabase(stmt *sql.Stmt, items []CurrencyItem, formattedDate string, done chan<- bool) {
-	for _, item := range items {
-		_, err := stmt.Exec(item.Title, item.Code, item.Value, formattedDate)
-		if err != nil {
-			log.Println("Error inserting data:", err)
-		}
-	}
-	done <- true
-}
-
 func main() {
 	configFile, err := os.Open("config.json")
 	if err != nil {
@@ -52,17 +24,11 @@ func main() {
 	}
 	defer configFile.Close()
 
-	var config struct {
-		ListenPort            string `json:"listenPort"`
-		MysqlConnectionString string `json:"mysqlConnectionString"`
-	}
-
-	err = json.NewDecoder(configFile).Decode(&config)
+	err = json.NewDecoder(configFile).Decode(&models.Config)
 	if err != nil {
 		log.Fatal("Error decoding config.json:", err)
 	}
-
-	db, err := sql.Open("mysql", config.MysqlConnectionString)
+	db, err := sql.Open("mysql", models.Config.MysqlConnectionString)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -77,15 +43,9 @@ func main() {
 	r.HandleFunc("/currency/save/{date}", func(w http.ResponseWriter, r *http.Request) {
 		vars := mux.Vars(r)
 		date := vars["date"]
+		formattedDate := dateutil.DateFormat(date)
 
-		parsedDate, err := time.Parse("02.01.2006", date)
-		if err != nil {
-			http.Error(w, "Invalid date format", http.StatusBadRequest)
-			return
-		}
-		formattedDate := parsedDate.Format("2006-01-02")
-
-		apiURL := fmt.Sprintf("https://nationalbank.kz/rss/get_rates.cfm?fdate=%s", date)
+		apiURL := fmt.Sprintf("%s?fdate=%s", models.Config.APIURL, date)
 
 		resp, err := http.Get(apiURL)
 		if err != nil {
@@ -100,7 +60,7 @@ func main() {
 			return
 		}
 
-		var rates Rates
+		var rates models.Rates
 		if err := xml.Unmarshal(xmlData, &rates); err != nil {
 			http.Error(w, "Failed to parse XML", http.StatusInternalServerError)
 			return
@@ -114,7 +74,7 @@ func main() {
 		defer stmt.Close()
 
 		done := make(chan bool)
-		go saveToDatabase(stmt, rates.Items, formattedDate, done)
+		go dateutil.SaveToDatabase(db, stmt, rates.Items, formattedDate, done)
 		<-done
 
 		w.WriteHeader(http.StatusOK)
@@ -124,16 +84,10 @@ func main() {
 
 	r.HandleFunc("/currency/{date}/{code}", func(w http.ResponseWriter, r *http.Request) {
 		vars := mux.Vars(r)
-		dateString := vars["date"]
+		date := vars["date"]
 		code := vars["code"]
 
-		date, err := time.Parse("02.01.2006", dateString)
-		if err != nil {
-			http.Error(w, "Invalid date format", http.StatusBadRequest)
-			return
-		}
-
-		formattedDate := date.Format("2006-01-02")
+		formattedDate := dateutil.DateFormat(date)
 
 		query := "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ? AND CODE = ?"
 		params := []interface{}{formattedDate}
@@ -146,9 +100,9 @@ func main() {
 		}
 		defer rows.Close()
 
-		var results []DBItem
+		var results []models.DBItem
 		for rows.Next() {
-			var item DBItem
+			var item models.DBItem
 			if err := rows.Scan(&item.ID, &item.Title, &item.Code, &item.Value, &item.Date); err != nil {
 				http.Error(w, "Failed to scan row", http.StatusInternalServerError)
 				return
@@ -162,15 +116,9 @@ func main() {
 
 	r.HandleFunc("/currency/{date}", func(w http.ResponseWriter, r *http.Request) {
 		vars := mux.Vars(r)
-		dateStr := vars["date"]
+		date := vars["date"]
 
-		date, err := time.Parse("02.01.2006", dateStr)
-		if err != nil {
-			http.Error(w, "Invalid date format", http.StatusBadRequest)
-			return
-		}
-
-		formattedDate := date.Format("2006-01-02")
+		formattedDate := dateutil.DateFormat(date)
 		query := "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ?"
 		params := []interface{}{formattedDate}
 
@@ -181,9 +129,9 @@ func main() {
 		}
 		defer rows.Close()
 
-		var results []DBItem
+		var results []models.DBItem
 		for rows.Next() {
-			var item DBItem
+			var item models.DBItem
 			if err := rows.Scan(&item.ID, &item.Title, &item.Code, &item.Value, &item.Date); err != nil {
 				http.Error(w, "Failed to scan row", http.StatusInternalServerError)
 				return
@@ -200,12 +148,12 @@ func main() {
 	})
 
 	server := &http.Server{
-		Addr:         ":" + config.ListenPort,
+		Addr:         ":" + models.Config.ListenPort,
 		ReadTimeout:  10 * time.Second,
 		WriteTimeout: 10 * time.Second,
 		Handler:      r,
 	}
 
-	log.Println("Listening on port", config.ListenPort, "...")
+	log.Println("Listening on port", models.Config.ListenPort, "...")
 	log.Fatal(server.ListenAndServe())
 }

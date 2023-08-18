@@ -135,15 +135,10 @@ func main() {
 
 		formattedDate := date.Format("2006-01-02")
 
-		query := "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ?"
+		query := "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ? AND CODE = ?"
 		params := []interface{}{formattedDate}
+		params = append(params, code)
 
-		if code != "" {
-			query += " AND CODE = ?"
-			params = append(params, code)
-		} else if code == "" {
-			query += " ORDER BY CODE"
-		}
 		rows, err := db.Query(query, params...)
 		if err != nil {
 			http.Error(w, "Failed to query database", http.StatusInternalServerError)

@@ -35,7 +35,7 @@ type CurrencyItem struct {
 	Value string `xml:"description"`
 }
 
-func saveToDatabase(db *sql.DB, stmt *sql.Stmt, items []CurrencyItem, formattedDate string, done chan<- bool) {
+func saveToDatabase(stmt *sql.Stmt, items []CurrencyItem, formattedDate string, done chan<- bool) {
 	for _, item := range items {
 		_, err := stmt.Exec(item.Title, item.Code, item.Value, formattedDate)
 		if err != nil {
@@ -114,7 +114,7 @@ func main() {
 		defer stmt.Close()
 
 		done := make(chan bool)
-		go saveToDatabase(db, stmt, rates.Items, formattedDate, done)
+		go saveToDatabase(stmt, rates.Items, formattedDate, done)
 		<-done
 
 		w.WriteHeader(http.StatusOK)

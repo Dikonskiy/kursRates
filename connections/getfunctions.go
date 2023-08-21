@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"io"
 	"kursRates/dateutil"
-	"kursRates/models"
+	"kursRates/internal/models"
 	"net/http"
 
 	"github.com/gorilla/mux"

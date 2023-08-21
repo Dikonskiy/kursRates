@@ -2,7 +2,7 @@ package dateutil
 
 import (
 	"database/sql"
-	"kursRates/models"
+	"kursRates/internal/models"
 	"log"
 	"time"
 )

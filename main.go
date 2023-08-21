@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"encoding/json"
 	"kursRates/connections"
-	"kursRates/models"
+	"kursRates/internal/models"
 	"log"
 	"net/http"
 	"os"

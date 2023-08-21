@@ -1,4 +1,4 @@
-package dateutil
+package util
 
 import (
 	"database/sql"

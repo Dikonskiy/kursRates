@@ -1,9 +1,13 @@
-INFO: 2023/08/21 11:54:18 getfunctions.go:85: Currency by date accessed
-INFO: 2023/08/21 11:54:19 getfunctions.go:85: Currency by date accessed
-INFO: 2023/08/21 11:54:51 getfunctions.go:85: Currency by date accessed
-INFO: 2023/08/21 11:56:05 getfunctions.go:89: Currency by date and code accessed
-INFO: 2023/08/21 11:58:08 main.go:55: Listening on port 8080 ...
-INFO: 2023/08/21 12:26:51 main.go:46: Listening on port 8080 ...
-INFO: 2023/08/21 12:27:41 getfunctions.go:89: Currency by date and code accessed
-INFO: 2023/08/21 12:27:42 getfunctions.go:89: Currency by date and code accessed
-INFO: 2023/08/21 12:27:45 getfunctions.go:85: Currency by date accessed
+INFO: 2023/08/21 14:26:50 main.go:42: Listening on port 8080 ...
+INFO: 2023/08/21 14:27:01 handlers.go:85: Currency by date accessed
+INFO: 2023/08/21 14:27:10 handlers.go:89: Currency by date and code accessed
+INFO: 2023/08/21 14:31:13 main.go:42: Listening on port 8080 ...
+INFO: 2023/08/21 14:31:21 handlers.go:64: date was saved
+INFO: 2023/08/21 14:35:49 server.go:21: Listening on port 8080 ...
+INFO: 2023/08/21 14:36:11 handlers.go:64: date was saved
+INFO: 2023/08/21 14:36:16 handlers.go:86: Currency by date accessed
+INFO: 2023/08/21 14:36:22 handlers.go:90: Currency by date and code accessed
+INFO: 2023/08/21 14:40:15 server.go:21: Listening on port 8080 ...
+INFO: 2023/08/21 14:40:31 handlers.go:63: date was saved
+INFO: 2023/08/21 14:40:37 handlers.go:85: Currency by date accessed
+INFO: 2023/08/21 14:40:42 handlers.go:89: Currency by date and code accessed

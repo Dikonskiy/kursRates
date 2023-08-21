@@ -2,9 +2,9 @@ package main
 
 import (
 	"kursRates/connections"
-	"kursRates/dbutil"
 	"kursRates/internal/models"
-	"kursRates/logutil"
+	"kursRates/util/dbutil"
+	"kursRates/util/logutil"
 	"log"
 	"net/http"
 	"os"

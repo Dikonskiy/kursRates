@@ -6,9 +6,9 @@ import (
 	"encoding/xml"
 	"fmt"
 	"io"
-	"kursRates/dateutil"
 	"kursRates/internal/models"
-	"kursRates/logutil"
+	"kursRates/util/dateutil"
+	"kursRates/util/logutil"
 	"net/http"
 
 	"github.com/gorilla/mux"

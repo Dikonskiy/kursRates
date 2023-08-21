@@ -1,13 +1,11 @@
 # kursRates
-Этот web сервис для получения и хранения курсов обмена валют от Национального банка Казахстана. API построен с использованием Go и использует маршрутизатор Gorilla Mux для обработки HTTP-запросов.
+This web service created to receive and store exchange rates from the National Bank of Kazakhstan. The API built by using Go and uses the Gorilla Mux router to process HTTP requests.
 
-# Описание
-Здесь я использовал маршрутизатор Gorilla, потому что он упрощает извелечение параметров из URL и использовать их в дальнейших операциях. А также был использован Go MySQL Driver потому что он имеет большую аудиторию пользователей, позволяет эффективно работать с базами данных.
+# Description
+Here I used Gorilla router, because it makes it easier to extract the parameters from the URL and use them in further operations. And also used Go MySQL Driver because it has a large audience of users, allows you to work effectively with databases.
 
 # Endpoints
-GET /currency/save/{date} - получает данные с API Нац. банка с заданной датой и сохраняет их в базе данных Test <br />
-
-GET /currency/{date}/{code} - возвращает определенный курс валют с заданной датой и кодом в формате JSON <br />
-
-GET /currency/{date} - возвращает все курсы валют с заданной датой в формате JSON
+GET /currency/save/{date} - get dates from API National Bank with a given date and save it to Database "Test" <br />
+GET /currency/{date}/{code} - return certain exchnge rate with a given date and with a given code in the JSON format <br />
+GET /currency/{date} - return certain exchnge rate with a given date in the JSON format
 

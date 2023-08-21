@@ -1,14 +1,11 @@
 package main
 
 import (
-	"database/sql"
-	"encoding/json"
 	"kursRates/connections"
-	"kursRates/models"
+	"kursRates/internal/app"
+	"kursRates/util"
 	"log"
-	"net/http"
 	"os"
-	"time"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
@@ -21,19 +18,9 @@ func main() {
 	}
 	defer configFile.Close()
 
-	err = json.NewDecoder(configFile).Decode(&models.Config)
-	if err != nil {
-		log.Fatal("Error decoding config.json:", err)
-	}
-	db, err := sql.Open("mysql", models.Config.MysqlConnectionString)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer db.Close()
+	util.InitLoggers()
 
-	if err := db.Ping(); err != nil {
-		log.Fatal(err)
-	}
+	util.InitDB()
 
 	r := mux.NewRouter()
 
@@ -41,13 +28,5 @@ func main() {
 	r.HandleFunc("/currency/{date}/{code}", connections.GetCurrencyHandler)
 	r.HandleFunc("/currency/{date}", connections.GetCurrencyHandler)
 
-	server := &http.Server{
-		Addr:         ":" + models.Config.ListenPort,
-		ReadTimeout:  10 * time.Second,
-		WriteTimeout: 10 * time.Second,
-		Handler:      r,
-	}
-
-	log.Println("Listening on port", models.Config.ListenPort, "...")
-	log.Fatal(server.ListenAndServe())
+	app.StartServer(r)
 }

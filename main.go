@@ -1,9 +1,8 @@
 package main
 
 import (
-	"database/sql"
-	"encoding/json"
 	"kursRates/connections"
+	"kursRates/dbutil"
 	"kursRates/internal/models"
 	"kursRates/logutil"
 	"log"
@@ -22,21 +21,13 @@ func main() {
 	}
 	defer configFile.Close()
 
-	err = json.NewDecoder(configFile).Decode(&models.Config)
+	logutil.InitLoggers()
+
+	db, err := dbutil.InitDB()
 	if err != nil {
-		log.Fatal("Error decoding config.json:", err)
-	}
-	db, err := sql.Open("mysql", models.Config.MysqlConnectionString)
-	if err != nil {
-		log.Fatal(err)
+		logutil.Error.Fatal("Failed to initialize database:", err)
 	}
 	defer db.Close()
-
-	if err := db.Ping(); err != nil {
-		log.Fatal(err)
-	}
-
-	logutil.InitLoggers()
 
 	r := mux.NewRouter()
 

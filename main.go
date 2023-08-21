@@ -38,8 +38,8 @@ func main() {
 	r := mux.NewRouter()
 
 	r.HandleFunc("/currency/save/{date}", connections.SaveCurrencyHandler)
-	r.HandleFunc("/currency/{date}/{code}", connections.GetCurrencyByDateAndCodeHandler)
-	r.HandleFunc("/currency/{date}", connections.GetCurrencyByDateHandler)
+	r.HandleFunc("/currency/{date}/{code}", connections.GetCurrencyHandler)
+	r.HandleFunc("/currency/{date}", connections.GetCurrencyHandler)
 
 	server := &http.Server{
 		Addr:         ":" + models.Config.ListenPort,

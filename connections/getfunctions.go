@@ -62,11 +62,10 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(`{"success": true}`))
 }
 
-func GetCurrencyByDateAndCodeHandler(w http.ResponseWriter, r *http.Request) {
+func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	date := vars["date"]
 	code := vars["code"]
-
 	formattedDate := dateutil.DateFormat(date)
 
 	db, err := sql.Open("mysql", models.Config.MysqlConnectionString)
@@ -76,46 +75,16 @@ func GetCurrencyByDateAndCodeHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	defer db.Close()
 
-	query := "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ? AND CODE = ?"
-	params := []interface{}{formattedDate}
-	params = append(params, code)
+	var query string
+	var params []interface{}
 
-	rows, err := db.Query(query, params...)
-	if err != nil {
-		http.Error(w, "Failed to query database", http.StatusInternalServerError)
-		return
+	if code == "" {
+		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ?"
+		params = []interface{}{formattedDate}
+	} else {
+		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ? AND CODE = ?"
+		params = []interface{}{formattedDate, code}
 	}
-	defer rows.Close()
-
-	var results []models.DBItem
-	for rows.Next() {
-		var item models.DBItem
-		if err := rows.Scan(&item.ID, &item.Title, &item.Code, &item.Value, &item.Date); err != nil {
-			http.Error(w, "Failed to scan row", http.StatusInternalServerError)
-			return
-		}
-		results = append(results, item)
-	}
-
-	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(results)
-}
-
-func GetCurrencyByDateHandler(w http.ResponseWriter, r *http.Request) {
-	vars := mux.Vars(r)
-	date := vars["date"]
-
-	formattedDate := dateutil.DateFormat(date)
-
-	db, err := sql.Open("mysql", models.Config.MysqlConnectionString)
-	if err != nil {
-		http.Error(w, "Failed to connect to database", http.StatusInternalServerError)
-		return
-	}
-	defer db.Close()
-
-	query := "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ?"
-	params := []interface{}{formattedDate}
 
 	rows, err := db.Query(query, params...)
 	if err != nil {

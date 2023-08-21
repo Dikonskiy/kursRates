@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"kursRates/connections"
 	"kursRates/internal/models"
+	"kursRates/logutil"
 	"log"
 	"net/http"
 	"os"
@@ -35,6 +36,8 @@ func main() {
 		log.Fatal(err)
 	}
 
+	logutil.InitLoggers()
+
 	r := mux.NewRouter()
 
 	r.HandleFunc("/currency/save/{date}", connections.SaveCurrencyHandler)
@@ -49,5 +52,6 @@ func main() {
 	}
 
 	log.Println("Listening on port", models.Config.ListenPort, "...")
+	logutil.Info.Println("Listening on port", models.Config.ListenPort, "...")
 	log.Fatal(server.ListenAndServe())
 }

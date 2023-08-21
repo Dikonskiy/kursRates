@@ -1,0 +1,5 @@
+INFO: 2023/08/21 11:54:18 getfunctions.go:85: Currency by date accessed
+INFO: 2023/08/21 11:54:19 getfunctions.go:85: Currency by date accessed
+INFO: 2023/08/21 11:54:51 getfunctions.go:85: Currency by date accessed
+INFO: 2023/08/21 11:56:05 getfunctions.go:89: Currency by date and code accessed
+INFO: 2023/08/21 11:58:08 main.go:55: Listening on port 8080 ...

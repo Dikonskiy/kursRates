@@ -8,6 +8,7 @@ import (
 	"io"
 	"kursRates/dateutil"
 	"kursRates/internal/models"
+	"kursRates/logutil"
 	"net/http"
 
 	"github.com/gorilla/mux"
@@ -81,9 +82,11 @@ func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	if code == "" {
 		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ?"
 		params = []interface{}{formattedDate}
+		logutil.Info.Println("Currency by date accessed")
 	} else {
 		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ? AND CODE = ?"
 		params = []interface{}{formattedDate, code}
+		logutil.Info.Println("Currency by date and code accessed")
 	}
 
 	rows, err := db.Query(query, params...)

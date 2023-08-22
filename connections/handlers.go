@@ -23,6 +23,7 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	resp, err := http.Get(apiURL)
 	if err != nil {
 		http.Error(w, "Failed to fetch data from API", http.StatusInternalServerError)
+		util.Error.Println("Failed to fetch data from API", http.StatusInternalServerError)
 		return
 	}
 	defer resp.Body.Close()
@@ -30,18 +31,21 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	xmlData, err := io.ReadAll(resp.Body)
 	if err != nil {
 		http.Error(w, "Failed to read XML response", http.StatusInternalServerError)
+		util.Error.Println("Failed to read XML response", http.StatusInternalServerError)
 		return
 	}
 
 	var rates models.Rates
 	if err := xml.Unmarshal(xmlData, &rates); err != nil {
 		http.Error(w, "Failed to parse XML", http.StatusInternalServerError)
+		util.Error.Println("Failed to parse XML", http.StatusInternalServerError)
 		return
 	}
 
 	db, err := sql.Open("mysql", models.Config.MysqlConnectionString)
 	if err != nil {
 		http.Error(w, "Failed to connect to database", http.StatusInternalServerError)
+		util.Error.Println("Failed to connect to database", http.StatusInternalServerError)
 		return
 	}
 	defer db.Close()
@@ -49,6 +53,7 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	stmt, err := db.Prepare("INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)")
 	if err != nil {
 		http.Error(w, "Failed to prepare statement", http.StatusInternalServerError)
+		util.Error.Println("Failed to prepare statement", http.StatusInternalServerError)
 		return
 	}
 	defer stmt.Close()
@@ -72,6 +77,7 @@ func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	db, err := sql.Open("mysql", models.Config.MysqlConnectionString)
 	if err != nil {
 		http.Error(w, "Failed to connect to database", http.StatusInternalServerError)
+		util.Error.Println("Failed to connect to database", http.StatusInternalServerError)
 		return
 	}
 	defer db.Close()
@@ -92,6 +98,7 @@ func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	rows, err := db.Query(query, params...)
 	if err != nil {
 		http.Error(w, "Failed to query database", http.StatusInternalServerError)
+		util.Error.Println("Failed to query database", http.StatusInternalServerError)
 		return
 	}
 	defer rows.Close()
@@ -101,6 +108,7 @@ func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 		var item models.DBItem
 		if err := rows.Scan(&item.ID, &item.Title, &item.Code, &item.Value, &item.Date); err != nil {
 			http.Error(w, "Failed to scan row", http.StatusInternalServerError)
+			util.Error.Println("Failed to scan row", http.StatusInternalServerError)
 			return
 		}
 		results = append(results, item)
@@ -108,6 +116,7 @@ func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 
 	if len(results) == 0 {
 		http.Error(w, "No data found with these parameters", http.StatusInternalServerError)
+		util.Error.Println("No data found with these parameters", http.StatusInternalServerError)
 		return
 	}
 

@@ -12,6 +12,7 @@ func SaveToDatabase(db *sql.DB, stmt *sql.Stmt, items []models.CurrencyItem, for
 		_, err := stmt.Exec(item.Title, item.Code, item.Value, formattedDate)
 		if err != nil {
 			log.Println("Error inserting data:", err)
+			Error.Println("No data found with these parameters", err)
 		}
 	}
 	done <- true

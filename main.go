@@ -18,7 +18,7 @@ func main() {
 	}
 	defer configFile.Close()
 
-	util.InitLoggers()
+	util.InitLogger()
 
 	util.InitDB()
 

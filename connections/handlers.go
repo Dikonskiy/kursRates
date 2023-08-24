@@ -1,7 +1,6 @@
 package connections
 
 import (
-	"database/sql"
 	"encoding/json"
 	"encoding/xml"
 	"fmt"
@@ -9,6 +8,7 @@ import (
 	"kursRates/internal/models"
 	"kursRates/util"
 	"net/http"
+	"strconv"
 
 	"github.com/gorilla/mux"
 )
@@ -23,7 +23,7 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	resp, err := http.Get(apiURL)
 	if err != nil {
 		http.Error(w, "Failed to fetch data from API", http.StatusInternalServerError)
-		util.Error.Println("Failed to fetch data from API", http.StatusInternalServerError)
+		util.Error.Println("Failed to fetch data from API:", err)
 		return
 	}
 	defer resp.Body.Close()
@@ -42,7 +42,7 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	db, err := sql.Open("mysql", models.Config.MysqlConnectionString)
+	db, err := util.InitDB()
 	if err != nil {
 		http.Error(w, "Failed to connect to database", http.StatusInternalServerError)
 		util.Error.Println("Failed to connect to database", http.StatusInternalServerError)
@@ -58,14 +58,19 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	defer stmt.Close()
 
-	done := make(chan bool)
-	go util.SaveToDatabase(db, stmt, rates.Items, formattedDate, done)
-	<-done
+	for _, item := range rates.Items {
+		value, err := strconv.ParseFloat(item.Value, 64)
+		if err != nil {
+			util.Error.Println("[ ERR ] convert to float", err.Error())
+			continue
+		}
 
-	w.WriteHeader(http.StatusOK)
-	w.Header().Set("Content-Type", "application/json")
-	w.Write([]byte(`{"success": true}`))
-	util.Info.Println("date was saved")
+		_, err = stmt.Exec(item.Title, item.Code, value, formattedDate)
+		if err != nil {
+			util.Error.Println("[ ERR ] insert in database: data item.Title, value:", item.Title, err.Error())
+			continue
+		}
+	}
 }
 
 func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
@@ -74,7 +79,7 @@ func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	code := vars["code"]
 	formattedDate := util.DateFormat(date)
 
-	db, err := sql.Open("mysql", models.Config.MysqlConnectionString)
+	db, err := util.GetDB()
 	if err != nil {
 		http.Error(w, "Failed to connect to database", http.StatusInternalServerError)
 		util.Error.Println("Failed to connect to database", http.StatusInternalServerError)
@@ -98,7 +103,7 @@ func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	rows, err := db.Query(query, params...)
 	if err != nil {
 		http.Error(w, "Failed to query database", http.StatusInternalServerError)
-		util.Error.Println("Failed to query database", http.StatusInternalServerError)
+		util.Error.Println("Failed to fetch data from API:", err)
 		return
 	}
 	defer rows.Close()

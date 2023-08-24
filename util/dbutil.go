@@ -10,7 +10,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-func InitDB() (*sql.DB, error) {
+func GetDB() (*sql.DB, error) {
 	configFile, err := os.Open("config.json")
 	if err != nil {
 		return nil, err
@@ -32,5 +32,13 @@ func InitDB() (*sql.DB, error) {
 		return nil, err
 	}
 
+	return db, nil
+}
+
+func InitDB() (*sql.DB, error) {
+	db, err := GetDB()
+	if err != nil {
+		return nil, err
+	}
 	return db, nil
 }

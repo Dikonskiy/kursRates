@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func SaveToDatabase(db *sql.DB, stmt *sql.Stmt, items []models.CurrencyItem, formattedDate string, done chan<- bool) {
+func SaveToDatabase(db *sql.DB, stmt *sql.Stmt, items []models.CurrencyItem, formattedDate string) {
 	for _, item := range items {
 		_, err := stmt.Exec(item.Title, item.Code, item.Value, formattedDate)
 		if err != nil {
@@ -15,7 +15,6 @@ func SaveToDatabase(db *sql.DB, stmt *sql.Stmt, items []models.CurrencyItem, for
 			Error.Println("No data found with these parameters", err)
 		}
 	}
-	done <- true
 }
 
 func DateFormat(date string) string {

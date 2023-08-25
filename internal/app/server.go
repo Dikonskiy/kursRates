@@ -2,8 +2,8 @@
 package app
 
 import (
+	logerr "kursRates/internal/logerr"
 	"kursRates/internal/models"
-	"kursRates/util"
 	"log"
 	"net/http"
 	"time"
@@ -18,6 +18,6 @@ func StartServer(router http.Handler) {
 	}
 
 	log.Println("Listening on port", models.Config.ListenPort, "...")
-	util.Info.Printf("Listening on port %s ...", models.Config.ListenPort)
+	logerr.Info.Printf("Listening on port %s ...", models.Config.ListenPort)
 	log.Fatal(server.ListenAndServe())
 }

@@ -1,24 +1,36 @@
-package connections
+package httphandler
 
 import (
 	"encoding/json"
 	"encoding/xml"
 	"fmt"
 	"io"
+	util "kursRates/internal/database"
+
+	logerr "kursRates/internal/logerr"
 	"kursRates/internal/models"
-	"kursRates/util"
 	"net/http"
 	"strconv"
+	"time"
 
 	"github.com/gorilla/mux"
 )
 
+func DateFormat(date string) (string, error) {
+	parsedDate, err := time.Parse("02.01.2006", date)
+	if err != nil {
+		return "", err
+	}
+	formattedDate := parsedDate.Format("2006-01-02")
+	return formattedDate, nil
+}
+
 func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	date := vars["date"]
-	formattedDate, err := util.DateFormat(date)
+	formattedDate, err := DateFormat(date)
 	if err != nil {
-		util.Error.Println("Failed to parse the date:", err)
+		logerr.Error.Println("Failed to parse the date:", err)
 	}
 
 	apiURL := fmt.Sprintf("%s?fdate=%s", models.Config.APIURL, date)
@@ -26,7 +38,7 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	resp, err := http.Get(apiURL)
 	if err != nil {
 		http.Error(w, "Failed to fetch data from API", http.StatusInternalServerError)
-		util.Error.Println("Failed to fetch data from API:", err)
+		logerr.Error.Println("Failed to fetch data from API:", err)
 		return
 	}
 	defer resp.Body.Close()
@@ -34,21 +46,21 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	xmlData, err := io.ReadAll(resp.Body)
 	if err != nil {
 		http.Error(w, "Failed to read XML response", http.StatusInternalServerError)
-		util.Error.Println("Failed to read XML response", http.StatusInternalServerError)
+		logerr.Error.Println("Failed to read XML response", http.StatusInternalServerError)
 		return
 	}
 
 	var rates models.Rates
 	if err := xml.Unmarshal(xmlData, &rates); err != nil {
 		http.Error(w, "Failed to parse XML", http.StatusInternalServerError)
-		util.Error.Println("Failed to parse XML", http.StatusInternalServerError)
+		logerr.Error.Println("Failed to parse XML", http.StatusInternalServerError)
 		return
 	}
 
 	db, err := util.InitDB()
 	if err != nil {
 		http.Error(w, "Failed to connect to database", http.StatusInternalServerError)
-		util.Error.Println("Failed to connect to database", http.StatusInternalServerError)
+		logerr.Error.Println("Failed to connect to database", http.StatusInternalServerError)
 		return
 	}
 	defer db.Close()
@@ -56,7 +68,7 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	stmt, err := db.Prepare("INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)")
 	if err != nil {
 		http.Error(w, "Failed to prepare statement", http.StatusInternalServerError)
-		util.Error.Println("Failed to prepare statement", http.StatusInternalServerError)
+		logerr.Error.Println("Failed to prepare statement", http.StatusInternalServerError)
 		return
 	}
 	defer stmt.Close()
@@ -64,35 +76,35 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	for _, item := range rates.Items {
 		value, err := strconv.ParseFloat(item.Value, 64)
 		if err != nil {
-			util.Error.Println("[ ERR ] convert to float", err.Error())
+			logerr.Error.Println("[ ERR ] convert to float", err.Error())
 			continue
 		}
 
 		_, err = stmt.Exec(item.Title, item.Code, value, formattedDate)
 		if err != nil {
-			util.Error.Println("[ ERR ] insert in database: data item.Title, value:", item.Title, err.Error())
+			logerr.Error.Println("[ ERR ] insert in database: data item.Title, value:", item.Title, err.Error())
 			continue
 		}
 	}
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")
 	w.Write([]byte(`{"success": true}`))
-	util.Info.Println("date was saved")
+	logerr.Info.Println("date was saved")
 }
 
 func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	date := vars["date"]
 	code := vars["code"]
-	formattedDate, err := util.DateFormat(date)
+	formattedDate, err := DateFormat(date)
 	if err != nil {
-		util.Error.Println("Failed to parse the date:", err)
+		logerr.Error.Println("Failed to parse the date:", err)
 	}
 
 	db, err := util.GetDB()
 	if err != nil {
 		http.Error(w, "Failed to connect to database", http.StatusInternalServerError)
-		util.Error.Println("Failed to connect to database", http.StatusInternalServerError)
+		logerr.Error.Println("Failed to connect to database", http.StatusInternalServerError)
 		return
 	}
 	defer db.Close()
@@ -103,17 +115,17 @@ func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	if code == "" {
 		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ?"
 		params = []interface{}{formattedDate}
-		util.Info.Println("Currency by date accessed")
+		logerr.Info.Println("Currency by date accessed")
 	} else {
 		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ? AND CODE = ?"
 		params = []interface{}{formattedDate, code}
-		util.Info.Println("Currency by date and code accessed")
+		logerr.Info.Println("Currency by date and code accessed")
 	}
 
 	rows, err := db.Query(query, params...)
 	if err != nil {
 		http.Error(w, "Failed to query database", http.StatusInternalServerError)
-		util.Error.Println("Failed to fetch data from API:", err)
+		logerr.Error.Println("Failed to fetch data from API:", err)
 		return
 	}
 	defer rows.Close()
@@ -123,7 +135,7 @@ func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 		var item models.DBItem
 		if err := rows.Scan(&item.ID, &item.Title, &item.Code, &item.Value, &item.Date); err != nil {
 			http.Error(w, "Failed to scan row", http.StatusInternalServerError)
-			util.Error.Println("Failed to scan row", http.StatusInternalServerError)
+			logerr.Error.Println("Failed to scan row", http.StatusInternalServerError)
 			return
 		}
 		results = append(results, item)
@@ -131,7 +143,7 @@ func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 
 	if len(results) == 0 {
 		http.Error(w, "No data found with these parameters", http.StatusInternalServerError)
-		util.Error.Println("No data found with these parameters", http.StatusInternalServerError)
+		logerr.Error.Println("No data found with these parameters", http.StatusInternalServerError)
 		return
 	}
 

@@ -1,2 +1,34 @@
 time="2023-08-25T10:25:28+06:00" level=info msg="Failed to connect to database 500"
 time="2023-08-25T10:40:52+06:00" level=info msg="Failed to initialize database: Error 1045 (28000): Access denied for user 'kursUse'@'localhost' (using password: YES)"
+Aug 25 11:26:33.730[36m [INFO] [0mFailed to initialize database: Error 1045 (28000): Access denied for user 'kursUse'@'localhost' (using password: YES)
+time="2023-08-25T11:27:39+06:00" level=info msg="Failed to initialize database: Error 1045 (28000): Access denied for user 'kursUse'@'localhost' (using password: YES)"
+level=info msg="Failed to initialize database: Error 1045 (28000): Access denied for user 'kursUse'@'localhost' (using password: YES)"
+level=info msg="Failed to connect to database 500"
+time="Aug 25 11:31:52.317" level=info msg="Failed to initialize database: Error 1045 (28000): Access denied for user 'kursUse'@'localhost' (using password: YES)"
+time="Aug 25 11:34:21.595" level=info msg="Failed to initialize database: Error 1045 (28000): Access denied for user 'kursUse'@'localhost' (using password: YES)"
+Aug 25 11:34:59.855 [info] Failed to initialize database: Error 1045 (28000): Access denied for user 'kursUse'@'localhost' (using password: YES)
+Aug 25 11:35:30.164 [info] Failed to initialize database: Error 1045 (28000): Access denied for user 'kursUse'@'localhost' (using password: YES)
+Aug 25 11:38:17.260 [info] Failed to parse the date: parsing time "10.082023" as "02.01.2006": cannot parse "2023" as "."
+Aug 25 11:38:17.434 [info] Failed to parse XML 500
+Aug 25 11:40:18.433 [[info]] Failed to parse the date: parsing time "10.082023" as "02.01.2006": cannot parse "2023" as "."
+Aug 25 11:40:18.874 [[info]] Failed to parse XML 500
+Aug 25 11:41:08.017 [info] Failed to parse the date: parsing time "10.082023" as "02.01.2006": cannot parse "2023" as "."
+Aug 25 11:41:08.455 [info] Failed to parse XML 500
+Aug 25 11:42:39.443 [info] Failed to parse the date: parsing time "10.082023" as "02.01.2006": cannot parse "2023" as "."
+Aug 25 11:42:40.141 [info] Failed to parse XML 500
+Aug 25 11:48:03.531 [info] Failed to parse the date: parsing time "10.082023" as "02.01.2006": cannot parse "2023" as "."
+Aug 25 11:48:04.027 [info] Failed to parse XML 500
+Aug 25 11:50:16.445 [info] Failed to parse the date: parsing time "10.082023" as "02.01.2006": cannot parse "2023" as "."
+Aug 25 11:50:16.867 [info] Failed to parse XML 500
+Aug 25 11:53:27.149 info Failed to parse the date: parsing time "10.082023" as "02.01.2006": cannot parse "2023" as "."
+Aug 25 11:53:27.602 info Failed to parse XML 500
+Aug 25 11:54:47.240 [error] Failed to parse the date: parsing time "10.082023" as "02.01.2006": cannot parse "2023" as "."
+Aug 25 11:54:47.694 [error] Failed to parse XML 500
+Aug 25 11:55:24.979 [info] Failed to parse the date: parsing time "10.082023" as "02.01.2006": cannot parse "2023" as "."
+Aug 25 11:55:25.429 [info] Failed to parse XML 500
+Aug 25 11:56:06.839 [error] Failed to parse the date: parsing time "10.082023" as "02.01.2006": cannot parse "2023" as "."
+Aug 25 11:56:07.295 [error] Failed to parse XML 500
+Aug 25 12:03:31.690 [info] Failed to parse the date: parsing time "10.082023" as "02.01.2006": cannot parse "2023" as "."
+Aug 25 12:03:32.132 [info] Failed to parse XML 500
+Aug 25 14:09:58.677 [info] Failed to parse the date: parsing time "11.082023" as "02.01.2006": cannot parse "2023" as "."
+Aug 25 14:09:59.131 [info] Failed to parse XML 500

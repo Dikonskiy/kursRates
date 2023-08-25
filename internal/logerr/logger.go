@@ -11,6 +11,25 @@ var (
 	Error = logrus.New()
 )
 
+type CustomFormatter struct {
+	TimestampFormat string
+}
+
+func (f *CustomFormatter) Format(entry *logrus.Entry) ([]byte, error) {
+	timestamp := entry.Time.Format(f.TimestampFormat)
+	level := entry.Level.String()
+	msg := entry.Message
+
+	var logLine string
+	if entry.Level == logrus.ErrorLevel {
+		logLine = timestamp + " [" + level + "] " + msg + "\n"
+	} else {
+		logLine = timestamp + " [" + level + "] " + msg + "\n"
+	}
+
+	return []byte(logLine), nil
+}
+
 func InitLogger() {
 	infoFile, err := os.OpenFile("info.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 	if err == nil {
@@ -28,6 +47,9 @@ func InitLogger() {
 		Error.SetOutput(os.Stderr)
 	}
 
-	Info.SetFormatter(&logrus.TextFormatter{})
-	Error.SetFormatter(&logrus.TextFormatter{})
+	customFormatter := &CustomFormatter{
+		TimestampFormat: "Jan 02 15:04:05.000",
+	}
+	Info.SetFormatter(customFormatter)
+	Error.SetFormatter(customFormatter)
 }

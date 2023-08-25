@@ -1,20 +1,12 @@
-INFO: 2023/08/21 14:26:50 main.go:42: Listening on port 8080 ...
-INFO: 2023/08/21 14:27:01 handlers.go:85: Currency by date accessed
-INFO: 2023/08/21 14:27:10 handlers.go:89: Currency by date and code accessed
-INFO: 2023/08/21 14:31:13 main.go:42: Listening on port 8080 ...
-INFO: 2023/08/21 14:31:21 handlers.go:64: date was saved
-INFO: 2023/08/21 14:35:49 server.go:21: Listening on port 8080 ...
-INFO: 2023/08/21 14:36:11 handlers.go:64: date was saved
-INFO: 2023/08/21 14:36:16 handlers.go:86: Currency by date accessed
-INFO: 2023/08/21 14:36:22 handlers.go:90: Currency by date and code accessed
-INFO: 2023/08/21 14:40:15 server.go:21: Listening on port 8080 ...
-INFO: 2023/08/21 14:40:31 handlers.go:63: date was saved
-INFO: 2023/08/21 14:40:37 handlers.go:85: Currency by date accessed
-INFO: 2023/08/21 14:40:42 handlers.go:89: Currency by date and code accessed
-INFO: 2023/08/22 09:50:13 server.go:21: Listening on port 8080 ...
-INFO: 2023/08/22 09:50:24 handlers.go:91: Currency by date accessed
-INFO: 2023/08/24 16:40:10 server.go:21: Listening on port 8080 ...
-INFO: 2023/08/24 16:40:28 handlers.go:65: date was saved
-INFO: 2023/08/24 16:42:59 server.go:21: Listening on port 8080 ...
-INFO: 2023/08/24 17:01:41 server.go:21: Listening on port 8080 ...
 time="2023-08-24T17:42:52+06:00" level=info msg="Listening on port 8080 ..."
+time="2023-08-25T10:24:21+06:00" level=info msg="Listening on port 8080 ..."
+time="2023-08-25T10:25:18+06:00" level=info msg="Listening on port 8080 ..."
+time="2023-08-25T10:32:53+06:00" level=info msg="Listening on port 8080 ..."
+time="2023-08-25T10:33:51+06:00" level=info msg="Listening on port 8080 ..."
+time="2023-08-25T10:39:43+06:00" level=info msg="Listening on port 8080 ..."
+time="2023-08-25T10:40:10+06:00" level=info msg="Listening on port 8080 ..."
+time="2023-08-25T10:40:52+06:00" level=info msg="Listening on port 8080 ..."
+time="2023-08-25T10:42:29+06:00" level=info msg="Listening on port 8080 ..."
+time="2023-08-25T10:44:15+06:00" level=info msg="date was saved"
+time="2023-08-25T10:49:06+06:00" level=info msg="Listening on port 8080 ..."
+time="2023-08-25T10:54:28+06:00" level=info msg="Listening on port 8080 ..."

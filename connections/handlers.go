@@ -16,7 +16,10 @@ import (
 func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	date := vars["date"]
-	formattedDate := util.DateFormat(date)
+	formattedDate, err := util.DateFormat(date)
+	if err != nil {
+		util.Error.Println("Failed to parse the date:", err)
+	}
 
 	apiURL := fmt.Sprintf("%s?fdate=%s", models.Config.APIURL, date)
 
@@ -71,13 +74,20 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 			continue
 		}
 	}
+	w.WriteHeader(http.StatusOK)
+	w.Header().Set("Content-Type", "application/json")
+	w.Write([]byte(`{"success": true}`))
+	util.Info.Println("date was saved")
 }
 
 func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	date := vars["date"]
 	code := vars["code"]
-	formattedDate := util.DateFormat(date)
+	formattedDate, err := util.DateFormat(date)
+	if err != nil {
+		util.Error.Println("Failed to parse the date:", err)
+	}
 
 	db, err := util.GetDB()
 	if err != nil {

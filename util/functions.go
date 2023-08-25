@@ -1,24 +1,14 @@
 package util
 
 import (
-	"database/sql"
-	"kursRates/internal/models"
-	"log"
 	"time"
 )
 
-func SaveToDatabase(db *sql.DB, stmt *sql.Stmt, items []models.CurrencyItem, formattedDate string) {
-	for _, item := range items {
-		_, err := stmt.Exec(item.Title, item.Code, item.Value, formattedDate)
-		if err != nil {
-			log.Println("Error inserting data:", err)
-			Error.Println("No data found with these parameters", err)
-		}
+func DateFormat(date string) (string, error) {
+	parsedDate, err := time.Parse("02.01.2006", date)
+	if err != nil {
+		return "", err
 	}
-}
-
-func DateFormat(date string) string {
-	parsedDate, _ := time.Parse("02.01.2006", date)
 	formattedDate := parsedDate.Format("2006-01-02")
-	return formattedDate
+	return formattedDate, nil
 }

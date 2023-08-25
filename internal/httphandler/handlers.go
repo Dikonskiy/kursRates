@@ -1,6 +1,7 @@
 package httphandler
 
 import (
+	"database/sql"
 	"encoding/json"
 	"encoding/xml"
 	"fmt"
@@ -15,6 +16,18 @@ import (
 
 	"github.com/gorilla/mux"
 )
+
+var (
+	db  *sql.DB
+	err error
+)
+
+func init() {
+	db, err = util.InitDB()
+	if err != nil {
+		logerr.Error.Fatalf("Failed to initialize database: %v", err)
+	}
+}
 
 func DateFormat(date string) (string, error) {
 	parsedDate, err := time.Parse("02.01.2006", date)
@@ -57,14 +70,6 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	db, err := util.InitDB()
-	if err != nil {
-		http.Error(w, "Failed to connect to database", http.StatusInternalServerError)
-		logerr.Error.Println("Failed to connect to database", http.StatusInternalServerError)
-		return
-	}
-	defer db.Close()
-
 	stmt, err := db.Prepare("INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)")
 	if err != nil {
 		http.Error(w, "Failed to prepare statement", http.StatusInternalServerError)
@@ -100,14 +105,6 @@ func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		logerr.Error.Println("Failed to parse the date:", err)
 	}
-
-	db, err := util.GetDB()
-	if err != nil {
-		http.Error(w, "Failed to connect to database", http.StatusInternalServerError)
-		logerr.Error.Println("Failed to connect to database", http.StatusInternalServerError)
-		return
-	}
-	defer db.Close()
 
 	var query string
 	var params []interface{}

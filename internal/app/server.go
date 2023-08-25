@@ -18,6 +18,6 @@ func StartServer(router http.Handler) {
 	}
 
 	log.Println("Listening on port", models.Config.ListenPort, "...")
-	util.Info.Println("Listening on port", models.Config.ListenPort, "...")
+	util.Info.Printf("Listening on port %s ...", models.Config.ListenPort)
 	log.Fatal(server.ListenAndServe())
 }

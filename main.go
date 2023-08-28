@@ -2,9 +2,9 @@ package main
 
 import (
 	"kursRates/internal/app"
-	util "kursRates/internal/database"
+	"kursRates/internal/database"
 	"kursRates/internal/httphandler"
-	logerr "kursRates/internal/logerr"
+	"kursRates/internal/logerr"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
@@ -13,12 +13,13 @@ import (
 func init() {
 	logerr.InitLogger()
 
-	db, err := util.InitDB()
+	db, err := database.InitDB()
 	if err != nil {
 		logerr.Error.Println("Failed to initialize database:", err)
 		return
 	}
 	defer db.Close()
+
 }
 
 func main() {

@@ -73,6 +73,26 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// Create a buffered channel to handle goroutines
+	itemsChan := make(chan models.CurrencyItem, len(rates.Items))
+	done := make(chan bool)
+
+	// Launch goroutines to process items concurrently
+	for _, item := range rates.Items {
+		go func(item models.CurrencyItem) {
+			itemsChan <- item
+		}(item)
+	}
+
+	// Close the items channel when all goroutines are done
+	go func() {
+		for i := 0; i < len(rates.Items); i++ {
+			<-done
+		}
+		close(itemsChan)
+	}()
+
+	// Process items from the channel
 	stmt, err := db.Prepare("INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)")
 	if err != nil {
 		http.Error(w, "Failed to prepare statement", http.StatusInternalServerError)
@@ -80,19 +100,23 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	defer stmt.Close()
 
-	for _, item := range rates.Items {
-		value, err := strconv.ParseFloat(item.Value, 64)
-		if err != nil {
-			http.Error(w, "Failed to convert float", http.StatusInternalServerError)
-			continue
-		}
+	for item := range itemsChan {
+		go func(item models.CurrencyItem) {
+			value, err := strconv.ParseFloat(item.Value, 64)
+			if err != nil {
+				http.Error(w, "Failed to convert float", http.StatusInternalServerError)
+				done <- true
+				return
+			}
 
-		_, err = stmt.Exec(item.Title, item.Code, value, formattedDate)
-		if err != nil {
-			http.Error(w, "Failed insert in database: data item.Title, value:", http.StatusInternalServerError)
-			continue
-		}
+			_, err = stmt.Exec(item.Title, item.Code, value, formattedDate)
+			if err != nil {
+				http.Error(w, "Failed insert in database: data item.Title, value:", http.StatusInternalServerError)
+			}
+			done <- true
+		}(item)
 	}
+
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")
 	w.Write([]byte(`{"success": true}`))

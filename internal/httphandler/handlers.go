@@ -72,19 +72,15 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Failed to parse XML", http.StatusInternalServerError)
 		return
 	}
-
-	// Create a buffered channel to handle goroutines
 	itemsChan := make(chan models.CurrencyItem, len(rates.Items))
 	done := make(chan bool)
 
-	// Launch goroutines to process items concurrently
 	for _, item := range rates.Items {
 		go func(item models.CurrencyItem) {
 			itemsChan <- item
 		}(item)
 	}
 
-	// Close the items channel when all goroutines are done
 	go func() {
 		for i := 0; i < len(rates.Items); i++ {
 			<-done
@@ -92,13 +88,14 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 		close(itemsChan)
 	}()
 
-	// Process items from the channel
 	stmt, err := db.Prepare("INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)")
 	if err != nil {
 		http.Error(w, "Failed to prepare statement", http.StatusInternalServerError)
 		return
 	}
 	defer stmt.Close()
+
+	savedItemCount := 0
 
 	for item := range itemsChan {
 		go func(item models.CurrencyItem) {
@@ -112,10 +109,14 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 			_, err = stmt.Exec(item.Title, item.Code, value, formattedDate)
 			if err != nil {
 				http.Error(w, "Failed insert in database: data item.Title, value:", http.StatusInternalServerError)
+			} else {
+				logerr.Info.Printf("%d Item saved", savedItemCount)
+				savedItemCount++
 			}
 			done <- true
 		}(item)
 	}
+	logerr.Info.Printf("%d Items saved\n", savedItemCount)
 
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")

@@ -19,7 +19,6 @@ func init() {
 		return
 	}
 	defer db.Close()
-
 }
 
 func main() {

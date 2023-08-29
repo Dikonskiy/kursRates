@@ -1,3 +1,4 @@
+// internal/httphandler/handlers.go
 package httphandler
 
 import (
@@ -6,9 +7,9 @@ import (
 	"encoding/xml"
 	"fmt"
 	"io"
-	util "kursRates/internal/database"
+	"kursRates/internal/database"
 
-	logerr "kursRates/internal/logerr"
+	"kursRates/internal/logerr"
 	"kursRates/internal/models"
 	"net/http"
 	"strconv"
@@ -23,7 +24,7 @@ var (
 )
 
 func init() {
-	db, err = util.InitDB()
+	db, err = database.InitDB()
 	if err != nil {
 		logerr.Error.Fatalf("Failed to initialize database: %v", err)
 	}
@@ -40,7 +41,7 @@ func DateFormat(date string) (string, error) {
 
 func respondWithError(w http.ResponseWriter, status int, errorMsg string, err error) {
 	http.Error(w, errorMsg, status)
-	logerr.Error.Printf("%s: %v\n", errorMsg, err)
+	logerr.Error.Printf("%s: %v", errorMsg, err)
 }
 
 func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
@@ -165,7 +166,7 @@ func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if len(results) == 0 {
-		respondWithError(w, http.StatusNotFound, "No data found with these parameters", nil)
+		respondWithError(w, http.StatusNotFound, "No data found with these parameters", err)
 		return
 	}
 

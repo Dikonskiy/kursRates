@@ -33,3 +33,12 @@ Aug 25 12:03:32.132 [info] Failed to parse XML 500
 Aug 25 14:09:58.677 [info] Failed to parse the date: parsing time "11.082023" as "02.01.2006": cannot parse "2023" as "."
 Aug 25 14:09:59.131 [info] Failed to parse XML 500
 Aug 25 15:40:58.203 [info] No data found with these parameters 500
+Aug 29 09:33:38.885 [info] Failed to initialize database: Error 1045 (28000): Access denied for user 'kursUse'@'localhost' (using password: YES)
+Aug 29 09:34:44.546 [info] No data found with these parameters: <nil>
+
+Aug 29 09:35:35.233 [info] No data found with these parameters: <nil>
+
+Aug 29 09:46:15.724 [[INFO]] No data found with these parameters: <nil>
+
+Aug 29 09:48:38.463 [INFO] No data found with these parameters: <nil>
+Aug 29 09:48:59.151 [INFO] No data found with these parameters: <nil>

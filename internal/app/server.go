@@ -2,7 +2,7 @@
 package app
 
 import (
-	logerr "kursRates/internal/logerr"
+	"kursRates/internal/logerr"
 	"kursRates/internal/models"
 	"log"
 	"net/http"

@@ -1,7 +1,9 @@
+// internal/logerr/logger.go
 package logerr
 
 import (
 	"os"
+	"strings"
 
 	"github.com/sirupsen/logrus"
 )
@@ -17,16 +19,10 @@ type CustomFormatter struct {
 
 func (f *CustomFormatter) Format(entry *logrus.Entry) ([]byte, error) {
 	timestamp := entry.Time.Format(f.TimestampFormat)
-	level := entry.Level.String()
+	level := "[" + strings.ToUpper(entry.Level.String()) + "]"
+
 	msg := entry.Message
-
-	var logLine string
-	if entry.Level == logrus.ErrorLevel {
-		logLine = timestamp + " [" + level + "] " + msg + "\n"
-	} else {
-		logLine = timestamp + " [" + level + "] " + msg + "\n"
-	}
-
+	logLine := timestamp + " " + level + " " + msg + "\n"
 	return []byte(logLine), nil
 }
 

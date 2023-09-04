@@ -4,10 +4,8 @@ package httphandler
 import (
 	"database/sql"
 	"encoding/json"
-	"encoding/xml"
-	"fmt"
-	"io"
 	"kursRates/internal/database"
+	"kursRates/internal/service"
 
 	"kursRates/internal/logerr"
 	"kursRates/internal/models"
@@ -19,6 +17,7 @@ import (
 )
 
 var (
+	log = logerr.InitLogger()
 	db  *sql.DB
 	err error
 )
@@ -26,7 +25,7 @@ var (
 func init() {
 	db, err = database.InitDB()
 	if err != nil {
-		logerr.Error.Fatalf("Failed to initialize database: %v", err)
+		log.Error("Failed to initialize database: ", err)
 	}
 }
 
@@ -41,88 +40,60 @@ func DateFormat(date string) (string, error) {
 
 func respondWithError(w http.ResponseWriter, status int, errorMsg string, err error) {
 	http.Error(w, errorMsg, status)
-	logerr.Error.Printf("%s: %v", errorMsg, err)
+	log.Error("%s: %v", errorMsg, err)
 }
 
 func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	date := vars["date"]
-	formattedDate, err := DateFormat(date)
 	if err != nil {
 		respondWithError(w, http.StatusBadRequest, "Failed to parse the date", err)
 		return
 	}
 
-	apiURL := fmt.Sprintf("%s?fdate=%s", models.Config.APIURL, date)
-
-	resp, err := http.Get(apiURL)
+	rates, err := service.Service(date)
 	if err != nil {
-		http.Error(w, "Failed to fetch data from API", http.StatusInternalServerError)
-		return
+		log.Error("Failed to parse: ", err)
 	}
-	defer resp.Body.Close()
 
-	xmlData, err := io.ReadAll(resp.Body)
+	formattedDate, err := DateFormat(rates.Date)
 	if err != nil {
-		http.Error(w, "Failed to read XML response", http.StatusInternalServerError)
+		http.Error(w, "Failed to parse and format the date", http.StatusInternalServerError)
 		return
 	}
-
-	var rates models.Rates
-	if err := xml.Unmarshal(xmlData, &rates); err != nil {
-		http.Error(w, "Failed to parse XML", http.StatusInternalServerError)
-		return
-	}
-	itemsChan := make(chan models.CurrencyItem, len(rates.Items))
-	done := make(chan bool)
-
-	for _, item := range rates.Items {
-		go func(item models.CurrencyItem) {
-			itemsChan <- item
-		}(item)
-	}
-
-	go func() {
-		for i := 0; i < len(rates.Items); i++ {
-			<-done
-		}
-		close(itemsChan)
-	}()
 
 	stmt, err := db.Prepare("INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)")
 	if err != nil {
 		http.Error(w, "Failed to prepare statement", http.StatusInternalServerError)
 		return
 	}
-	defer stmt.Close()
 
 	savedItemCount := 0
 
-	for item := range itemsChan {
-		go func(item models.CurrencyItem) {
+	go func(rates models.Rates, stmt *sql.Stmt) {
+		defer stmt.Close()
+		for _, item := range rates.Items {
 			value, err := strconv.ParseFloat(item.Value, 64)
 			if err != nil {
-				http.Error(w, "Failed to convert float", http.StatusInternalServerError)
-				done <- true
-				return
+				log.Error("Failed to convert float: %s", err.Error())
+				continue
 			}
 
 			_, err = stmt.Exec(item.Title, item.Code, value, formattedDate)
 			if err != nil {
-				http.Error(w, "Failed insert in database: data item.Title, value:", http.StatusInternalServerError)
+				log.Error("Failed insert in database:", err.Error())
 			} else {
-				logerr.Info.Printf("%d Item saved", savedItemCount)
+				log.Info("Item saved", savedItemCount)
 				savedItemCount++
 			}
-			done <- true
-		}(item)
-	}
-	logerr.Info.Printf("%d Items saved\n", savedItemCount)
+		}
+		log.Info("Items saved", savedItemCount)
+	}(rates, stmt)
 
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")
 	w.Write([]byte(`{"success": true}`))
-	logerr.Info.Println("date was saved")
+	log.Info("date was saved")
 }
 
 func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
@@ -141,11 +112,11 @@ func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	if code == "" {
 		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ?"
 		params = []interface{}{formattedDate}
-		logerr.Info.Println("Currency by date accessed")
+		log.Info("Currency by date accessed")
 	} else {
 		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ? AND CODE = ?"
 		params = []interface{}{formattedDate, code}
-		logerr.Info.Println("Currency by date and code accessed")
+		log.Info("Currency by date and code accessed")
 	}
 
 	rows, err := db.Query(query, params...)

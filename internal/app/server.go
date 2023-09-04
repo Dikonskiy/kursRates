@@ -9,6 +9,10 @@ import (
 	"time"
 )
 
+var (
+	slog = logerr.InitLogger()
+)
+
 func StartServer(router http.Handler) {
 	server := &http.Server{
 		Addr:         ":" + models.Config.ListenPort,
@@ -18,6 +22,6 @@ func StartServer(router http.Handler) {
 	}
 
 	log.Println("Listening on port", models.Config.ListenPort, "...")
-	logerr.Info.Printf("Listening on port %s ...", models.Config.ListenPort)
+	slog.Info("Listening on port, " + models.Config.ListenPort + "...")
 	log.Fatal(server.ListenAndServe())
 }

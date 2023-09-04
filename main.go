@@ -11,11 +11,11 @@ import (
 )
 
 func init() {
-	log := logerr.InitLogger()
+	logger := logerr.InitLogger()
 
 	db, err := database.InitDB()
 	if err != nil {
-		log.Error("Failed to initialize database:", err)
+		logger.Error("Failed to initialize database:", err)
 		return
 	}
 	defer db.Close()

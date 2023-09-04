@@ -10,7 +10,7 @@ import (
 )
 
 var (
-	slog = logerr.InitLogger()
+	logger = logerr.InitLogger()
 )
 
 func StartServer(router http.Handler) {
@@ -22,6 +22,6 @@ func StartServer(router http.Handler) {
 	}
 
 	log.Println("Listening on port", models.Config.ListenPort, "...")
-	slog.Info("Listening on port, " + models.Config.ListenPort + "...")
+	logger.Info("Listening on port, " + models.Config.ListenPort + "...")
 	log.Fatal(server.ListenAndServe())
 }

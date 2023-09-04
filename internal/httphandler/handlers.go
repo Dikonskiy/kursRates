@@ -17,15 +17,15 @@ import (
 )
 
 var (
-	log = logerr.InitLogger()
-	db  *sql.DB
-	err error
+	logger = logerr.InitLogger()
+	db     *sql.DB
+	err    error
 )
 
 func init() {
 	db, err = database.InitDB()
 	if err != nil {
-		log.Error("Failed to initialize database: ", err)
+		logger.Error("Failed to initialize database: ", err)
 	}
 }
 
@@ -40,7 +40,7 @@ func DateFormat(date string) (string, error) {
 
 func respondWithError(w http.ResponseWriter, status int, errorMsg string, err error) {
 	http.Error(w, errorMsg, status)
-	log.Error("%s: %v", errorMsg, err)
+	logger.Error("%s: %v", errorMsg, err)
 }
 
 func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
@@ -53,7 +53,7 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 
 	rates, err := service.Service(date)
 	if err != nil {
-		log.Error("Failed to parse: ", err)
+		logger.Error("Failed to parse: ", err)
 	}
 
 	formattedDate, err := DateFormat(rates.Date)
@@ -75,25 +75,25 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 		for _, item := range rates.Items {
 			value, err := strconv.ParseFloat(item.Value, 64)
 			if err != nil {
-				log.Error("Failed to convert float: %s", err.Error())
+				logger.Error("Failed to convert float: %s", err.Error())
 				continue
 			}
 
 			_, err = stmt.Exec(item.Title, item.Code, value, formattedDate)
 			if err != nil {
-				log.Error("Failed insert in database:", err.Error())
+				logger.Error("Failed insert in database:", err.Error())
 			} else {
-				log.Info("Item saved", savedItemCount)
+				logger.Info("Item saved", savedItemCount)
 				savedItemCount++
 			}
 		}
-		log.Info("Items saved", savedItemCount)
+		logger.Info("Items saved", savedItemCount)
 	}(rates, stmt)
 
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")
 	w.Write([]byte(`{"success": true}`))
-	log.Info("date was saved")
+	logger.Info("date was saved")
 }
 
 func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
@@ -112,11 +112,11 @@ func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	if code == "" {
 		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ?"
 		params = []interface{}{formattedDate}
-		log.Info("Currency by date accessed")
+		logger.Info("Currency by date accessed")
 	} else {
 		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ? AND CODE = ?"
 		params = []interface{}{formattedDate, code}
-		log.Info("Currency by date and code accessed")
+		logger.Info("Currency by date and code accessed")
 	}
 
 	rows, err := db.Query(query, params...)

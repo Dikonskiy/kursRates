@@ -1,5 +1,12 @@
 package repository
 
-func Repo() {
-	
+import (
+	"database/sql"
+)
+
+func NewRepository(Db *sql.DB) {
+	// return &Repository{
+	// 	Db:  Db,
+	// 	Log: Log,
+	// }
 }

@@ -5,6 +5,7 @@ import (
 	"database/sql"
 	"encoding/json"
 	"kursRates/internal/database"
+	"kursRates/internal/repository"
 	"kursRates/internal/service"
 
 	"kursRates/internal/logerr"
@@ -62,11 +63,7 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	stmt, err := db.Prepare("INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)")
-	if err != nil {
-		http.Error(w, "Failed to prepare statement", http.StatusInternalServerError)
-		return
-	}
+	stmt, err := repository.AddData()
 
 	savedItemCount := 0
 

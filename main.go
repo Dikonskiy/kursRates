@@ -2,23 +2,26 @@ package main
 
 import (
 	"kursRates/internal/app"
-	"kursRates/internal/database"
 	"kursRates/internal/httphandler"
 	"kursRates/internal/logerr"
+	"kursRates/internal/repository"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
 )
 
+var Repo *repository.Repository
+
 func init() {
 	logger := logerr.InitLogger()
 
-	db, err := database.InitDB()
+	db, err := repository.InitDB()
 	if err != nil {
 		logger.Error("Failed to initialize database:", err)
 		return
 	}
-	defer db.Close()
+
+	Repo = repository.NewRepository(db)
 }
 
 func main() {

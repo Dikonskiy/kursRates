@@ -4,7 +4,6 @@ package httphandler
 import (
 	"database/sql"
 	"encoding/json"
-	"kursRates/internal/database"
 	"kursRates/internal/repository"
 	"kursRates/internal/service"
 
@@ -22,13 +21,6 @@ var (
 	db     *sql.DB
 	err    error
 )
-
-func init() {
-	db, err = database.InitDB()
-	if err != nil {
-		logger.Error("Failed to initialize database: ", err)
-	}
-}
 
 func DateFormat(date string) (string, error) {
 	parsedDate, err := time.Parse("02.01.2006", date)
@@ -64,6 +56,9 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	stmt, err := repository.AddData()
+	if err != nil {
+		logger.Error("Failed to prepare data", err)
+	}
 
 	savedItemCount := 0
 

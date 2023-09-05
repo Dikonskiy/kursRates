@@ -2,12 +2,11 @@ package repository
 
 import (
 	"database/sql"
-	"kursRates/internal/database"
 	"kursRates/internal/logerr"
 )
 
 var (
-	db, _  = database.InitDB()
+	db, _  = InitDB()
 	logger = logerr.InitLogger()
 )
 

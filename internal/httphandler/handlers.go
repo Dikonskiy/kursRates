@@ -10,13 +10,13 @@ import (
 	"kursRates/internal/logerr"
 	"kursRates/internal/models"
 	"net/http"
-	"strconv"
 	"time"
 
 	"github.com/gorilla/mux"
 )
 
 var (
+	Repo   *repository.Repository
 	logger = logerr.InitLogger()
 	db     *sql.DB
 	err    error
@@ -49,38 +49,13 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 		logger.Error("Failed to parse: ", err)
 	}
 
-	formattedDate, err := DateFormat(rates.Date)
+	formattedDate, err := DateFormat(date)
 	if err != nil {
 		http.Error(w, "Failed to parse and format the date", http.StatusInternalServerError)
 		return
 	}
 
-	stmt, err := repository.AddData()
-	if err != nil {
-		logger.Error("Failed to prepare data", err)
-	}
-
-	savedItemCount := 0
-
-	go func(rates models.Rates, stmt *sql.Stmt) {
-		defer stmt.Close()
-		for _, item := range rates.Items {
-			value, err := strconv.ParseFloat(item.Value, 64)
-			if err != nil {
-				logger.Error("Failed to convert float: %s", err.Error())
-				continue
-			}
-
-			_, err = stmt.Exec(item.Title, item.Code, value, formattedDate)
-			if err != nil {
-				logger.Error("Failed insert in database:", err.Error())
-			} else {
-				logger.Info("Item saved", savedItemCount)
-				savedItemCount++
-			}
-		}
-		logger.Info("Items saved", savedItemCount)
-	}(rates, stmt)
+	go repository.InsertData(Repo, rates, formattedDate)
 
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")

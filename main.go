@@ -20,7 +20,6 @@ func init() {
 		logger.Error("Failed to initialize database:", err)
 		return
 	}
-
 	Repo = repository.NewRepository(db)
 }
 

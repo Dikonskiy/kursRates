@@ -709,3 +709,29 @@ Sep 01 17:06:41.509 [INFO] date was saved
 {"time":"2023-09-05T18:43:51.7225032+06:00","level":"INFO","msg":"Items saved","!BADKEY":39}
 {"time":"2023-09-05T18:49:20.8004107+06:00","level":"INFO","msg":"Listening on port, 8080..."}
 {"time":"2023-09-05T19:09:37.5691002+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-05T20:10:22.3612759+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-05T20:10:29.6918399+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-05T20:10:29.6956554+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-05T20:10:29.6996103+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-05T20:10:30.7470972+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-05T20:10:30.7514955+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-05T20:10:30.7551514+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-05T20:10:35.7743313+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-05T20:10:35.7770169+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-05T20:10:35.779939+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-05T20:10:37.4345074+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-05T20:10:38.0629471+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-05T20:10:39.0918205+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-05T20:10:39.0940838+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-05T20:10:39.097346+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-05T20:10:44.1125301+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-06T12:33:31.6805164+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-06T12:38:14.4012708+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-06T12:39:05.4500471+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-06T12:47:36.9936857+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-06T12:48:04.3870248+06:00","level":"INFO","msg":"date was saved"}
+{"time":"2023-09-06T14:04:25.5549511+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-06T21:09:18.3473919+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-06T21:09:46.7010218+06:00","level":"INFO","msg":"date was saved"}
+{"time":"2023-09-06T21:18:28.0584588+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-06T21:19:07.2292512+06:00","level":"INFO","msg":"date was saved"}

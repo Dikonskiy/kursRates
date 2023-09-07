@@ -44,15 +44,15 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	rates, err := service.Service(date)
-	if err != nil {
-		logger.Error("Failed to parse: ", err)
-	}
-
 	formattedDate, err := DateFormat(date)
 	if err != nil {
 		http.Error(w, "Failed to parse and format the date", http.StatusInternalServerError)
 		return
+	}
+
+	rates, err := service.Service(date)
+	if err != nil {
+		logger.Error("Failed to parse: ", err)
 	}
 
 	go repository.InsertData(Repo, rates, formattedDate)

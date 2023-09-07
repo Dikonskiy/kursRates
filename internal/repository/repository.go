@@ -2,9 +2,7 @@ package repository
 
 import (
 	"database/sql"
-	"encoding/json"
 	"kursRates/internal/models"
-	"os"
 )
 
 type Repository struct {
@@ -18,17 +16,6 @@ func NewRepository(Db *sql.DB) *Repository {
 }
 
 func GetDB() (*sql.DB, error) {
-	configFile, err := os.Open("config.json")
-	if err != nil {
-		return nil, err
-	}
-	defer configFile.Close()
-
-	err = json.NewDecoder(configFile).Decode(&models.Config)
-	if err != nil {
-		return nil, err
-	}
-
 	db, err := sql.Open("mysql", models.Config.MysqlConnectionString)
 	if err != nil {
 		return nil, err
@@ -42,10 +29,11 @@ func GetDB() (*sql.DB, error) {
 	return db, nil
 }
 
-func InitDB() (*sql.DB, error) {
+func InitDB(repo *Repository) error {
 	Db, err := GetDB()
 	if err != nil {
-		return nil, err
+		return err
 	}
-	return Db, nil
+	repo.Db = Db
+	return nil
 }

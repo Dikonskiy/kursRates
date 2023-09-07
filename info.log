@@ -735,3 +735,31 @@ Sep 01 17:06:41.509 [INFO] date was saved
 {"time":"2023-09-06T21:09:46.7010218+06:00","level":"INFO","msg":"date was saved"}
 {"time":"2023-09-06T21:18:28.0584588+06:00","level":"INFO","msg":"Listening on port, 8080..."}
 {"time":"2023-09-06T21:19:07.2292512+06:00","level":"INFO","msg":"date was saved"}
+{"time":"2023-09-06T21:45:03.8894416+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-06T21:45:15.663841+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-06T21:45:16.6863186+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-06T21:45:17.7497516+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-06T21:45:17.7529915+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-06T21:45:17.7568701+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-06T21:45:53.9172592+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-06T21:45:53.918818+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-06T21:45:53.922619+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-06T21:45:58.9510104+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-06T21:46:28.8610754+06:00","level":"INFO","msg":"date was saved"}
+{"time":"2023-09-06T22:15:38.1137551+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-07T20:52:29.2440529+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-07T20:54:36.0066426+06:00","level":"ERROR","msg":"Failed to parse: ","!BADKEY":"EOF"}
+{"time":"2023-09-07T21:03:34.4000827+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-07T21:03:56.1673653+06:00","level":"ERROR","msg":"Failed to parse: ","!BADKEY":"EOF"}
+{"time":"2023-09-07T21:14:22.7386779+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-07T21:14:42.3150079+06:00","level":"ERROR","msg":"Failed to parse: ","!BADKEY":"EOF"}
+{"time":"2023-09-07T21:17:31.0422065+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-07T21:17:52.3785126+06:00","level":"ERROR","msg":"Failed to parse: ","!BADKEY":"EOF"}
+{"time":"2023-09-07T21:24:43.6706761+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-07T21:30:25.8754912+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-07T21:31:54.0352114+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-07T21:31:56.0416372+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-07T21:31:59.3963133+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-07T21:32:07.1971605+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-07T21:45:34.1655368+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-07T21:45:42.4007867+06:00","level":"INFO","msg":"Currency by date accessed"}

@@ -14,7 +14,8 @@ var (
 func (r *Repository) AddData() (*sql.Stmt, error) {
 	stmt, err := r.Db.Prepare("INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)")
 	if err != nil {
-		logger.Error("Failed to to prepare date", err)
+		logger.Error("Failed to prepare date", err)
+		return nil, err
 	}
 	return stmt, nil
 }

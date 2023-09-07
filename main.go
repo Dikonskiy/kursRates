@@ -4,6 +4,7 @@ import (
 	"kursRates/internal/app"
 	"kursRates/internal/httphandler"
 	"kursRates/internal/logerr"
+	"kursRates/internal/models"
 	"kursRates/internal/repository"
 
 	_ "github.com/go-sql-driver/mysql"
@@ -15,11 +16,21 @@ var Repo *repository.Repository
 func init() {
 	logger := logerr.InitLogger()
 
-	db, err := repository.InitDB()
+	// Initialize the configuration
+	err := models.InitConfig("config.json")
 	if err != nil {
-		logger.Error("Failed to initialize database:", err)
+		logger.Error("Failed to initialize the configuration:", err)
 		return
 	}
+
+	// Initialize the database connection
+	db, err := repository.GetDB()
+	if err != nil {
+		logger.Error("Failed to initialize the database:", err)
+		return
+	}
+	defer db.Close()
+
 	Repo = repository.NewRepository(db)
 }
 

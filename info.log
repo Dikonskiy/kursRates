@@ -763,3 +763,23 @@ Sep 01 17:06:41.509 [INFO] date was saved
 {"time":"2023-09-07T21:32:07.1971605+06:00","level":"INFO","msg":"Currency by date accessed"}
 {"time":"2023-09-07T21:45:34.1655368+06:00","level":"INFO","msg":"Listening on port, 8080..."}
 {"time":"2023-09-07T21:45:42.4007867+06:00","level":"INFO","msg":"Currency by date accessed"}
+{"time":"2023-09-08T09:05:37.7583188+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-08T09:08:50.026588+06:00","level":"INFO","msg":"date was saved"}
+{"time":"2023-09-08T09:18:47.3888771+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-08T09:19:08.8756308+06:00","level":"INFO","msg":"date was saved"}
+{"time":"2023-09-08T09:21:30.9235984+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-08T09:23:39.5056906+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-08T09:24:53.0840444+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-08T09:31:42.6036971+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-08T09:33:55.6658761+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-08T09:35:16.7048345+06:00","level":"ERROR","msg":"Failed to parse: ","!BADKEY":"Get \"https://nationalbank.kz/rss/get_rates.cfm?fdate=02.08.2023\": dial tcp 62.32.78.90:443: i/o timeout"}
+{"time":"2023-09-08T09:36:32.1804175+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-08T11:37:08.862543+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-08T11:41:42.6110098+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-08T11:43:27.4732498+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-08T11:49:02.5499904+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-08T11:49:49.7662003+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-08T12:34:40.3179296+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-08T13:05:51.0216145+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-08T13:08:09.6168332+06:00","level":"INFO","msg":"Listening on port, 8080..."}
+{"time":"2023-09-08T13:08:29.5518312+06:00","level":"INFO","msg":"date was saved"}

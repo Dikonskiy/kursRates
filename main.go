@@ -16,20 +16,16 @@ var Repo *repository.Repository
 func init() {
 	logger := logerr.InitLogger()
 
-	// Initialize the configuration
 	err := models.InitConfig("config.json")
 	if err != nil {
 		logger.Error("Failed to initialize the configuration:", err)
 		return
 	}
 
-	// Initialize the database connection
 	db, err := repository.GetDB()
 	if err != nil {
 		logger.Error("Failed to initialize the database:", err)
-		return
 	}
-	defer db.Close()
 
 	Repo = repository.NewRepository(db)
 }

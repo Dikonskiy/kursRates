@@ -2,13 +2,11 @@
 package httphandler
 
 import (
-	"database/sql"
 	"encoding/json"
 	"kursRates/internal/repository"
 	"kursRates/internal/service"
 
 	"kursRates/internal/logerr"
-	"kursRates/internal/models"
 	"net/http"
 	"time"
 
@@ -18,7 +16,6 @@ import (
 var (
 	Repo   *repository.Repository
 	logger = logerr.InitLogger()
-	db     *sql.DB
 	err    error
 )
 
@@ -55,7 +52,14 @@ func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 		logger.Error("Failed to parse: ", err)
 	}
 
-	go repository.InsertData(Repo, rates, formattedDate)
+	db, err := repository.GetDB()
+	if err != nil {
+		respondWithError(w, http.StatusInternalServerError, "Failed to get the database connection", err)
+		return
+	}
+	defer db.Close()
+
+	go repository.InsertData(db, rates, formattedDate)
 
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")
@@ -73,41 +77,12 @@ func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var query string
-	var params []interface{}
-
-	if code == "" {
-		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ?"
-		params = []interface{}{formattedDate}
-		logger.Info("Currency by date accessed")
-	} else {
-		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ? AND CODE = ?"
-		params = []interface{}{formattedDate, code}
-		logger.Info("Currency by date and code accessed")
-	}
-
-	rows, err := db.Query(query, params...)
+	data, err := repository.GetData(Repo.Db, formattedDate, code)
 	if err != nil {
-		http.Error(w, "Failed to query database", http.StatusInternalServerError)
-		return
-	}
-	defer rows.Close()
-
-	var results []models.DBItem
-	for rows.Next() {
-		var item models.DBItem
-		if err := rows.Scan(&item.ID, &item.Title, &item.Code, &item.Value, &item.Date); err != nil {
-			http.Error(w, "Failed to scan row", http.StatusInternalServerError)
-			return
-		}
-		results = append(results, item)
-	}
-
-	if len(results) == 0 {
-		respondWithError(w, http.StatusNotFound, "No data found with these parameters", err)
+		http.Error(w, "Failed to retrieve data", http.StatusInternalServerError)
 		return
 	}
 
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(results)
+	json.NewEncoder(w).Encode(data)
 }

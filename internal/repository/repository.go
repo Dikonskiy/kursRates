@@ -9,9 +9,9 @@ type Repository struct {
 	Db *sql.DB
 }
 
-func NewRepository(Db *sql.DB) *Repository {
+func NewRepository(db *sql.DB) *Repository {
 	return &Repository{
-		Db: Db,
+		Db: db,
 	}
 }
 

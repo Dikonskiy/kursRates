@@ -8,20 +8,21 @@ import (
 )
 
 var (
+	Repo   *Repository
 	logger = logerr.InitLogger()
 )
 
-func (r *Repository) AddData() (*sql.Stmt, error) {
-	stmt, err := r.Db.Prepare("INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)")
+func AddData(db *sql.DB) (*sql.Stmt, error) {
+	stmt, err := Repo.Db.Prepare("INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)")
 	if err != nil {
-		logger.Error("Failed to prepare date", err)
+		logger.Error("Failed to prepare statement", err)
 		return nil, err
 	}
 	return stmt, nil
 }
 
-func InsertData(r *Repository, rates models.Rates, formattedDate string) {
-	stmt, err := r.AddData()
+func InsertData(db *sql.DB, rates models.Rates, formattedDate string) {
+	stmt, err := AddData(Repo.Db)
 	if err != nil {
 		logger.Error("Failed to prepare data", err)
 		return

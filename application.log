@@ -1,0 +1,45 @@
+time=2023-09-12T14:17:37.246+06:00 level=INFO msg="Listening on port, 8080..."
+{"time":"2023-09-12T15:21:58.7554169+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-12T15:21:58.8429704+06:00","level":"INFO","msg":"Item saved","!BADKEY":1}
+{"time":"2023-09-12T15:21:58.8452714+06:00","level":"INFO","msg":"Item saved","!BADKEY":2}
+{"time":"2023-09-12T15:21:58.8473061+06:00","level":"INFO","msg":"Item saved","!BADKEY":3}
+{"time":"2023-09-12T15:21:58.847821+06:00","level":"INFO","msg":"Item saved","!BADKEY":4}
+{"time":"2023-09-12T15:21:58.848819+06:00","level":"INFO","msg":"Item saved","!BADKEY":5}
+{"time":"2023-09-12T15:21:58.8496456+06:00","level":"INFO","msg":"Item saved","!BADKEY":6}
+{"time":"2023-09-12T15:21:58.8508754+06:00","level":"INFO","msg":"Item saved","!BADKEY":7}
+{"time":"2023-09-12T15:21:58.8519193+06:00","level":"INFO","msg":"Item saved","!BADKEY":8}
+{"time":"2023-09-12T15:21:58.8538463+06:00","level":"INFO","msg":"Item saved","!BADKEY":9}
+{"time":"2023-09-12T15:21:58.855566+06:00","level":"INFO","msg":"Item saved","!BADKEY":10}
+{"time":"2023-09-12T15:21:58.8578693+06:00","level":"INFO","msg":"Item saved","!BADKEY":11}
+{"time":"2023-09-12T15:21:58.859603+06:00","level":"INFO","msg":"Item saved","!BADKEY":12}
+{"time":"2023-09-12T15:21:58.8611772+06:00","level":"INFO","msg":"Item saved","!BADKEY":13}
+{"time":"2023-09-12T15:21:58.8619146+06:00","level":"INFO","msg":"Item saved","!BADKEY":14}
+{"time":"2023-09-12T15:21:58.8628431+06:00","level":"INFO","msg":"Item saved","!BADKEY":15}
+{"time":"2023-09-12T15:21:58.8638432+06:00","level":"INFO","msg":"Item saved","!BADKEY":16}
+{"time":"2023-09-12T15:21:58.8648555+06:00","level":"INFO","msg":"Item saved","!BADKEY":17}
+{"time":"2023-09-12T15:21:58.8657216+06:00","level":"INFO","msg":"Item saved","!BADKEY":18}
+{"time":"2023-09-12T15:21:58.8666987+06:00","level":"INFO","msg":"Item saved","!BADKEY":19}
+{"time":"2023-09-12T15:21:58.8677025+06:00","level":"INFO","msg":"Item saved","!BADKEY":20}
+{"time":"2023-09-12T15:21:58.8685467+06:00","level":"INFO","msg":"Item saved","!BADKEY":21}
+{"time":"2023-09-12T15:21:58.870487+06:00","level":"INFO","msg":"Item saved","!BADKEY":22}
+{"time":"2023-09-12T15:21:58.8742246+06:00","level":"INFO","msg":"Item saved","!BADKEY":23}
+{"time":"2023-09-12T15:21:58.8754484+06:00","level":"INFO","msg":"Item saved","!BADKEY":24}
+{"time":"2023-09-12T15:21:58.876617+06:00","level":"INFO","msg":"Item saved","!BADKEY":25}
+{"time":"2023-09-12T15:21:58.8775758+06:00","level":"INFO","msg":"Item saved","!BADKEY":26}
+{"time":"2023-09-12T15:21:58.8783876+06:00","level":"INFO","msg":"Item saved","!BADKEY":27}
+{"time":"2023-09-12T15:21:58.8791849+06:00","level":"INFO","msg":"Item saved","!BADKEY":28}
+{"time":"2023-09-12T15:21:58.8799354+06:00","level":"INFO","msg":"Item saved","!BADKEY":29}
+{"time":"2023-09-12T15:21:58.8806715+06:00","level":"INFO","msg":"Item saved","!BADKEY":30}
+{"time":"2023-09-12T15:21:58.8813854+06:00","level":"INFO","msg":"Item saved","!BADKEY":31}
+{"time":"2023-09-12T15:21:58.8822679+06:00","level":"INFO","msg":"Item saved","!BADKEY":32}
+{"time":"2023-09-12T15:21:58.8830326+06:00","level":"INFO","msg":"Item saved","!BADKEY":33}
+{"time":"2023-09-12T15:21:58.883768+06:00","level":"INFO","msg":"Item saved","!BADKEY":34}
+{"time":"2023-09-12T15:21:58.8845427+06:00","level":"INFO","msg":"Item saved","!BADKEY":35}
+{"time":"2023-09-12T15:21:58.8852885+06:00","level":"INFO","msg":"Item saved","!BADKEY":36}
+{"time":"2023-09-12T15:21:58.8860939+06:00","level":"INFO","msg":"Item saved","!BADKEY":37}
+{"time":"2023-09-12T15:21:58.8883354+06:00","level":"INFO","msg":"Item saved","!BADKEY":38}
+{"time":"2023-09-12T15:21:58.8902796+06:00","level":"INFO","msg":"Item saved","!BADKEY":39}
+{"time":"2023-09-12T15:21:58.8911606+06:00","level":"INFO","msg":"Items saved:","!BADKEY":39}
+{"time":"2023-09-12T15:23:06.3055939+06:00","level":"INFO","msg":"Data was showed"}
+{"time":"2023-09-12T15:23:12.1757436+06:00","level":"INFO","msg":"Data was showed"}
+{"time":"2023-09-12T16:20:15.3383027+06:00","level":"INFO","msg":"Data was showed"}

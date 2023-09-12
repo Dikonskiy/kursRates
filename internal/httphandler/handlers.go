@@ -5,19 +5,28 @@ import (
 	"encoding/json"
 	"kursRates/internal/repository"
 	"kursRates/internal/service"
+	"log"
 
-	"kursRates/internal/logerr"
 	"net/http"
 	"time"
 
 	"github.com/gorilla/mux"
 )
 
-var (
-	Repo   *repository.Repository
-	logger = logerr.InitLogger()
-	err    error
-)
+type Handler struct {
+	R *repository.Repository
+}
+
+func NewHandler(mysqlConnectionString string) *Handler {
+	repo := repository.NewRepository(mysqlConnectionString)
+	if repo == nil {
+		log.Fatal("Failed to initialize the repository")
+	}
+	return &Handler{
+		R: repo,
+	}
+
+}
 
 func DateFormat(date string) (string, error) {
 	parsedDate, err := time.Parse("02.01.2006", date)
@@ -28,60 +37,50 @@ func DateFormat(date string) (string, error) {
 	return formattedDate, nil
 }
 
-func respondWithError(w http.ResponseWriter, status int, errorMsg string, err error) {
+func (h *Handler) RespondWithError(w http.ResponseWriter, status int, errorMsg string, err error) {
 	http.Error(w, errorMsg, status)
-	logger.Error("%s: %v", errorMsg, err)
+	h.R.Logerr.Error(errorMsg+": ", err)
 }
 
-func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
+func (h *Handler) SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	date := vars["date"]
-	if err != nil {
-		respondWithError(w, http.StatusBadRequest, "Failed to parse the date", err)
-		return
-	}
 
 	formattedDate, err := DateFormat(date)
 	if err != nil {
-		http.Error(w, "Failed to parse and format the date", http.StatusInternalServerError)
+		h.RespondWithError(w, http.StatusBadRequest, "Failed to parse and format the date", err)
 		return
 	}
 
 	rates, err := service.Service(date)
 	if err != nil {
-		logger.Error("Failed to parse: ", err)
+		h.RespondWithError(w, http.StatusBadRequest, "Failed to parse", err)
 	}
 
-	db, err := repository.GetDB()
-	if err != nil {
-		respondWithError(w, http.StatusInternalServerError, "Failed to get the database connection", err)
-		return
-	}
-	defer db.Close()
-
-	go repository.InsertData(db, rates, formattedDate)
+	go h.R.InsertData(rates, formattedDate)
 
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")
 	w.Write([]byte(`{"success": true}`))
-	logger.Info("date was saved")
+	h.R.Logerr.Info("Success: true")
 }
 
-func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
+func (h *Handler) GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	date := vars["date"]
 	code := vars["code"]
 	formattedDate, err := DateFormat(date)
 	if err != nil {
-		respondWithError(w, http.StatusBadRequest, "Failed to parse the date", err)
+		h.RespondWithError(w, http.StatusBadRequest, "Failed to parse the date", err)
 		return
 	}
 
-	data, err := repository.GetData(Repo.Db, formattedDate, code)
+	data, err := h.R.GetData(formattedDate, code)
 	if err != nil {
-		http.Error(w, "Failed to retrieve data", http.StatusInternalServerError)
+		h.RespondWithError(w, http.StatusInternalServerError, "Failed to retrieve data", err)
 		return
 	}
+	h.R.Logerr.Info("Data was showed")
 
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(data)

@@ -25,7 +25,6 @@ func NewHandler(mysqlConnectionString string) *Handler {
 	return &Handler{
 		R: repo,
 	}
-
 }
 
 func DateFormat(date string) (string, error) {

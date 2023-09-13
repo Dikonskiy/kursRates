@@ -14,11 +14,11 @@ type Repository struct {
 }
 
 func NewRepository(MysqlConnectionString string) *Repository {
-	logerr := logerr.InitLogger()
+	var logerr = logerr.NewLogerr(models.Config.IsProd)
 
 	db, err := sql.Open("mysql", MysqlConnectionString)
 	if err != nil {
-		logerr.Error("Failed initialize database connection")
+		logerr.Logerr.Error("Failed initialize database connection")
 		return nil
 	}
 
@@ -29,7 +29,7 @@ func NewRepository(MysqlConnectionString string) *Repository {
 
 	return &Repository{
 		Db:     db,
-		Logerr: logerr,
+		Logerr: logerr.Logerr,
 	}
 }
 

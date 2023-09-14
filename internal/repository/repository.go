@@ -13,9 +13,7 @@ type Repository struct {
 	Logerr *slog.Logger
 }
 
-func NewRepository(MysqlConnectionString string) *Repository {
-	var logerr = logerr.NewLogerr(models.Config.IsProd)
-
+func NewRepository(MysqlConnectionString string, logerr *logerr.Logerr) *Repository {
 	db, err := sql.Open("mysql", MysqlConnectionString)
 	if err != nil {
 		logerr.Logerr.Error("Failed initialize database connection")

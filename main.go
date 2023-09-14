@@ -12,19 +12,23 @@ import (
 	"github.com/gorilla/mux"
 )
 
-var Repo *repository.Repository
-var Hand *httphandler.Handler
-var Logger *logerr.Logerr
+var (
+	Repo   *repository.Repository
+	Hand   *httphandler.Handler
+	Logger *logerr.Logerr
+	Cnfg   *models.Config
+)
 
 func init() {
-	err := initconfig.InitConfig("config.json")
+	var err error
+	Cnfg, err = initconfig.InitConfig("config.json")
 	if err != nil {
 		Repo.Logerr.Error("Failed to initialize the configuration:", err)
 		return
 	}
-	Repo = repository.NewRepository(models.Config.MysqlConnectionString)
-	Hand = httphandler.NewHandler(models.Config.MysqlConnectionString)
-	Logger = logerr.NewLogerr(models.Config.IsProd)
+	Logger = logerr.NewLogerr(Cnfg.IsProd)
+	Repo = repository.NewRepository(Cnfg.MysqlConnectionString, Logger)
+	Hand = httphandler.NewHandler(Repo, Cnfg)
 }
 
 func main() {
@@ -34,5 +38,5 @@ func main() {
 	r.HandleFunc("/currency/{date}/{code}", Hand.GetCurrencyHandler)
 	r.HandleFunc("/currency/{date}", Hand.GetCurrencyHandler)
 
-	app.StartServer(r)
-}	
+	app.StartServer(r, Logger, Cnfg)
+}

@@ -3,6 +3,7 @@ package httphandler
 
 import (
 	"encoding/json"
+	"kursRates/internal/models"
 	"kursRates/internal/repository"
 	"kursRates/internal/service"
 
@@ -13,16 +14,17 @@ import (
 )
 
 type Handler struct {
-	R *repository.Repository
+	R    *repository.Repository
+	Cnfg *models.Config
 }
 
-func NewHandler(mysqlConnectionString string) *Handler {
-	repo := repository.NewRepository(mysqlConnectionString)
+func NewHandler(repo *repository.Repository, config *models.Config) *Handler {
 	if repo == nil {
 		repo.Logerr.Error("Failed to initialize the repository")
 	}
 	return &Handler{
-		R: repo,
+		R:    repo,
+		Cnfg: config,
 	}
 }
 
@@ -50,7 +52,7 @@ func (h *Handler) SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	rates, err := service.Service(date)
+	rates, err := service.Service(date, h.Cnfg)
 	if err != nil {
 		h.RespondWithError(w, http.StatusBadRequest, "Failed to parse", err)
 	}

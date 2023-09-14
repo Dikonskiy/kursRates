@@ -6,17 +6,18 @@ import (
 	"os"
 )
 
-func InitConfig(configFilePath string) error {
-	configFile, err := os.Open(configFilePath)
+func InitConfig(filename string) (*models.Config, error) {
+	file, err := os.Open(filename)
 	if err != nil {
-		return err
+		return nil, err
 	}
-	defer configFile.Close()
+	defer file.Close()
 
-	err = json.NewDecoder(configFile).Decode(&models.Config)
-	if err != nil {
-		return err
+	var Config models.Config
+	decoder := json.NewDecoder(file)
+	if err := decoder.Decode(&Config); err != nil {
+		return nil, err
 	}
 
-	return nil
+	return &Config, nil
 }

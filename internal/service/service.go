@@ -8,16 +8,16 @@ import (
 	"net/http"
 )
 
-func Service(date string) (models.Rates, error) {
-	rates, err := FetchRatesFromAPI(date)
+func Service(date string, config *models.Config) (models.Rates, error) {
+	rates, err := FetchRatesFromAPI(date, config)
 	if err != nil {
 		return models.Rates{}, err
 	}
 	return rates, nil
 }
 
-func FetchRatesFromAPI(date string) (models.Rates, error) {
-	apiURL := fmt.Sprintf("%s?fdate=%s", models.Config.APIURL, date)
+func FetchRatesFromAPI(date string, Config *models.Config) (models.Rates, error) {
+	apiURL := fmt.Sprintf("%s?fdate=%s", Config.APIURL, date)
 
 	resp, err := http.Get(apiURL)
 	if err != nil {

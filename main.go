@@ -35,4 +35,4 @@ func main() {
 	r.HandleFunc("/currency/{date}", Hand.GetCurrencyHandler)
 
 	app.StartServer(r)
-}
+}	

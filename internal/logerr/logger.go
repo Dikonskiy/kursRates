@@ -16,13 +16,13 @@ func NewLogerr(isProd bool) *Logerr {
 	if err != nil {
 		log.Fatal("Failed to open info log file:", err)
 	}
-	var infoLog *slog.Logger
+	var logerr *slog.Logger
 	if isProd {
-		infoLog = slog.New(slog.NewJSONHandler(infoLogFile, nil))
+		logerr = slog.New(slog.NewJSONHandler(infoLogFile, nil))
 	} else {
-		infoLog = slog.New(slog.NewTextHandler(infoLogFile, nil))
+		logerr = slog.New(slog.NewTextHandler(infoLogFile, nil))
 	}
 	return &Logerr{
-		Logerr: infoLog,
+		Logerr: logerr,
 	}
 }

@@ -5,7 +5,6 @@ import (
 	"encoding/json"
 	"kursRates/internal/repository"
 	"kursRates/internal/service"
-	"log"
 
 	"net/http"
 	"time"
@@ -20,7 +19,7 @@ type Handler struct {
 func NewHandler(mysqlConnectionString string) *Handler {
 	repo := repository.NewRepository(mysqlConnectionString)
 	if repo == nil {
-		log.Fatal("Failed to initialize the repository")
+		repo.Logerr.Error("Failed to initialize the repository")
 	}
 	return &Handler{
 		R: repo,

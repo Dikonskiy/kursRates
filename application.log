@@ -126,3 +126,128 @@ time=2023-09-12T14:17:37.246+06:00 level=INFO msg="Listening on port, 8080..."
 {"time":"2023-09-13T15:02:02.2400841+06:00","level":"INFO","msg":"Item saved","!BADKEY":38}
 {"time":"2023-09-13T15:02:02.2413858+06:00","level":"INFO","msg":"Item saved","!BADKEY":39}
 {"time":"2023-09-13T15:02:02.2419557+06:00","level":"INFO","msg":"Items saved:","!BADKEY":39}
+time=2023-09-13T15:21:12.364+06:00 level=INFO msg="Success: true"
+time=2023-09-13T15:21:12.370+06:00 level=INFO msg="Item saved" !BADKEY=1
+time=2023-09-13T15:21:12.371+06:00 level=INFO msg="Item saved" !BADKEY=2
+time=2023-09-13T15:21:12.373+06:00 level=INFO msg="Item saved" !BADKEY=3
+time=2023-09-13T15:21:12.374+06:00 level=INFO msg="Item saved" !BADKEY=4
+time=2023-09-13T15:21:12.375+06:00 level=INFO msg="Item saved" !BADKEY=5
+time=2023-09-13T15:21:12.376+06:00 level=INFO msg="Item saved" !BADKEY=6
+time=2023-09-13T15:21:12.377+06:00 level=INFO msg="Item saved" !BADKEY=7
+time=2023-09-13T15:21:12.378+06:00 level=INFO msg="Item saved" !BADKEY=8
+time=2023-09-13T15:21:12.379+06:00 level=INFO msg="Item saved" !BADKEY=9
+time=2023-09-13T15:21:12.381+06:00 level=INFO msg="Item saved" !BADKEY=10
+time=2023-09-13T15:21:12.382+06:00 level=INFO msg="Item saved" !BADKEY=11
+time=2023-09-13T15:21:12.383+06:00 level=INFO msg="Item saved" !BADKEY=12
+time=2023-09-13T15:21:12.384+06:00 level=INFO msg="Item saved" !BADKEY=13
+time=2023-09-13T15:21:12.384+06:00 level=INFO msg="Item saved" !BADKEY=14
+time=2023-09-13T15:21:12.385+06:00 level=INFO msg="Item saved" !BADKEY=15
+time=2023-09-13T15:21:12.386+06:00 level=INFO msg="Item saved" !BADKEY=16
+time=2023-09-13T15:21:12.387+06:00 level=INFO msg="Item saved" !BADKEY=17
+time=2023-09-13T15:21:12.388+06:00 level=INFO msg="Item saved" !BADKEY=18
+time=2023-09-13T15:21:12.390+06:00 level=INFO msg="Item saved" !BADKEY=19
+time=2023-09-13T15:21:12.391+06:00 level=INFO msg="Item saved" !BADKEY=20
+time=2023-09-13T15:21:12.391+06:00 level=INFO msg="Item saved" !BADKEY=21
+time=2023-09-13T15:21:12.392+06:00 level=INFO msg="Item saved" !BADKEY=22
+time=2023-09-13T15:21:12.392+06:00 level=INFO msg="Item saved" !BADKEY=23
+time=2023-09-13T15:21:12.393+06:00 level=INFO msg="Item saved" !BADKEY=24
+time=2023-09-13T15:21:12.396+06:00 level=INFO msg="Item saved" !BADKEY=25
+time=2023-09-13T15:21:12.399+06:00 level=INFO msg="Item saved" !BADKEY=26
+time=2023-09-13T15:21:12.404+06:00 level=INFO msg="Item saved" !BADKEY=27
+time=2023-09-13T15:21:12.405+06:00 level=INFO msg="Item saved" !BADKEY=28
+time=2023-09-13T15:21:12.406+06:00 level=INFO msg="Item saved" !BADKEY=29
+time=2023-09-13T15:21:12.407+06:00 level=INFO msg="Item saved" !BADKEY=30
+time=2023-09-13T15:21:12.407+06:00 level=INFO msg="Item saved" !BADKEY=31
+time=2023-09-13T15:21:12.408+06:00 level=INFO msg="Item saved" !BADKEY=32
+time=2023-09-13T15:21:12.409+06:00 level=INFO msg="Item saved" !BADKEY=33
+time=2023-09-13T15:21:12.409+06:00 level=INFO msg="Item saved" !BADKEY=34
+time=2023-09-13T15:21:12.410+06:00 level=INFO msg="Item saved" !BADKEY=35
+time=2023-09-13T15:21:12.410+06:00 level=INFO msg="Item saved" !BADKEY=36
+time=2023-09-13T15:21:12.411+06:00 level=INFO msg="Item saved" !BADKEY=37
+time=2023-09-13T15:21:12.412+06:00 level=INFO msg="Item saved" !BADKEY=38
+time=2023-09-13T15:21:12.413+06:00 level=INFO msg="Item saved" !BADKEY=39
+time=2023-09-13T15:21:12.413+06:00 level=INFO msg="Items saved:" !BADKEY=39
+time=2023-09-13T15:21:14.367+06:00 level=INFO msg="Success: true"
+time=2023-09-13T15:21:14.370+06:00 level=INFO msg="Item saved" !BADKEY=1
+time=2023-09-13T15:21:14.372+06:00 level=INFO msg="Item saved" !BADKEY=2
+time=2023-09-13T15:21:14.374+06:00 level=INFO msg="Item saved" !BADKEY=3
+time=2023-09-13T15:21:14.375+06:00 level=INFO msg="Item saved" !BADKEY=4
+time=2023-09-13T15:21:14.376+06:00 level=INFO msg="Item saved" !BADKEY=5
+time=2023-09-13T15:21:14.378+06:00 level=INFO msg="Item saved" !BADKEY=6
+time=2023-09-13T15:21:14.379+06:00 level=INFO msg="Item saved" !BADKEY=7
+time=2023-09-13T15:21:14.380+06:00 level=INFO msg="Item saved" !BADKEY=8
+time=2023-09-13T15:21:14.381+06:00 level=INFO msg="Item saved" !BADKEY=9
+time=2023-09-13T15:21:14.383+06:00 level=INFO msg="Item saved" !BADKEY=10
+time=2023-09-13T15:21:14.384+06:00 level=INFO msg="Item saved" !BADKEY=11
+time=2023-09-13T15:21:14.385+06:00 level=INFO msg="Item saved" !BADKEY=12
+time=2023-09-13T15:21:14.386+06:00 level=INFO msg="Item saved" !BADKEY=13
+time=2023-09-13T15:21:14.387+06:00 level=INFO msg="Item saved" !BADKEY=14
+time=2023-09-13T15:21:14.388+06:00 level=INFO msg="Item saved" !BADKEY=15
+time=2023-09-13T15:21:14.391+06:00 level=INFO msg="Item saved" !BADKEY=16
+time=2023-09-13T15:21:14.392+06:00 level=INFO msg="Item saved" !BADKEY=17
+time=2023-09-13T15:21:14.394+06:00 level=INFO msg="Item saved" !BADKEY=18
+time=2023-09-13T15:21:14.396+06:00 level=INFO msg="Item saved" !BADKEY=19
+time=2023-09-13T15:21:14.397+06:00 level=INFO msg="Item saved" !BADKEY=20
+time=2023-09-13T15:21:14.398+06:00 level=INFO msg="Item saved" !BADKEY=21
+time=2023-09-13T15:21:14.399+06:00 level=INFO msg="Item saved" !BADKEY=22
+time=2023-09-13T15:21:14.401+06:00 level=INFO msg="Item saved" !BADKEY=23
+time=2023-09-13T15:21:14.402+06:00 level=INFO msg="Item saved" !BADKEY=24
+time=2023-09-13T15:21:14.403+06:00 level=INFO msg="Item saved" !BADKEY=25
+time=2023-09-13T15:21:14.404+06:00 level=INFO msg="Item saved" !BADKEY=26
+time=2023-09-13T15:21:14.405+06:00 level=INFO msg="Item saved" !BADKEY=27
+time=2023-09-13T15:21:14.406+06:00 level=INFO msg="Item saved" !BADKEY=28
+time=2023-09-13T15:21:14.407+06:00 level=INFO msg="Item saved" !BADKEY=29
+time=2023-09-13T15:21:14.408+06:00 level=INFO msg="Item saved" !BADKEY=30
+time=2023-09-13T15:21:14.409+06:00 level=INFO msg="Item saved" !BADKEY=31
+time=2023-09-13T15:21:14.412+06:00 level=INFO msg="Item saved" !BADKEY=32
+time=2023-09-13T15:21:14.414+06:00 level=INFO msg="Item saved" !BADKEY=33
+time=2023-09-13T15:21:14.414+06:00 level=INFO msg="Item saved" !BADKEY=34
+time=2023-09-13T15:21:14.416+06:00 level=INFO msg="Item saved" !BADKEY=35
+time=2023-09-13T15:21:14.417+06:00 level=INFO msg="Item saved" !BADKEY=36
+time=2023-09-13T15:21:14.419+06:00 level=INFO msg="Item saved" !BADKEY=37
+time=2023-09-13T15:21:14.420+06:00 level=INFO msg="Item saved" !BADKEY=38
+time=2023-09-13T15:21:14.421+06:00 level=INFO msg="Item saved" !BADKEY=39
+time=2023-09-13T15:21:14.421+06:00 level=INFO msg="Items saved:" !BADKEY=39
+time=2023-09-14T09:52:51.676+06:00 level=INFO msg="Listening on port" 8080=...
+{"time":"2023-09-14T09:54:37.0694325+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-09-14T09:55:11.063171+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-14T09:55:11.1251928+06:00","level":"INFO","msg":"Item saved","!BADKEY":1}
+{"time":"2023-09-14T09:55:11.1293075+06:00","level":"INFO","msg":"Item saved","!BADKEY":2}
+{"time":"2023-09-14T09:55:11.1325091+06:00","level":"INFO","msg":"Item saved","!BADKEY":3}
+{"time":"2023-09-14T09:55:11.1347283+06:00","level":"INFO","msg":"Item saved","!BADKEY":4}
+{"time":"2023-09-14T09:55:11.1369479+06:00","level":"INFO","msg":"Item saved","!BADKEY":5}
+{"time":"2023-09-14T09:55:11.1387076+06:00","level":"INFO","msg":"Item saved","!BADKEY":6}
+{"time":"2023-09-14T09:55:11.1416424+06:00","level":"INFO","msg":"Item saved","!BADKEY":7}
+{"time":"2023-09-14T09:55:11.1422952+06:00","level":"INFO","msg":"Item saved","!BADKEY":8}
+{"time":"2023-09-14T09:55:11.1439854+06:00","level":"INFO","msg":"Item saved","!BADKEY":9}
+{"time":"2023-09-14T09:55:11.1467474+06:00","level":"INFO","msg":"Item saved","!BADKEY":10}
+{"time":"2023-09-14T09:55:11.1484369+06:00","level":"INFO","msg":"Item saved","!BADKEY":11}
+{"time":"2023-09-14T09:55:11.1506341+06:00","level":"INFO","msg":"Item saved","!BADKEY":12}
+{"time":"2023-09-14T09:55:11.1525122+06:00","level":"INFO","msg":"Item saved","!BADKEY":13}
+{"time":"2023-09-14T09:55:11.1530667+06:00","level":"INFO","msg":"Item saved","!BADKEY":14}
+{"time":"2023-09-14T09:55:11.1556476+06:00","level":"INFO","msg":"Item saved","!BADKEY":15}
+{"time":"2023-09-14T09:55:11.1574985+06:00","level":"INFO","msg":"Item saved","!BADKEY":16}
+{"time":"2023-09-14T09:55:11.1584517+06:00","level":"INFO","msg":"Item saved","!BADKEY":17}
+{"time":"2023-09-14T09:55:11.1597288+06:00","level":"INFO","msg":"Item saved","!BADKEY":18}
+{"time":"2023-09-14T09:55:11.1631954+06:00","level":"INFO","msg":"Item saved","!BADKEY":19}
+{"time":"2023-09-14T09:55:11.1708723+06:00","level":"INFO","msg":"Item saved","!BADKEY":20}
+{"time":"2023-09-14T09:55:11.1745482+06:00","level":"INFO","msg":"Item saved","!BADKEY":21}
+{"time":"2023-09-14T09:55:11.1751981+06:00","level":"INFO","msg":"Item saved","!BADKEY":22}
+{"time":"2023-09-14T09:55:11.1766823+06:00","level":"INFO","msg":"Item saved","!BADKEY":23}
+{"time":"2023-09-14T09:55:11.1790864+06:00","level":"INFO","msg":"Item saved","!BADKEY":24}
+{"time":"2023-09-14T09:55:11.1800063+06:00","level":"INFO","msg":"Item saved","!BADKEY":25}
+{"time":"2023-09-14T09:55:11.1815269+06:00","level":"INFO","msg":"Item saved","!BADKEY":26}
+{"time":"2023-09-14T09:55:11.1841252+06:00","level":"INFO","msg":"Item saved","!BADKEY":27}
+{"time":"2023-09-14T09:55:11.1864783+06:00","level":"INFO","msg":"Item saved","!BADKEY":28}
+{"time":"2023-09-14T09:55:11.1884356+06:00","level":"INFO","msg":"Item saved","!BADKEY":29}
+{"time":"2023-09-14T09:55:11.1902102+06:00","level":"INFO","msg":"Item saved","!BADKEY":30}
+{"time":"2023-09-14T09:55:11.1919766+06:00","level":"INFO","msg":"Item saved","!BADKEY":31}
+{"time":"2023-09-14T09:55:11.1927556+06:00","level":"INFO","msg":"Item saved","!BADKEY":32}
+{"time":"2023-09-14T09:55:11.1958751+06:00","level":"INFO","msg":"Item saved","!BADKEY":33}
+{"time":"2023-09-14T09:55:11.1973426+06:00","level":"INFO","msg":"Item saved","!BADKEY":34}
+{"time":"2023-09-14T09:55:11.1996216+06:00","level":"INFO","msg":"Item saved","!BADKEY":35}
+{"time":"2023-09-14T09:55:11.2008595+06:00","level":"INFO","msg":"Item saved","!BADKEY":36}
+{"time":"2023-09-14T09:55:11.2032966+06:00","level":"INFO","msg":"Item saved","!BADKEY":37}
+{"time":"2023-09-14T09:55:11.2053306+06:00","level":"INFO","msg":"Item saved","!BADKEY":38}
+{"time":"2023-09-14T09:55:11.206977+06:00","level":"INFO","msg":"Item saved","!BADKEY":39}
+{"time":"2023-09-14T09:55:11.206977+06:00","level":"INFO","msg":"Items saved:","!BADKEY":39}

@@ -2,31 +2,41 @@ package main
 
 import (
 	"kursRates/internal/app"
-	"kursRates/internal/database"
 	"kursRates/internal/httphandler"
+	"kursRates/internal/initconfig"
 	"kursRates/internal/logerr"
+	"kursRates/internal/models"
+	"kursRates/internal/repository"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
 )
 
-func init() {
-	logerr.InitLogger()
+var (
+	Repo   *repository.Repository
+	Hand   *httphandler.Handler
+	Logger *logerr.Logerr
+	Cnfg   *models.Config
+)
 
-	db, err := database.InitDB()
+func init() {
+	var err error
+	Cnfg, err = initconfig.InitConfig("config.json")
 	if err != nil {
-		logerr.Error.Println("Failed to initialize database:", err)
+		Repo.Logerr.Error("Failed to initialize the configuration:", err)
 		return
 	}
-	defer db.Close()
+	Logger = logerr.NewLogerr(Cnfg.IsProd)
+	Repo = repository.NewRepository(Cnfg.MysqlConnectionString, Logger)
+	Hand = httphandler.NewHandler(Repo, Cnfg)
 }
 
 func main() {
 	r := mux.NewRouter()
 
-	r.HandleFunc("/currency/save/{date}", httphandler.SaveCurrencyHandler)
-	r.HandleFunc("/currency/{date}/{code}", httphandler.GetCurrencyHandler)
-	r.HandleFunc("/currency/{date}", httphandler.GetCurrencyHandler)
+	r.HandleFunc("/currency/save/{date}", Hand.SaveCurrencyHandler)
+	r.HandleFunc("/currency/{date}/{code}", Hand.GetCurrencyHandler)
+	r.HandleFunc("/currency/{date}", Hand.GetCurrencyHandler)
 
-	app.StartServer(r)
+	app.StartServer(r, Logger, Cnfg)
 }

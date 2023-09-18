@@ -9,15 +9,15 @@ import (
 	"time"
 )
 
-func StartServer(router http.Handler) {
+func StartServer(router http.Handler, Logerr *logerr.Logerr, config *models.Config) {
 	server := &http.Server{
-		Addr:         ":" + models.Config.ListenPort,
+		Addr:         ":" + config.ListenPort,
 		ReadTimeout:  10 * time.Second,
 		WriteTimeout: 10 * time.Second,
 		Handler:      router,
 	}
 
-	log.Println("Listening on port", models.Config.ListenPort, "...")
-	logerr.Info.Printf("Listening on port %s ...", models.Config.ListenPort)
+	log.Println("Listening on port", config.ListenPort, "...")
+	Logerr.Logerr.Info("Listening on port", config.ListenPort, "...")
 	log.Fatal(server.ListenAndServe())
 }

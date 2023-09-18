@@ -2,50 +2,27 @@
 package logerr
 
 import (
+	"log"
+	"log/slog"
 	"os"
-	"strings"
-
-	"github.com/sirupsen/logrus"
 )
 
-var (
-	Info  = logrus.New()
-	Error = logrus.New()
-)
-
-type CustomFormatter struct {
-	TimestampFormat string
+type Logerr struct {
+	Logerr *slog.Logger
 }
 
-func (f *CustomFormatter) Format(entry *logrus.Entry) ([]byte, error) {
-	timestamp := entry.Time.Format(f.TimestampFormat)
-	level := "[" + strings.ToUpper(entry.Level.String()) + "]"
-
-	msg := entry.Message
-	logLine := timestamp + " " + level + " " + msg + "\n"
-	return []byte(logLine), nil
-}
-
-func InitLogger() {
-	infoFile, err := os.OpenFile("info.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
-	if err == nil {
-		Info.SetOutput(infoFile)
+func NewLogerr(isProd bool) *Logerr {
+	infoLogFile, err := os.OpenFile("application.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if err != nil {
+		log.Fatal("Failed to open info log file:", err)
+	}
+	var logerr *slog.Logger
+	if isProd {
+		logerr = slog.New(slog.NewJSONHandler(infoLogFile, nil))
 	} else {
-		logrus.Warn("Failed to open info.log file. Using default stderr.")
-		Info.SetOutput(os.Stderr)
+		logerr = slog.New(slog.NewTextHandler(infoLogFile, nil))
 	}
-
-	errorFile, err := os.OpenFile("error.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
-	if err == nil {
-		Error.SetOutput(errorFile)
-	} else {
-		logrus.Warn("Failed to open error.log file. Using default stderr.")
-		Error.SetOutput(os.Stderr)
+	return &Logerr{
+		Logerr: logerr,
 	}
-
-	customFormatter := &CustomFormatter{
-		TimestampFormat: "Jan 02 15:04:05.000",
-	}
-	Info.SetFormatter(customFormatter)
-	Error.SetFormatter(customFormatter)
 }

@@ -2,31 +2,29 @@
 package httphandler
 
 import (
-	"database/sql"
 	"encoding/json"
-	"encoding/xml"
-	"fmt"
-	"io"
-	"kursRates/internal/database"
-
-	"kursRates/internal/logerr"
 	"kursRates/internal/models"
+	"kursRates/internal/repository"
+	"kursRates/internal/service"
+
 	"net/http"
-	"strconv"
 	"time"
 
 	"github.com/gorilla/mux"
 )
 
-var (
-	db  *sql.DB
-	err error
-)
+type Handler struct {
+	R    *repository.Repository
+	Cnfg *models.Config
+}
 
-func init() {
-	db, err = database.InitDB()
-	if err != nil {
-		logerr.Error.Fatalf("Failed to initialize database: %v", err)
+func NewHandler(repo *repository.Repository, config *models.Config) *Handler {
+	if repo == nil {
+		repo.Logerr.Error("Failed to initialize the repository")
+	}
+	return &Handler{
+		R:    repo,
+		Cnfg: config,
 	}
 }
 
@@ -39,137 +37,52 @@ func DateFormat(date string) (string, error) {
 	return formattedDate, nil
 }
 
-func respondWithError(w http.ResponseWriter, status int, errorMsg string, err error) {
+func (h *Handler) RespondWithError(w http.ResponseWriter, status int, errorMsg string, err error) {
 	http.Error(w, errorMsg, status)
-	logerr.Error.Printf("%s: %v", errorMsg, err)
+	h.R.Logerr.Error(errorMsg+": ", err)
 }
 
-func SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
+func (h *Handler) SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	date := vars["date"]
+
 	formattedDate, err := DateFormat(date)
 	if err != nil {
-		respondWithError(w, http.StatusBadRequest, "Failed to parse the date", err)
+		h.RespondWithError(w, http.StatusBadRequest, "Failed to parse and format the date", err)
 		return
 	}
 
-	apiURL := fmt.Sprintf("%s?fdate=%s", models.Config.APIURL, date)
-
-	resp, err := http.Get(apiURL)
+	rates, err := service.Service(date, h.Cnfg)
 	if err != nil {
-		http.Error(w, "Failed to fetch data from API", http.StatusInternalServerError)
-		return
-	}
-	defer resp.Body.Close()
-
-	xmlData, err := io.ReadAll(resp.Body)
-	if err != nil {
-		http.Error(w, "Failed to read XML response", http.StatusInternalServerError)
+		h.RespondWithError(w, http.StatusBadRequest, "Failed to parse", err)
 		return
 	}
 
-	var rates models.Rates
-	if err := xml.Unmarshal(xmlData, &rates); err != nil {
-		http.Error(w, "Failed to parse XML", http.StatusInternalServerError)
-		return
-	}
-	itemsChan := make(chan models.CurrencyItem, len(rates.Items))
-	done := make(chan bool)
-
-	for _, item := range rates.Items {
-		go func(item models.CurrencyItem) {
-			itemsChan <- item
-		}(item)
-	}
-
-	go func() {
-		for i := 0; i < len(rates.Items); i++ {
-			<-done
-		}
-		close(itemsChan)
-	}()
-
-	stmt, err := db.Prepare("INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)")
-	if err != nil {
-		http.Error(w, "Failed to prepare statement", http.StatusInternalServerError)
-		return
-	}
-	defer stmt.Close()
-
-	savedItemCount := 0
-
-	for item := range itemsChan {
-		go func(item models.CurrencyItem) {
-			value, err := strconv.ParseFloat(item.Value, 64)
-			if err != nil {
-				http.Error(w, "Failed to convert float", http.StatusInternalServerError)
-				done <- true
-				return
-			}
-
-			_, err = stmt.Exec(item.Title, item.Code, value, formattedDate)
-			if err != nil {
-				http.Error(w, "Failed insert in database: data item.Title, value:", http.StatusInternalServerError)
-			} else {
-				logerr.Info.Printf("%d Item saved", savedItemCount)
-				savedItemCount++
-			}
-			done <- true
-		}(item)
-	}
-	logerr.Info.Printf("%d Items saved\n", savedItemCount)
+	go h.R.InsertData(rates, formattedDate)
 
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")
 	w.Write([]byte(`{"success": true}`))
-	logerr.Info.Println("date was saved")
+	h.R.Logerr.Info("Success: true")
 }
 
-func GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
+func (h *Handler) GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	date := vars["date"]
 	code := vars["code"]
 	formattedDate, err := DateFormat(date)
 	if err != nil {
-		respondWithError(w, http.StatusBadRequest, "Failed to parse the date", err)
+		h.RespondWithError(w, http.StatusBadRequest, "Failed to parse the date", err)
 		return
 	}
 
-	var query string
-	var params []interface{}
-
-	if code == "" {
-		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ?"
-		params = []interface{}{formattedDate}
-		logerr.Info.Println("Currency by date accessed")
-	} else {
-		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ? AND CODE = ?"
-		params = []interface{}{formattedDate, code}
-		logerr.Info.Println("Currency by date and code accessed")
-	}
-
-	rows, err := db.Query(query, params...)
+	data, err := h.R.GetData(formattedDate, code)
 	if err != nil {
-		http.Error(w, "Failed to query database", http.StatusInternalServerError)
+		h.RespondWithError(w, http.StatusInternalServerError, "Failed to retrieve data", err)
 		return
 	}
-	defer rows.Close()
-
-	var results []models.DBItem
-	for rows.Next() {
-		var item models.DBItem
-		if err := rows.Scan(&item.ID, &item.Title, &item.Code, &item.Value, &item.Date); err != nil {
-			http.Error(w, "Failed to scan row", http.StatusInternalServerError)
-			return
-		}
-		results = append(results, item)
-	}
-
-	if len(results) == 0 {
-		respondWithError(w, http.StatusNotFound, "No data found with these parameters", err)
-		return
-	}
+	h.R.Logerr.Info("Data was showed")
 
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(results)
+	json.NewEncoder(w).Encode(data)
 }

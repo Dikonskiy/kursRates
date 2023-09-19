@@ -5,35 +5,39 @@ import (
 	"fmt"
 	"io"
 	"kursRates/internal/models"
+	"log/slog"
 	"net/http"
 )
 
-func Service(date string, config *models.Config) (models.Rates, error) {
-	rates, err := FetchRatesFromAPI(date, config)
-	if err != nil {
-		return models.Rates{}, err
-	}
-	return rates, nil
+type Service struct {
+	Rates  *models.Rates
+	Logger *slog.Logger
 }
 
-func FetchRatesFromAPI(date string, Config *models.Config) (models.Rates, error) {
-	apiURL := fmt.Sprintf("%s?fdate=%s", Config.APIURL, date)
+func NewService(data string, Config *models.Config, logerr *slog.Logger) (*Service, error) {
+	apiURL := fmt.Sprintf("%s?fdate=%s", Config.APIURL, data)
 
 	resp, err := http.Get(apiURL)
 	if err != nil {
-		return models.Rates{}, err
+		logerr.Error("Failed to GET URL", err)
+		return nil, err
 	}
 	defer resp.Body.Close()
 
 	xmlData, err := io.ReadAll(resp.Body)
 	if err != nil {
-		return models.Rates{}, err
+		logerr.Error("Failed to Read response Body", err)
+		return nil, err
 	}
 
-	var rates models.Rates
+	var rates *models.Rates
 	if err := xml.Unmarshal(xmlData, &rates); err != nil {
-		return models.Rates{}, err
+		logerr.Error("Failed to parse XML data", err)
+		return nil, err
 	}
 
-	return rates, nil
+	return &Service{
+		Rates:  rates,
+		Logger: logerr,
+	}, nil
 }

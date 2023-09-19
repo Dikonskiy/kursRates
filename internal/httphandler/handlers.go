@@ -52,13 +52,13 @@ func (h *Handler) SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	rates, err := service.Service(date, h.Cnfg)
+	service, err := service.NewService(date, h.Cnfg, h.R.Logerr)
 	if err != nil {
 		h.RespondWithError(w, http.StatusBadRequest, "Failed to parse", err)
 		return
 	}
 
-	go h.R.InsertData(rates, formattedDate)
+	go h.R.InsertData(*service.Rates, formattedDate)
 
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")

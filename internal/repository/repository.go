@@ -62,10 +62,14 @@ func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
 			r.Logerr.Error("Failed to insert in the database:", err.Error())
 		} else {
 			savedItemCount++
-			r.Logerr.Info("Item saved", savedItemCount)
+			r.Logerr.Info("Item saved",
+				"count", savedItemCount,
+			)
 		}
 	}
-	r.Logerr.Info("Items saved:", savedItemCount)
+	r.Logerr.Info("Items saved:",
+		"All", savedItemCount,
+	)
 }
 
 func (r *Repository) GetData(formattedDate, code string) ([]models.DBItem, error) {
@@ -96,7 +100,7 @@ func (r *Repository) GetData(formattedDate, code string) ([]models.DBItem, error
 	}
 
 	if len(results) == 0 {
-		r.Logerr.Error("no data found with these parameters")
+		r.Logerr.Error("No data found with these parameters")
 	}
 
 	return results, nil

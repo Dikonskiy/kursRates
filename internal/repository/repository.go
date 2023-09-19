@@ -31,19 +31,10 @@ func NewRepository(MysqlConnectionString string, logerr *logerr.Logerr) *Reposit
 	}
 }
 
-func (r *Repository) AddData() (*sql.Stmt, error) {
+func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
 	stmt, err := r.Db.Prepare("INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)")
 	if err != nil {
 		r.Logerr.Error("Failed to prepare statement", err)
-		return nil, err
-	}
-	return stmt, nil
-}
-
-func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
-	stmt, err := r.AddData()
-	if err != nil {
-		r.Logerr.Error("Failed to prepare data", err)
 		return
 	}
 	defer stmt.Close()

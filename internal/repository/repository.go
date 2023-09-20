@@ -32,13 +32,6 @@ func NewRepository(MysqlConnectionString string, logerr *logerr.Logerr) *Reposit
 }
 
 func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
-	stmt, err := r.Db.Prepare("INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)")
-	if err != nil {
-		r.Logerr.Error("Failed to prepare statement", err)
-		return
-	}
-	defer stmt.Close()
-
 	savedItemCount := 0
 
 	for _, item := range rates.Items {
@@ -48,7 +41,7 @@ func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
 			continue
 		}
 
-		_, err = stmt.Exec(item.Title, item.Code, value, formattedDate)
+		rows, err := r.Db.Query("INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)", item.Title, item.Code, value, formattedDate)
 		if err != nil {
 			r.Logerr.Error("Failed to insert in the database:", err.Error())
 		} else {
@@ -57,6 +50,7 @@ func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
 				"count", savedItemCount,
 			)
 		}
+		defer rows.Close()
 	}
 	r.Logerr.Info("Items saved:",
 		"All", savedItemCount,

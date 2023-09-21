@@ -6,6 +6,7 @@ import (
 	"kursRates/internal/models"
 	"log/slog"
 	"strconv"
+	"time"
 )
 
 type Repository struct {
@@ -19,6 +20,10 @@ func NewRepository(MysqlConnectionString string, logerr *logerr.Logerr) *Reposit
 		logerr.Logerr.Error("Failed initialize database connection")
 		return nil
 	}
+
+	db.SetMaxOpenConns(10)
+	db.SetMaxIdleConns(5)
+	db.SetConnMaxLifetime(5 * time.Minute)
 
 	if err := db.Ping(); err != nil {
 		db.Close()

@@ -70,6 +70,7 @@ func (h *Handler) GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	date := vars["date"]
 	code := vars["code"]
+
 	formattedDate, err := DateFormat(date)
 	if err != nil {
 		h.RespondWithError(w, http.StatusBadRequest, "Failed to parse the date", err)

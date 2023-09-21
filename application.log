@@ -12410,3 +12410,403 @@
 {"time":"2023-09-20T10:58:51.664587+06:00","level":"INFO","msg":"Item saved","count":38}
 {"time":"2023-09-20T10:58:51.6713163+06:00","level":"INFO","msg":"Item saved","count":39}
 {"time":"2023-09-20T10:58:51.6714259+06:00","level":"INFO","msg":"Items saved:","All":39}
+{"time":"2023-09-20T12:05:30.3780314+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-09-20T12:05:55.253155+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2533606+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2538643+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2538643+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2538643+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2538643+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2538643+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2538643+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2538643+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2538643+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:05:55.2538643+06:00","level":"INFO","msg":"Items saved:","All":0}
+{"time":"2023-09-20T12:08:08.727174+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-09-20T12:08:16.6063953+06:00","level":"INFO","msg":"Data was showed"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8776337+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:08:37.8781483+06:00","level":"INFO","msg":"Items saved:","All":0}
+{"time":"2023-09-20T12:09:17.1367749+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-09-20T12:09:34.5128514+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-20T12:09:34.5128514+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5128514+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134002+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:09:34.5134814+06:00","level":"INFO","msg":"Items saved:","All":0}
+{"time":"2023-09-20T12:09:50.9194285+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-09-20T12:10:31.1656481+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-20T12:10:31.1658015+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1660404+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1660404+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1660404+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1660404+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1660404+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1660404+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1660404+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T12:10:31.1661263+06:00","level":"INFO","msg":"Items saved:","All":0}
+{"time":"2023-09-20T14:46:01.5612539+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-09-20T14:46:26.9410025+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-20T14:46:26.9410025+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9415086+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9420537+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9420537+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9420537+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9420537+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9420537+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9420537+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9420537+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-20T14:46:26.9421657+06:00","level":"INFO","msg":"Items saved:","All":0}
+{"time":"2023-09-21T10:38:54.9303171+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-09-21T10:39:39.6092561+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-21T10:39:39.6092561+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6092561+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6092561+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6092561+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6092561+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6092561+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6092561+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6092561+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6092561+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6097673+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6103166+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6103166+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6103166+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6103166+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T10:39:39.6103166+06:00","level":"INFO","msg":"Items saved:","All":0}
+{"time":"2023-09-21T12:36:05.2692551+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-09-21T12:36:25.0864964+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-21T12:36:25.0870217+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0875647+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0875647+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0875647+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0875647+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0875647+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0875647+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0875647+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0875647+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0875647+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0875647+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0875647+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0880987+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0880987+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0880987+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0880987+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0880987+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0880987+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0880987+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0880987+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0880987+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0880987+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0880987+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0880987+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0880987+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0887254+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0887254+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0887254+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0887254+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0887254+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0887254+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0887254+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0887254+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0887254+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0887254+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0887254+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0887254+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0887254+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0887254+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T12:36:25.0887254+06:00","level":"INFO","msg":"Items saved:","All":0}
+{"time":"2023-09-21T14:31:58.6658913+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-09-21T14:32:24.4700677+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-21T14:32:24.4700677+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.4700677+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.4700677+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.4700677+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.4700677+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.4700677+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.4700677+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.4700677+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.4700677+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.4700677+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:32:24.470571+06:00","level":"INFO","msg":"Items saved:","All":0}
+{"time":"2023-09-21T14:36:00.5057562+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-09-21T14:36:23.0333507+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-21T14:36:23.0338541+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0338541+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0338541+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0338541+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0338541+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"ERROR","msg":"Failed to insert in the database:","!BADKEY":"context canceled"}
+{"time":"2023-09-21T14:36:23.0349403+06:00","level":"INFO","msg":"Items saved:","All":0}
+{"time":"2023-09-21T14:37:36.0700455+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-09-21T14:38:07.7905147+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-21T14:39:08.3902451+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-09-21T14:39:36.4531763+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-21T16:57:53.0374312+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-09-21T17:00:07.3023028+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-21T17:00:07.3422845+06:00","level":"INFO","msg":"Item saved","count":1}
+{"time":"2023-09-21T17:00:07.3592563+06:00","level":"INFO","msg":"Item saved","count":2}
+{"time":"2023-09-21T17:00:07.3722589+06:00","level":"INFO","msg":"Item saved","count":3}
+{"time":"2023-09-21T17:00:07.3810709+06:00","level":"INFO","msg":"Item saved","count":4}
+{"time":"2023-09-21T17:00:07.3902626+06:00","level":"INFO","msg":"Item saved","count":5}
+{"time":"2023-09-21T17:00:07.4009307+06:00","level":"INFO","msg":"Item saved","count":6}
+{"time":"2023-09-21T17:00:07.4111904+06:00","level":"INFO","msg":"Item saved","count":7}
+{"time":"2023-09-21T17:00:07.4169853+06:00","level":"INFO","msg":"Item saved","count":8}
+{"time":"2023-09-21T17:00:07.4240216+06:00","level":"INFO","msg":"Item saved","count":9}
+{"time":"2023-09-21T17:00:07.4330431+06:00","level":"INFO","msg":"Item saved","count":10}
+{"time":"2023-09-21T17:00:10.7425397+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-21T17:01:00.3884011+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-21T17:01:02.0755402+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-21T17:02:19.5143092+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-09-21T17:02:31.2183886+06:00","level":"INFO","msg":"Server gracefully stopped"}

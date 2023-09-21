@@ -1,12 +1,18 @@
 package main
 
 import (
+	"context"
 	"kursRates/internal/app"
 	"kursRates/internal/httphandler"
 	"kursRates/internal/initconfig"
 	"kursRates/internal/logerr"
 	"kursRates/internal/models"
 	"kursRates/internal/repository"
+	"net/http"
+	"os"
+	"os/signal"
+	"syscall"
+	"time"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
@@ -37,6 +43,26 @@ func main() {
 	r.HandleFunc("/currency/save/{date}", Hand.SaveCurrencyHandler)
 	r.HandleFunc("/currency/{date}/{code}", Hand.GetCurrencyHandler)
 	r.HandleFunc("/currency/{date}", Hand.GetCurrencyHandler)
+
+	server := &http.Server{
+		Addr:    Cnfg.ListenPort,
+		Handler: r,
+	}
+
+	go func() {
+		c := make(chan os.Signal, 1)
+		signal.Notify(c, os.Interrupt, syscall.SIGTERM)
+		<-c
+
+		ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
+		defer cancel()
+
+		if err := server.Shutdown(ctx); err != nil {
+			Logger.Logerr.Error("Server shutdown error:", err)
+		} else {
+			Logger.Logerr.Info("Server gracefully stopped")
+		}
+	}()
 
 	app.StartServer(r, Logger, Cnfg)
 }

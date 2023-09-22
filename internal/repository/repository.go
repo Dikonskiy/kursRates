@@ -1,6 +1,7 @@
 package repository
 
 import (
+	"context"
 	"database/sql"
 	"kursRates/internal/logerr"
 	"kursRates/internal/models"
@@ -21,9 +22,9 @@ func NewRepository(MysqlConnectionString string, logerr *logerr.Logerr) *Reposit
 		return nil
 	}
 
-	db.SetMaxOpenConns(10)
-	db.SetMaxIdleConns(5)
-	db.SetConnMaxLifetime(5 * time.Minute)
+	db.SetMaxOpenConns(140000)
+	db.SetMaxIdleConns(15000)
+	db.SetConnMaxLifetime(1000 * time.Minute)
 
 	if err := db.Ping(); err != nil {
 		db.Close()
@@ -37,6 +38,9 @@ func NewRepository(MysqlConnectionString string, logerr *logerr.Logerr) *Reposit
 }
 
 func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
+	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
+	defer cancel()
+
 	savedItemCount := 0
 
 	for _, item := range rates.Items {
@@ -46,7 +50,7 @@ func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
 			continue
 		}
 
-		rows, err := r.Db.Query("INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)", item.Title, item.Code, value, formattedDate)
+		rows, err := r.Db.QueryContext(ctx, "INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)", item.Title, item.Code, value, formattedDate)
 		if err != nil {
 			r.Logerr.Error("Failed to insert in the database:", err.Error())
 		} else {
@@ -66,6 +70,9 @@ func (r *Repository) GetData(formattedDate, code string) ([]models.DBItem, error
 	var query string
 	var params []interface{}
 
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
+
 	if code == "" {
 		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ?"
 		params = []interface{}{formattedDate}
@@ -74,7 +81,7 @@ func (r *Repository) GetData(formattedDate, code string) ([]models.DBItem, error
 		params = []interface{}{formattedDate, code}
 	}
 
-	rows, err := r.Db.Query(query, params...)
+	rows, err := r.Db.QueryContext(ctx, query, params...)
 	if err != nil {
 		return nil, err
 	}

@@ -8,11 +8,8 @@ import (
 	"kursRates/internal/logerr"
 	"kursRates/internal/models"
 	"kursRates/internal/repository"
-	"net/http"
 	"os"
 	"os/signal"
-	"syscall"
-	"time"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
@@ -32,6 +29,7 @@ func init() {
 		Repo.Logerr.Error("Failed to initialize the configuration:", err)
 		return
 	}
+
 	Logger = logerr.NewLogerr(Cnfg.IsProd)
 	Repo = repository.NewRepository(Cnfg.MysqlConnectionString, Logger)
 	Hand = httphandler.NewHandler(Repo, Cnfg)
@@ -40,29 +38,26 @@ func init() {
 func main() {
 	r := mux.NewRouter()
 
+	ctx := context.Background()
+
+	ctx, cancel := context.WithCancel(ctx)
+	c := make(chan os.Signal, 1)
+	signal.Notify(c, os.Interrupt)
+	defer func() {
+		signal.Stop(c)
+		cancel()
+	}()
+	go func() {
+		select {
+		case <-c:
+			cancel()
+		case <-ctx.Done():
+		}
+	}()
+
 	r.HandleFunc("/currency/save/{date}", Hand.SaveCurrencyHandler)
 	r.HandleFunc("/currency/{date}/{code}", Hand.GetCurrencyHandler)
 	r.HandleFunc("/currency/{date}", Hand.GetCurrencyHandler)
-
-	server := &http.Server{
-		Addr:    Cnfg.ListenPort,
-		Handler: r,
-	}
-
-	go func() {
-		c := make(chan os.Signal, 1)
-		signal.Notify(c, os.Interrupt, syscall.SIGTERM)
-		<-c
-
-		ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
-		defer cancel()
-
-		if err := server.Shutdown(ctx); err != nil {
-			Logger.Logerr.Error("Server shutdown error:", err)
-		} else {
-			Logger.Logerr.Info("Server gracefully stopped")
-		}
-	}()
 
 	app.StartServer(r, Logger, Cnfg)
 }

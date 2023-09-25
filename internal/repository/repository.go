@@ -22,9 +22,9 @@ func NewRepository(MysqlConnectionString string, logerr *logerr.Logerr) *Reposit
 		return nil
 	}
 
-	db.SetMaxOpenConns(140000)
-	db.SetMaxIdleConns(15000)
-	db.SetConnMaxLifetime(1000 * time.Minute)
+	db.SetMaxOpenConns(234)
+	db.SetMaxIdleConns(234)
+	db.SetConnMaxLifetime(10 * time.Minute)
 
 	if err := db.Ping(); err != nil {
 		db.Close()
@@ -38,10 +38,10 @@ func NewRepository(MysqlConnectionString string, logerr *logerr.Logerr) *Reposit
 }
 
 func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
-	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
-	defer cancel()
-
 	savedItemCount := 0
+
+	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*30))
+	defer cancel()
 
 	for _, item := range rates.Items {
 		value, err := strconv.ParseFloat(item.Value, 64)
@@ -70,9 +70,6 @@ func (r *Repository) GetData(formattedDate, code string) ([]models.DBItem, error
 	var query string
 	var params []interface{}
 
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
-	defer cancel()
-
 	if code == "" {
 		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ?"
 		params = []interface{}{formattedDate}
@@ -80,6 +77,9 @@ func (r *Repository) GetData(formattedDate, code string) ([]models.DBItem, error
 		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ? AND CODE = ?"
 		params = []interface{}{formattedDate, code}
 	}
+
+	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*30))
+	defer cancel()
 
 	rows, err := r.Db.QueryContext(ctx, query, params...)
 	if err != nil {

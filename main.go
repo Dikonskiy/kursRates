@@ -8,8 +8,10 @@ import (
 	"kursRates/internal/logerr"
 	"kursRates/internal/models"
 	"kursRates/internal/repository"
+	"net/http"
 	"os"
 	"os/signal"
+	"time"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
@@ -55,9 +57,26 @@ func main() {
 		}
 	}()
 
-	r.HandleFunc("/currency/save/{date}", Hand.SaveCurrencyHandler)
-	r.HandleFunc("/currency/{date}/{code}", Hand.GetCurrencyHandler)
-	r.HandleFunc("/currency/{date}", Hand.GetCurrencyHandler)
+	r.HandleFunc("/currency/save/{date}", func(w http.ResponseWriter, r *http.Request) {
+		ctx, cancel := context.WithDeadline(r.Context(), time.Now().Add(30*time.Second))
+		defer cancel()
+
+		Hand.SaveCurrencyHandler(w, r.WithContext(ctx))
+	})
+
+	r.HandleFunc("/currency/{date}/{code}", func(w http.ResponseWriter, r *http.Request) {
+		ctx, cancel := context.WithDeadline(r.Context(), time.Now().Add(30*time.Second))
+		defer cancel()
+
+		Hand.GetCurrencyHandler(w, r.WithContext(ctx))
+	})
+
+	r.HandleFunc("/currency/{date}", func(w http.ResponseWriter, r *http.Request) {
+		ctx, cancel := context.WithDeadline(r.Context(), time.Now().Add(30*time.Second))
+		defer cancel()
+
+		Hand.GetCurrencyHandler(w, r.WithContext(ctx))
+	})
 
 	app.StartServer(r, Logger, Cnfg)
 }

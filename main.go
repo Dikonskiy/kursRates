@@ -20,6 +20,7 @@ var (
 	Hand   *httphandler.Handler
 	Logger *logerr.Logerr
 	Cnfg   *models.Config
+	App    *app.Application
 )
 
 func init() {
@@ -33,6 +34,7 @@ func init() {
 	Logger = logerr.NewLogerr(Cnfg.IsProd)
 	Repo = repository.NewRepository(Cnfg.MysqlConnectionString, Logger)
 	Hand = httphandler.NewHandler(Repo, Cnfg)
+	App = app.NewApplication(Repo)
 }
 
 func main() {
@@ -59,5 +61,5 @@ func main() {
 		Hand.GetCurrencyHandler(w, r.WithContext(ctx))
 	})
 
-	app.StartServer(r, Logger, Cnfg)
+	App.StartServer(r, Cnfg)
 }

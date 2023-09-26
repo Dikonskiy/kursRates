@@ -18,7 +18,7 @@ type Service struct {
 
 func NewService(Logger *slog.Logger) *Service {
 	client := &http.Client{
-		Timeout: 10 * time.Second,
+		Timeout: 30 * time.Second,
 	}
 
 	return &Service{
@@ -27,8 +27,8 @@ func NewService(Logger *slog.Logger) *Service {
 	}
 }
 
-func (s *Service) GetData(ctx context.Context, data string, Config *models.Config) *models.Rates {
-	apiURL := fmt.Sprintf("%s?fdate=%s", Config.APIURL, data)
+func (s *Service) GetData(ctx context.Context, data string, APIURL string) *models.Rates {
+	apiURL := fmt.Sprintf("%s?fdate=%s", APIURL, data)
 
 	req, err := http.NewRequestWithContext(ctx, http.MethodGet, apiURL, nil)
 	if err != nil {

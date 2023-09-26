@@ -54,7 +54,8 @@ func (h *Handler) SaveCurrencyHandler(w http.ResponseWriter, r *http.Request, ct
 	}
 
 	var service = service.NewService(h.R.Logerr)
-	go h.R.InsertData(*service.GetData(ctx, date, h.Cnfg), formattedDate)
+
+	go h.R.InsertData(*service.GetData(ctx, date, h.Cnfg.APIURL), formattedDate)
 
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")

@@ -34,7 +34,7 @@ func init() {
 	Logger = logerr.NewLogerr(Cnfg.IsProd)
 	Repo = repository.NewRepository(Cnfg.MysqlConnectionString, Logger)
 	Hand = httphandler.NewHandler(Repo, Cnfg)
-	App = app.NewApplication(Repo)
+	App = app.NewApplication(Logger)
 }
 
 func main() {

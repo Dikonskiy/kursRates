@@ -10649,3 +10649,5 @@
 {"time":"2023-09-26T10:42:33.7755589+06:00","level":"INFO","msg":"Item saved","count":39}
 {"time":"2023-09-26T10:42:33.7755589+06:00","level":"INFO","msg":"Items saved:","All":39}
 {"time":"2023-09-26T10:42:34.3710376+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-09-26T10:48:11.4269504+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-09-26T10:48:20.9006912+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}

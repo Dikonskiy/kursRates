@@ -24,7 +24,7 @@ func NewRepository(MysqlConnectionString string, logerr *logerr.Logerr) *Reposit
 
 	db.SetMaxOpenConns(234)
 	db.SetMaxIdleConns(234)
-	db.SetConnMaxLifetime(10 * time.Minute)
+	db.SetConnMaxLifetime(5 * time.Second)
 
 	if err := db.Ping(); err != nil {
 		db.Close()

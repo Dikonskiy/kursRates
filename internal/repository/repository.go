@@ -66,7 +66,7 @@ func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
 	)
 }
 
-func (r *Repository) GetData(formattedDate, code string) ([]models.DBItem, error) {
+func (r *Repository) GetData(ctx context.Context, formattedDate, code string) ([]models.DBItem, error) {
 	var query string
 	var params []interface{}
 
@@ -77,9 +77,6 @@ func (r *Repository) GetData(formattedDate, code string) ([]models.DBItem, error
 		query = "SELECT ID, TITLE, CODE, VALUE, A_DATE FROM R_CURRENCY WHERE A_DATE = ? AND CODE = ?"
 		params = []interface{}{formattedDate, code}
 	}
-
-	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*30))
-	defer cancel()
 
 	rows, err := r.Db.QueryContext(ctx, query, params...)
 	if err != nil {

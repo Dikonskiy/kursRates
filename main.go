@@ -44,21 +44,21 @@ func main() {
 		ctx, cancel := context.WithDeadline(r.Context(), time.Now().Add(30*time.Second))
 		defer cancel()
 
-		Hand.SaveCurrencyHandler(w, r.WithContext(ctx))
+		Hand.SaveCurrencyHandler(w, r.WithContext(ctx), ctx)
 	})
 
 	r.HandleFunc("/currency/{date}/{code}", func(w http.ResponseWriter, r *http.Request) {
 		ctx, cancel := context.WithDeadline(r.Context(), time.Now().Add(30*time.Second))
 		defer cancel()
 
-		Hand.GetCurrencyHandler(w, r.WithContext(ctx))
+		Hand.GetCurrencyHandler(w, r.WithContext(ctx), ctx)
 	})
 
 	r.HandleFunc("/currency/{date}", func(w http.ResponseWriter, r *http.Request) {
 		ctx, cancel := context.WithDeadline(r.Context(), time.Now().Add(30*time.Second))
 		defer cancel()
 
-		Hand.GetCurrencyHandler(w, r.WithContext(ctx))
+		Hand.GetCurrencyHandler(w, r.WithContext(ctx), ctx)
 	})
 
 	App.StartServer(r, Cnfg)

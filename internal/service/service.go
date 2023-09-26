@@ -1,6 +1,7 @@
 package service
 
 import (
+	"context"
 	"encoding/xml"
 	"fmt"
 	"io"
@@ -26,10 +27,16 @@ func NewService(Logger *slog.Logger) *Service {
 	}
 }
 
-func (s *Service) GetData(data string, Config *models.Config) *models.Rates {
+func (s *Service) GetData(ctx context.Context, data string, Config *models.Config) *models.Rates {
 	apiURL := fmt.Sprintf("%s?fdate=%s", Config.APIURL, data)
 
-	resp, err := s.Client.Get(apiURL)
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, apiURL, nil)
+	if err != nil {
+		s.Logger.Error("Failed to create request with context", err)
+		return nil
+	}
+
+	resp, err := s.Client.Do(req)
 	if err != nil {
 		s.Logger.Error("Failed to GET URL", err)
 		return nil

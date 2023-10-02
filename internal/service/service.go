@@ -1,43 +1,59 @@
 package service
 
 import (
+	"context"
 	"encoding/xml"
 	"fmt"
 	"io"
 	"kursRates/internal/models"
 	"log/slog"
 	"net/http"
+	"time"
 )
 
 type Service struct {
-	Rates  *models.Rates
+	Client *http.Client
 	Logger *slog.Logger
 }
 
-func NewService(data string, Config *models.Config, logerr *slog.Logger) (*Service, error) {
-	apiURL := fmt.Sprintf("%s?fdate=%s", Config.APIURL, data)
+func NewService(Logger *slog.Logger) *Service {
+	client := &http.Client{
+		Timeout: 30 * time.Second,
+	}
 
-	resp, err := http.Get(apiURL)
+	return &Service{
+		Client: client,
+		Logger: Logger,
+	}
+}
+
+func (s *Service) GetData(ctx context.Context, data string, APIURL string) *models.Rates {
+	apiURL := fmt.Sprintf("%s?fdate=%s", APIURL, data)
+
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, apiURL, nil)
 	if err != nil {
-		logerr.Error("Failed to GET URL", err)
-		return nil, err
+		s.Logger.Error("Failed to create request with context", err)
+		return nil
+	}
+
+	resp, err := s.Client.Do(req)
+	if err != nil {
+		s.Logger.Error("Failed to GET URL", err)
+		return nil
 	}
 	defer resp.Body.Close()
 
 	xmlData, err := io.ReadAll(resp.Body)
 	if err != nil {
-		logerr.Error("Failed to Read response Body", err)
-		return nil, err
+		s.Logger.Error("Failed to Read response Body", err)
+		return nil
 	}
 
 	var rates *models.Rates
 	if err := xml.Unmarshal(xmlData, &rates); err != nil {
-		logerr.Error("Failed to parse XML data", err)
-		return nil, err
+		s.Logger.Error("Failed to parse XML data", err)
+		return nil
 	}
 
-	return &Service{
-		Rates:  rates,
-		Logger: logerr,
-	}, nil
+	return rates
 }

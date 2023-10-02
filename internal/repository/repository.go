@@ -1,11 +1,13 @@
 package repository
 
 import (
+	"context"
 	"database/sql"
 	"kursRates/internal/logerr"
 	"kursRates/internal/models"
 	"log/slog"
 	"strconv"
+	"time"
 )
 
 type Repository struct {
@@ -19,6 +21,10 @@ func NewRepository(MysqlConnectionString string, logerr *logerr.Logerr) *Reposit
 		logerr.Logerr.Error("Failed initialize database connection")
 		return nil
 	}
+
+	db.SetMaxOpenConns(39)
+	db.SetMaxIdleConns(5)
+	db.SetConnMaxLifetime(3 * time.Minute)
 
 	if err := db.Ping(); err != nil {
 		db.Close()
@@ -34,6 +40,9 @@ func NewRepository(MysqlConnectionString string, logerr *logerr.Logerr) *Reposit
 func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
 	savedItemCount := 0
 
+	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(time.Second*30))
+	defer cancel()
+
 	for _, item := range rates.Items {
 		value, err := strconv.ParseFloat(item.Value, 64)
 		if err != nil {
@@ -41,7 +50,7 @@ func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
 			continue
 		}
 
-		rows, err := r.Db.Query("INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)", item.Title, item.Code, value, formattedDate)
+		rows, err := r.Db.QueryContext(ctx, "INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)", item.Title, item.Code, value, formattedDate)
 		if err != nil {
 			r.Logerr.Error("Failed to insert in the database:", err.Error())
 		} else {
@@ -57,7 +66,7 @@ func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
 	)
 }
 
-func (r *Repository) GetData(formattedDate, code string) ([]models.DBItem, error) {
+func (r *Repository) GetData(ctx context.Context, formattedDate, code string) ([]models.DBItem, error) {
 	var query string
 	var params []interface{}
 
@@ -69,7 +78,7 @@ func (r *Repository) GetData(formattedDate, code string) ([]models.DBItem, error
 		params = []interface{}{formattedDate, code}
 	}
 
-	rows, err := r.Db.Query(query, params...)
+	rows, err := r.Db.QueryContext(ctx, query, params...)
 	if err != nil {
 		return nil, err
 	}

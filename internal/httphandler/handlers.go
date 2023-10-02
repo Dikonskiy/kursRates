@@ -2,6 +2,7 @@
 package httphandler
 
 import (
+	"context"
 	"encoding/json"
 	"kursRates/internal/models"
 	"kursRates/internal/repository"
@@ -42,7 +43,7 @@ func (h *Handler) RespondWithError(w http.ResponseWriter, status int, errorMsg s
 	h.R.Logerr.Error(errorMsg+": ", err)
 }
 
-func (h *Handler) SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
+func (h *Handler) SaveCurrencyHandler(w http.ResponseWriter, r *http.Request, ctx context.Context) {
 	vars := mux.Vars(r)
 	date := vars["date"]
 
@@ -52,13 +53,9 @@ func (h *Handler) SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	service, err := service.NewService(date, h.Cnfg, h.R.Logerr)
-	if err != nil {
-		h.RespondWithError(w, http.StatusBadRequest, "Failed to parse", err)
-		return
-	}
+	var service = service.NewService(h.R.Logerr)
 
-	go h.R.InsertData(*service.Rates, formattedDate)
+	go h.R.InsertData(*service.GetData(ctx, date, h.Cnfg.APIURL), formattedDate)
 
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")
@@ -66,17 +63,18 @@ func (h *Handler) SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	h.R.Logerr.Info("Success: true")
 }
 
-func (h *Handler) GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
+func (h *Handler) GetCurrencyHandler(w http.ResponseWriter, r *http.Request, ctx context.Context) {
 	vars := mux.Vars(r)
 	date := vars["date"]
 	code := vars["code"]
+
 	formattedDate, err := DateFormat(date)
 	if err != nil {
 		h.RespondWithError(w, http.StatusBadRequest, "Failed to parse the date", err)
 		return
 	}
 
-	data, err := h.R.GetData(formattedDate, code)
+	data, err := h.R.GetData(ctx, formattedDate, code)
 	if err != nil {
 		h.RespondWithError(w, http.StatusInternalServerError, "Failed to retrieve data", err)
 		return

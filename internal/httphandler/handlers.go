@@ -4,6 +4,7 @@ package httphandler
 import (
 	"context"
 	"encoding/json"
+	"kursRates/internal/metrics"
 	"kursRates/internal/models"
 	"kursRates/internal/repository"
 	"kursRates/internal/service"
@@ -17,15 +18,17 @@ import (
 type Handler struct {
 	R    *repository.Repository
 	Cnfg *models.Config
+	M    *metrics.Metrics
 }
 
-func NewHandler(repo *repository.Repository, config *models.Config) *Handler {
+func NewHandler(repo *repository.Repository, config *models.Config, m *metrics.Metrics) *Handler {
 	if repo == nil {
 		repo.Logerr.Error("Failed to initialize the repository")
 	}
 	return &Handler{
 		R:    repo,
 		Cnfg: config,
+		M:    m,
 	}
 }
 
@@ -59,7 +62,7 @@ func (h *Handler) SaveCurrencyHandler(w http.ResponseWriter, r *http.Request, ct
 		return
 	}
 
-	var service = service.NewService(h.R.Logerr)
+	var service = service.NewService(h.R.Logerr, h.M)
 
 	go h.R.InsertData(*service.GetData(ctx, date, h.Cnfg.APIURL), formattedDate)
 

@@ -6,6 +6,7 @@ import (
 	"kursRates/internal/httphandler"
 	"kursRates/internal/initconfig"
 	"kursRates/internal/logerr"
+	"kursRates/internal/metrics"
 	"kursRates/internal/models"
 	"kursRates/internal/repository"
 	"net/http"
@@ -15,15 +16,17 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	httpSwagger "github.com/swaggo/http-swagger/v2"
 )
 
 var (
-	Repo   *repository.Repository
-	Hand   *httphandler.Handler
-	Logger *logerr.Logerr
-	Cnfg   *models.Config
-	App    *app.Application
+	Metrics *metrics.Metrics
+	Repo    *repository.Repository
+	Hand    *httphandler.Handler
+	Logger  *logerr.Logerr
+	Cnfg    *models.Config
+	App     *app.Application
 )
 
 func init() {
@@ -34,9 +37,10 @@ func init() {
 		return
 	}
 
+	Metrics = metrics.NewMetrics()
 	Logger = logerr.NewLogerr(Cnfg.IsProd)
 	Repo = repository.NewRepository(Cnfg.MysqlConnectionString, Logger)
-	Hand = httphandler.NewHandler(Repo, Cnfg)
+	Hand = httphandler.NewHandler(Repo, Cnfg, Metrics)
 	App = app.NewApplication(Logger)
 }
 
@@ -82,6 +86,14 @@ func main() {
 
 		Hand.GetCurrencyHandler(w, r.WithContext(ctx), ctx)
 	})
+
+	r.Handle("/metrics", promhttp.Handler())
+
+	go func() {
+		if err := http.ListenAndServe(":8081", r); err != nil {
+			Logger.Logerr.Error("Can't start the server", err)
+		}
+	}()
 
 	App.StartServer(r, Cnfg)
 }

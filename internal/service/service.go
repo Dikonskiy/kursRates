@@ -5,6 +5,7 @@ import (
 	"encoding/xml"
 	"fmt"
 	"io"
+	"kursRates/internal/metrics"
 	"kursRates/internal/models"
 	"log/slog"
 	"net/http"
@@ -12,22 +13,25 @@ import (
 )
 
 type Service struct {
-	Client *http.Client
-	Logger *slog.Logger
+	Client  *http.Client
+	Logger  *slog.Logger
+	Metrics *metrics.Metrics
 }
 
-func NewService(Logger *slog.Logger) *Service {
+func NewService(Logger *slog.Logger, metrics *metrics.Metrics) *Service {
 	client := &http.Client{
 		Timeout: 30 * time.Second,
 	}
 
 	return &Service{
-		Client: client,
-		Logger: Logger,
+		Client:  client,
+		Logger:  Logger,
+		Metrics: metrics,
 	}
 }
 
 func (s *Service) GetData(ctx context.Context, data string, APIURL string) *models.Rates {
+	start := time.Now()
 	apiURL := fmt.Sprintf("%s?fdate=%s", APIURL, data)
 
 	req, err := http.NewRequestWithContext(ctx, http.MethodGet, apiURL, nil)
@@ -42,6 +46,12 @@ func (s *Service) GetData(ctx context.Context, data string, APIURL string) *mode
 		return nil
 	}
 	defer resp.Body.Close()
+
+	duration := time.Since(start)
+	statusCode := fmt.Sprintf("%d", resp.StatusCode)
+
+	s.Metrics.IncRequestCount(http.MethodGet, statusCode)
+	s.Metrics.ObserveRequestDuration(http.MethodGet, statusCode, duration.Seconds())
 
 	xmlData, err := io.ReadAll(resp.Body)
 	if err != nil {

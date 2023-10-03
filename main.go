@@ -42,7 +42,7 @@ func init() {
 
 // @title Swagger kursRates API
 // @version 0.1
-// @description This is the currency of rates service.
+// @description A web service that, upon request, collects data from the public API of the national bank and saves the data to the local TEST database
 // @termsOfService http://swagger.io/terms/
 
 // @contact.name API Support
@@ -55,7 +55,7 @@ func init() {
 func main() {
 	r := mux.NewRouter()
 
-	r.PathPrefix("/docs/").Handler(httpSwagger.Handler(
+	r.PathPrefix("/swagger/").Handler(httpSwagger.Handler(
 		httpSwagger.URL("swagger/doc.json"),
 		httpSwagger.DeepLinking(true),
 		httpSwagger.DocExpansion("none"),

@@ -1,1 +1,190 @@
 
+{"time":"2023-10-02T15:57:57.5412241+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T15:58:15.7377852+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T15:58:40.3561385+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:13:11.4523641+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:13:30.1721767+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:14:38.8988212+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:15:00.6791073+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:16:40.7570339+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:18:47.3607772+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:22:26.2762428+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:22:36.4368377+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:27:41.3693858+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:28:08.4350439+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:28:48.6023606+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:29:12.1936312+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:30:56.3235692+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:31:13.8413861+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:32:28.199882+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:34:29.0611321+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:35:11.5183065+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:39:36.2529615+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:39:56.6222128+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:40:04.6434291+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:40:41.8732087+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:41:02.6922795+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:41:30.8220084+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:41:45.6123411+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:42:34.1543907+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:42:38.098583+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:42:51.4511533+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:43:10.6893489+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:44:22.0093402+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:47:47.3461653+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:50:57.087107+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:51:06.3689984+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:52:24.6774121+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:52:36.6989587+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-02T16:52:50.2634197+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-02T16:52:57.2239953+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:20:31.6756265+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:21:24.1686835+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-10-03T09:21:24.3077229+06:00","level":"INFO","msg":"Item saved","count":1}
+{"time":"2023-10-03T09:21:24.315378+06:00","level":"INFO","msg":"Item saved","count":2}
+{"time":"2023-10-03T09:21:24.3175207+06:00","level":"INFO","msg":"Item saved","count":3}
+{"time":"2023-10-03T09:21:24.3200457+06:00","level":"INFO","msg":"Item saved","count":4}
+{"time":"2023-10-03T09:21:24.3236653+06:00","level":"INFO","msg":"Item saved","count":5}
+{"time":"2023-10-03T09:21:24.3267993+06:00","level":"INFO","msg":"Item saved","count":6}
+{"time":"2023-10-03T09:21:24.3308044+06:00","level":"INFO","msg":"Item saved","count":7}
+{"time":"2023-10-03T09:21:24.3332738+06:00","level":"INFO","msg":"Item saved","count":8}
+{"time":"2023-10-03T09:21:24.3356582+06:00","level":"INFO","msg":"Item saved","count":9}
+{"time":"2023-10-03T09:21:24.3379706+06:00","level":"INFO","msg":"Item saved","count":10}
+{"time":"2023-10-03T09:21:24.3403266+06:00","level":"INFO","msg":"Item saved","count":11}
+{"time":"2023-10-03T09:21:24.3428154+06:00","level":"INFO","msg":"Item saved","count":12}
+{"time":"2023-10-03T09:21:24.3773655+06:00","level":"INFO","msg":"Item saved","count":13}
+{"time":"2023-10-03T09:21:24.3836755+06:00","level":"INFO","msg":"Item saved","count":14}
+{"time":"2023-10-03T09:21:24.3877819+06:00","level":"INFO","msg":"Item saved","count":15}
+{"time":"2023-10-03T09:21:24.3922982+06:00","level":"INFO","msg":"Item saved","count":16}
+{"time":"2023-10-03T09:21:24.3961835+06:00","level":"INFO","msg":"Item saved","count":17}
+{"time":"2023-10-03T09:21:24.398672+06:00","level":"INFO","msg":"Item saved","count":18}
+{"time":"2023-10-03T09:21:24.401036+06:00","level":"INFO","msg":"Item saved","count":19}
+{"time":"2023-10-03T09:21:24.4043372+06:00","level":"INFO","msg":"Item saved","count":20}
+{"time":"2023-10-03T09:21:24.4070534+06:00","level":"INFO","msg":"Item saved","count":21}
+{"time":"2023-10-03T09:21:24.4094851+06:00","level":"INFO","msg":"Item saved","count":22}
+{"time":"2023-10-03T09:21:24.4112316+06:00","level":"INFO","msg":"Item saved","count":23}
+{"time":"2023-10-03T09:21:24.4146124+06:00","level":"INFO","msg":"Item saved","count":24}
+{"time":"2023-10-03T09:21:24.4170403+06:00","level":"INFO","msg":"Item saved","count":25}
+{"time":"2023-10-03T09:21:24.4187992+06:00","level":"INFO","msg":"Item saved","count":26}
+{"time":"2023-10-03T09:21:24.4218763+06:00","level":"INFO","msg":"Item saved","count":27}
+{"time":"2023-10-03T09:21:24.4241172+06:00","level":"INFO","msg":"Item saved","count":28}
+{"time":"2023-10-03T09:21:24.4258784+06:00","level":"INFO","msg":"Item saved","count":29}
+{"time":"2023-10-03T09:21:24.4292166+06:00","level":"INFO","msg":"Item saved","count":30}
+{"time":"2023-10-03T09:21:24.4318221+06:00","level":"INFO","msg":"Item saved","count":31}
+{"time":"2023-10-03T09:21:24.434091+06:00","level":"INFO","msg":"Item saved","count":32}
+{"time":"2023-10-03T09:21:24.4362031+06:00","level":"INFO","msg":"Item saved","count":33}
+{"time":"2023-10-03T09:21:24.4383749+06:00","level":"INFO","msg":"Item saved","count":34}
+{"time":"2023-10-03T09:21:24.4405931+06:00","level":"INFO","msg":"Item saved","count":35}
+{"time":"2023-10-03T09:21:24.4428807+06:00","level":"INFO","msg":"Item saved","count":36}
+{"time":"2023-10-03T09:21:24.4452683+06:00","level":"INFO","msg":"Item saved","count":37}
+{"time":"2023-10-03T09:21:24.4474409+06:00","level":"INFO","msg":"Item saved","count":38}
+{"time":"2023-10-03T09:21:24.4496884+06:00","level":"INFO","msg":"Item saved","count":39}
+{"time":"2023-10-03T09:21:24.4496884+06:00","level":"INFO","msg":"Items saved:","All":39}
+{"time":"2023-10-03T09:21:45.8568865+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-10-03T09:21:45.8617745+06:00","level":"INFO","msg":"Item saved","count":1}
+{"time":"2023-10-03T09:21:45.8633491+06:00","level":"INFO","msg":"Item saved","count":2}
+{"time":"2023-10-03T09:21:45.8654398+06:00","level":"INFO","msg":"Item saved","count":3}
+{"time":"2023-10-03T09:21:45.8661025+06:00","level":"INFO","msg":"Item saved","count":4}
+{"time":"2023-10-03T09:21:45.867573+06:00","level":"INFO","msg":"Item saved","count":5}
+{"time":"2023-10-03T09:21:45.8742318+06:00","level":"INFO","msg":"Item saved","count":6}
+{"time":"2023-10-03T09:21:45.8782425+06:00","level":"INFO","msg":"Item saved","count":7}
+{"time":"2023-10-03T09:21:45.8821683+06:00","level":"INFO","msg":"Item saved","count":8}
+{"time":"2023-10-03T09:21:45.8859578+06:00","level":"INFO","msg":"Item saved","count":9}
+{"time":"2023-10-03T09:21:45.8896346+06:00","level":"INFO","msg":"Item saved","count":10}
+{"time":"2023-10-03T09:21:45.8940103+06:00","level":"INFO","msg":"Item saved","count":11}
+{"time":"2023-10-03T09:21:45.8972974+06:00","level":"INFO","msg":"Item saved","count":12}
+{"time":"2023-10-03T09:21:45.900384+06:00","level":"INFO","msg":"Item saved","count":13}
+{"time":"2023-10-03T09:21:45.9034217+06:00","level":"INFO","msg":"Item saved","count":14}
+{"time":"2023-10-03T09:21:45.9075579+06:00","level":"INFO","msg":"Item saved","count":15}
+{"time":"2023-10-03T09:21:45.9106364+06:00","level":"INFO","msg":"Item saved","count":16}
+{"time":"2023-10-03T09:21:45.9146521+06:00","level":"INFO","msg":"Item saved","count":17}
+{"time":"2023-10-03T09:21:45.9176553+06:00","level":"INFO","msg":"Item saved","count":18}
+{"time":"2023-10-03T09:21:45.92239+06:00","level":"INFO","msg":"Item saved","count":19}
+{"time":"2023-10-03T09:21:45.927363+06:00","level":"INFO","msg":"Item saved","count":20}
+{"time":"2023-10-03T09:21:45.9299705+06:00","level":"INFO","msg":"Item saved","count":21}
+{"time":"2023-10-03T09:21:45.9323375+06:00","level":"INFO","msg":"Item saved","count":22}
+{"time":"2023-10-03T09:21:45.9354495+06:00","level":"INFO","msg":"Item saved","count":23}
+{"time":"2023-10-03T09:21:45.9372352+06:00","level":"INFO","msg":"Item saved","count":24}
+{"time":"2023-10-03T09:21:45.9407304+06:00","level":"INFO","msg":"Item saved","count":25}
+{"time":"2023-10-03T09:21:45.9432812+06:00","level":"INFO","msg":"Item saved","count":26}
+{"time":"2023-10-03T09:21:45.9462563+06:00","level":"INFO","msg":"Item saved","count":27}
+{"time":"2023-10-03T09:21:45.9486332+06:00","level":"INFO","msg":"Item saved","count":28}
+{"time":"2023-10-03T09:21:45.9508119+06:00","level":"INFO","msg":"Item saved","count":29}
+{"time":"2023-10-03T09:21:45.9530721+06:00","level":"INFO","msg":"Item saved","count":30}
+{"time":"2023-10-03T09:21:45.9559281+06:00","level":"INFO","msg":"Item saved","count":31}
+{"time":"2023-10-03T09:21:45.9586197+06:00","level":"INFO","msg":"Item saved","count":32}
+{"time":"2023-10-03T09:21:45.9621475+06:00","level":"INFO","msg":"Item saved","count":33}
+{"time":"2023-10-03T09:21:45.9647389+06:00","level":"INFO","msg":"Item saved","count":34}
+{"time":"2023-10-03T09:21:45.9673473+06:00","level":"INFO","msg":"Item saved","count":35}
+{"time":"2023-10-03T09:21:45.9699487+06:00","level":"INFO","msg":"Item saved","count":36}
+{"time":"2023-10-03T09:21:45.9735559+06:00","level":"INFO","msg":"Item saved","count":37}
+{"time":"2023-10-03T09:21:45.9761469+06:00","level":"INFO","msg":"Item saved","count":38}
+{"time":"2023-10-03T09:21:45.9785366+06:00","level":"INFO","msg":"Item saved","count":39}
+{"time":"2023-10-03T09:21:45.9785366+06:00","level":"INFO","msg":"Items saved:","All":39}
+{"time":"2023-10-03T09:23:45.9362473+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:24:12.6434384+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:24:16.0500774+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:24:30.5026274+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:25:29.0830488+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:27:52.1172119+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:28:17.0974121+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:28:42.622092+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:28:45.8192118+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:29:19.6955904+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:29:37.481896+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:31:05.770109+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:31:47.2600485+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:32:41.6106752+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:32:49.414456+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:34:53.0662131+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:35:02.413965+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:36:00.5363726+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:36:06.9600683+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:39:09.3043794+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:39:14.3376929+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:39:45.7614328+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:39:54.7284266+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:41:30.7644192+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:43:43.6634185+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:45:12.740468+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:45:34.9566773+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:46:49.4822442+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:46:57.3134589+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:48:42.156973+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:49:27.7359122+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:50:34.7511875+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:53:01.9459739+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:56:50.1670736+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:57:05.7963374+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T09:59:10.8665989+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T09:59:16.9501659+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T10:01:21.5156341+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T10:01:29.1236315+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T10:03:01.0750228+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T10:03:07.3596008+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T10:03:45.6660919+06:00","level":"ERROR","msg":"No data found with these parameters"}
+{"time":"2023-10-03T10:03:45.6669854+06:00","level":"INFO","msg":"Data was showed"}
+{"time":"2023-10-03T10:04:05.858958+06:00","level":"INFO","msg":"Data was showed"}
+{"time":"2023-10-03T10:04:34.8922613+06:00","level":"ERROR","msg":"No data found with these parameters"}
+{"time":"2023-10-03T10:04:34.8922613+06:00","level":"INFO","msg":"Data was showed"}
+{"time":"2023-10-03T10:04:39.7819527+06:00","level":"ERROR","msg":"No data found with these parameters"}
+{"time":"2023-10-03T10:04:39.7819527+06:00","level":"INFO","msg":"Data was showed"}
+{"time":"2023-10-03T10:06:30.7225231+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T10:06:56.305768+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T10:07:10.0726527+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T10:07:17.7879351+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T10:07:43.9868344+06:00","level":"ERROR","msg":"No data found with these parameters"}
+{"time":"2023-10-03T10:07:43.9868344+06:00","level":"INFO","msg":"Data was showed"}
+{"time":"2023-10-03T10:08:03.091257+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T10:08:08.575072+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T10:08:25.0385501+06:00","level":"ERROR","msg":"No data found with these parameters"}
+{"time":"2023-10-03T10:08:25.0385501+06:00","level":"INFO","msg":"Data was showed"}
+{"time":"2023-10-03T10:09:08.3645672+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T10:09:15.7671159+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T10:09:52.4114027+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T10:09:56.3721093+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T10:10:15.7587607+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-03T10:10:23.1575077+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-03T10:10:46.5951678+06:00","level":"INFO","msg":"Data was showed"}
+{"time":"2023-10-03T10:11:03.7732462+06:00","level":"INFO","msg":"Data was showed"}
+{"time":"2023-10-03T10:11:11.1327727+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}

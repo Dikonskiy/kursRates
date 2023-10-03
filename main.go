@@ -11,8 +11,11 @@ import (
 	"net/http"
 	"time"
 
+	_ "kursRates/docs"
+
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
+	httpSwagger "github.com/swaggo/http-swagger/v2"
 )
 
 var (
@@ -37,8 +40,27 @@ func init() {
 	App = app.NewApplication(Logger)
 }
 
+// @title Swagger kursRates API
+// @version 0.1
+// @description This is the currency of rates service.
+// @termsOfService http://swagger.io/terms/
+
+// @contact.name API Support
+// @contact.url http://www.swagger.io/support
+// @contact.email support@swagger.io
+
+// @license.name Apache 2.0
+// @license.url http://www.apache.org/licenses/LICENSE-2.0.html
+
 func main() {
 	r := mux.NewRouter()
+
+	r.PathPrefix("/docs/").Handler(httpSwagger.Handler(
+		httpSwagger.URL("swagger/doc.json"),
+		httpSwagger.DeepLinking(true),
+		httpSwagger.DocExpansion("none"),
+		httpSwagger.DomID("swagger-ui"),
+	)).Methods(http.MethodGet)
 
 	r.HandleFunc("/currency/save/{date}", func(w http.ResponseWriter, r *http.Request) {
 		ctx, cancel := context.WithDeadline(r.Context(), time.Now().Add(30*time.Second))

@@ -1286,3 +1286,7 @@
 {"time":"2023-10-04T10:34:24.5542692+06:00","level":"INFO","msg":"Items saved:","All":39}
 {"time":"2023-10-04T10:34:25.6930382+06:00","level":"INFO","msg":"Data was showed"}
 {"time":"2023-10-04T10:45:18.7209521+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-04T11:03:40.8373776+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-04T11:06:11.6282509+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-04T11:06:15.1968166+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-04T11:06:53.570206+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}

@@ -88,6 +88,8 @@ func main() {
 		Hand.GetCurrencyHandler(w, r.WithContext(ctx), ctx)
 	})
 
+	r.HandleFunc("/health", Hand.HealthCheckHandler)
+
 	r.Handle("/metrics", promhttp.Handler())
 	go func() {
 		if err := http.ListenAndServe(":8081", r); err != nil {

@@ -102,3 +102,20 @@ func (h *Handler) GetCurrencyHandler(w http.ResponseWriter, r *http.Request, ctx
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(data)
 }
+
+func (h *Handler) HealthCheckHandler(w http.ResponseWriter, r *http.Request) {
+	if h.R.Db == nil {
+		w.WriteHeader(http.StatusServiceUnavailable)
+		w.Write([]byte("Status: Not available"))
+		return
+	}
+
+	if err := h.R.Db.Ping(); err != nil {
+		w.WriteHeader(http.StatusServiceUnavailable)
+		w.Write([]byte("Status: Not available"))
+		return
+	}
+
+	w.WriteHeader(http.StatusOK)
+	w.Write([]byte("Status: Available"))
+}

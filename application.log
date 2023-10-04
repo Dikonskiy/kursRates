@@ -1290,3 +1290,13 @@
 {"time":"2023-10-04T11:06:11.6282509+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
 {"time":"2023-10-04T11:06:15.1968166+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
 {"time":"2023-10-04T11:06:53.570206+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-04T11:14:29.2924651+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-04T11:14:39.4021159+06:00","level":"INFO","msg":"Status","!BADKEY":"Available"}
+{"time":"2023-10-04T11:19:51.1314401+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
+{"time":"2023-10-04T11:19:55.0341523+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-04T11:20:03.3695217+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-04T11:20:16.5672386+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-04T11:21:55.4387993+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-04T11:22:05.5342029+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-04T11:22:32.9858613+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T12:09:05.1040542+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}

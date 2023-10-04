@@ -103,9 +103,18 @@ func (h *Handler) GetCurrencyHandler(w http.ResponseWriter, r *http.Request, ctx
 	json.NewEncoder(w).Encode(data)
 }
 
+// @Summary Check the health status of the application
+// @Description Returns the health status of the application, including the database availability.
+// @ID health-check
+// @Produce  json
+// @Success 200 {string} string "Status: Available"
+// @Failure 503 {string} string "Status: Not available"
+// @Router /health [get]
 func (h *Handler) HealthCheckHandler(w http.ResponseWriter, r *http.Request) {
 	if h.R.Db == nil {
 		w.WriteHeader(http.StatusServiceUnavailable)
+		h.R.Logerr.Info("Health checker",
+			"Status", "Not available")
 		w.Write([]byte("Status: Not available"))
 		return
 	}
@@ -113,9 +122,13 @@ func (h *Handler) HealthCheckHandler(w http.ResponseWriter, r *http.Request) {
 	if err := h.R.Db.Ping(); err != nil {
 		w.WriteHeader(http.StatusServiceUnavailable)
 		w.Write([]byte("Status: Not available"))
+		h.R.Logerr.Info("Health checker",
+			"Status", "Not available")
 		return
 	}
 
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte("Status: Available"))
+	h.R.Logerr.Info("Health checker",
+		"Status", "Available")
 }

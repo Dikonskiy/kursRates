@@ -43,8 +43,8 @@ func (a *Application) StartServer(router http.Handler, config *models.Config) {
 func shutdown(quit chan os.Signal, logger slog.Logger) {
 	signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
 	s := <-quit
-	logger.Info("caught signal", map[string]string{
-		"signal": s.String(),
-	})
+	logger.Info("caught signal",
+		"signal", s.String(),
+	)
 	os.Exit(0)
 }

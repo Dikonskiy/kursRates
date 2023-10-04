@@ -3,7 +3,8 @@ info:
     email: support@swagger.io
     name: API Support
     url: http://www.swagger.io/support
-  description: This is the currency of rates service.
+  description: A web service that, upon request, collects data from the public API
+    of the national bank and saves the data to the local TEST database
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
@@ -69,4 +70,21 @@ paths:
       summary: Save currency data
       tags:
       - currency
+  /health:
+    get:
+      description: Returns the health status of the application, including the database
+        availability.
+      operationId: health-check
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 'Status: Available'
+          schema:
+            type: string
+        "503":
+          description: 'Status: Not available'
+          schema:
+            type: string
+      summary: Check the health status of the application
 swagger: "2.0"

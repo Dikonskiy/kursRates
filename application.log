@@ -1300,3 +1300,66 @@
 {"time":"2023-10-04T11:22:05.5342029+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
 {"time":"2023-10-04T11:22:32.9858613+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
 {"time":"2023-10-04T12:09:05.1040542+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-04T15:40:01.316409+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-04T15:40:23.5528579+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T16:20:04.6335406+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-04T16:20:32.1150113+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-04T16:20:43.5118792+06:00","level":"ERROR","msg":"Failed to check APIURL:","!BADKEY":"Get \"https://nationalban.kz/rss/get_rates.cfm\": dial tcp: lookup nationalban.kz: no such host"}
+{"time":"2023-10-04T16:20:43.5118792+06:00","level":"INFO","msg":"Health checker","Status":"Not available"}
+{"time":"2023-10-04T16:20:44.9772197+06:00","level":"ERROR","msg":"Failed to check APIURL:","!BADKEY":"Get \"https://nationalban.kz/rss/get_rates.cfm\": dial tcp: lookup nationalban.kz: no such host"}
+{"time":"2023-10-04T16:20:44.9772197+06:00","level":"INFO","msg":"Health checker","Status":"Not available"}
+{"time":"2023-10-04T16:20:55.4921132+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-04T16:20:59.4637648+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-04T16:21:07.4496992+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T16:21:08.3722178+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:33:39.4228589+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-04T17:33:44.1132133+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-04T17:34:02.4881122+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:34:03.0230495+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:34:03.0966721+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:34:31.310873+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:34:31.9108464+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:34:32.4307867+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:35:01.3072467+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:35:01.9139683+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:35:02.441638+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:35:31.3130848+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:35:31.9231283+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:35:32.4308384+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:36:01.3083362+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:36:01.9120906+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:36:02.4303869+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:36:31.3151074+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:36:31.9230304+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:36:32.4315812+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:37:01.3120309+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:37:01.9186086+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:37:02.4327433+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:37:31.3164402+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:37:31.9206248+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:37:32.4327313+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:38:01.3108524+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:38:01.9156469+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:38:02.4408612+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:38:31.3190985+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:38:31.9246739+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:38:32.453812+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:39:01.3107611+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:39:01.9142699+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:39:02.4415856+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:39:31.317686+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:39:31.9109338+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:39:32.4386409+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:40:01.3128983+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:40:01.9161981+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:40:02.4308418+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:40:29.1770037+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-04T17:40:32.695327+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-04T17:41:10.1337666+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:41:39.8030632+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:42:09.7948608+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
+{"time":"2023-10-04T17:42:17.2217557+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-04T17:42:20.8685539+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-04T17:42:28.4277417+06:00","level":"ERROR","msg":"Failed to check APIURL:","!BADKEY":"Get \"https://nationalban.kz/rss/get_rates.cfm\": dial tcp: lookup nationalban.kz: no such host"}
+{"time":"2023-10-04T17:42:28.4277417+06:00","level":"INFO","msg":"Health checker","Status":"Not available"}
+{"time":"2023-10-04T17:54:19.1933996+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}

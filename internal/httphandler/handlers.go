@@ -15,8 +15,9 @@ import (
 )
 
 type Handler struct {
-	R    *repository.Repository
-	Cnfg *models.Config
+	R         *repository.Repository
+	Cnfg      *models.Config
+	isHealthy bool
 }
 
 func NewHandler(repo *repository.Repository, config *models.Config) *Handler {
@@ -111,24 +112,64 @@ func (h *Handler) GetCurrencyHandler(w http.ResponseWriter, r *http.Request, ctx
 // @Failure 503 {string} string "Status: Not available"
 // @Router /health [get]
 func (h *Handler) HealthCheckHandler(w http.ResponseWriter, r *http.Request) {
+	ticker := time.NewTicker(time.Second * 30)
+
+	go func() {
+		for {
+			select {
+			case <-ticker.C:
+				if h.isHealthy {
+					h.R.Logerr.Info("Health checker", "Status", "Available")
+				}
+			}
+		}
+	}()
+
+	h.respondWithCurrentHealthStatus(w)
+}
+
+func (h *Handler) respondWithCurrentHealthStatus(w http.ResponseWriter) {
 	if h.R.Db == nil {
 		w.WriteHeader(http.StatusServiceUnavailable)
-		h.R.Logerr.Info("Health checker",
-			"Status", "Not available")
 		w.Write([]byte("Status: Not available"))
+		h.R.Logerr.Info("Health checker", "Status", "Not available")
+		h.isHealthy = false
 		return
 	}
 
 	if err := h.R.Db.Ping(); err != nil {
 		w.WriteHeader(http.StatusServiceUnavailable)
 		w.Write([]byte("Status: Not available"))
-		h.R.Logerr.Info("Health checker",
-			"Status", "Not available")
+		h.R.Logerr.Info("Health checker", "Status", "Not available")
+		h.isHealthy = false
 		return
 	}
 
+	if !h.CheckAPIURL() {
+		w.WriteHeader(http.StatusServiceUnavailable)
+		w.Write([]byte("Status: Not available"))
+		h.R.Logerr.Info("Health checker", "Status", "Not available")
+		h.isHealthy = false
+		return
+	}
+
+	h.isHealthy = true
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte("Status: Available"))
-	h.R.Logerr.Info("Health checker",
-		"Status", "Available")
+	h.R.Logerr.Info("Health checker", "Status", "Available")
+}
+
+func (h *Handler) CheckAPIURL() bool {
+	resp, err := http.Get(h.Cnfg.APIURL)
+	if err != nil {
+		h.R.Logerr.Error("Failed to check APIURL:", err)
+		return false
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode == http.StatusOK {
+		return true
+	}
+
+	return false
 }

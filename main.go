@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"kursRates/internal/app"
 	"kursRates/internal/httphandler"
 	"kursRates/internal/initconfig"
@@ -39,8 +40,8 @@ func init() {
 
 	Metrics = metrics.NewMetrics()
 	Logger = logerr.NewLogerr(Cnfg.IsProd)
-	Repo = repository.NewRepository(Cnfg.MysqlConnectionString, Logger)
-	Hand = httphandler.NewHandler(Repo, Cnfg, Metrics)
+	Repo = repository.NewRepository(Cnfg.MysqlConnectionString, Logger, Metrics)
+	Hand = httphandler.NewHandler(Repo, Cnfg)
 	App = app.NewApplication(Logger)
 }
 
@@ -88,12 +89,12 @@ func main() {
 	})
 
 	r.Handle("/metrics", promhttp.Handler())
-
 	go func() {
 		if err := http.ListenAndServe(":8081", r); err != nil {
-			Logger.Logerr.Error("Can't start the server", err)
+			fmt.Println("Failed to start the metrics server:", err)
 		}
 	}()
 
 	App.StartServer(r, Cnfg)
+
 }

@@ -4,6 +4,7 @@ import (
 	"context"
 	"database/sql"
 	"kursRates/internal/logerr"
+	"kursRates/internal/metrics"
 	"kursRates/internal/models"
 	"log/slog"
 	"strconv"
@@ -11,11 +12,12 @@ import (
 )
 
 type Repository struct {
-	Db     *sql.DB
-	Logerr *slog.Logger
+	Db      *sql.DB
+	Logerr  *slog.Logger
+	Metrics *metrics.Metrics
 }
 
-func NewRepository(MysqlConnectionString string, logerr *logerr.Logerr) *Repository {
+func NewRepository(MysqlConnectionString string, logerr *logerr.Logerr, metrics *metrics.Metrics) *Repository {
 	db, err := sql.Open("mysql", MysqlConnectionString)
 	if err != nil {
 		logerr.Logerr.Error("Failed initialize database connection")
@@ -32,8 +34,9 @@ func NewRepository(MysqlConnectionString string, logerr *logerr.Logerr) *Reposit
 	}
 
 	return &Repository{
-		Db:     db,
-		Logerr: logerr.Logerr,
+		Db:      db,
+		Logerr:  logerr.Logerr,
+		Metrics: metrics,
 	}
 }
 
@@ -46,13 +49,15 @@ func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
 	for _, item := range rates.Items {
 		value, err := strconv.ParseFloat(item.Value, 64)
 		if err != nil {
-			r.Logerr.Error("Failed to convert float: %s", err.Error())
+			r.Logerr.Error("Failed to convert float: %s", err)
 			continue
 		}
 
+		startTime := time.Now()
+
 		rows, err := r.Db.QueryContext(ctx, "INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)", item.Title, item.Code, value, formattedDate)
 		if err != nil {
-			r.Logerr.Error("Failed to insert in the database:", err.Error())
+			r.Logerr.Error("Failed to insert in the database:", err)
 		} else {
 			savedItemCount++
 			r.Logerr.Info("Item saved",
@@ -60,6 +65,9 @@ func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
 			)
 		}
 		defer rows.Close()
+
+		duration := time.Since(startTime).Seconds()
+		go r.Metrics.ObserveInsertDuration("insert", "success", duration)
 	}
 	r.Logerr.Info("Items saved:",
 		"All", savedItemCount,
@@ -78,11 +86,19 @@ func (r *Repository) GetData(ctx context.Context, formattedDate, code string) ([
 		params = []interface{}{formattedDate, code}
 	}
 
+	startTime := time.Now()
+
 	rows, err := r.Db.QueryContext(ctx, query, params...)
 	if err != nil {
 		return nil, err
 	}
 	defer rows.Close()
+
+	duration := time.Since(startTime).Seconds()
+	if code == "" {
+		go r.Metrics.ObserveSelectDuration("select", "success", duration)
+		go r.Metrics.IncSelectCount("select", "success")
+	}
 
 	var results []models.DBItem
 	for rows.Next() {

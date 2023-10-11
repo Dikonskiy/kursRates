@@ -100,6 +100,30 @@ const docTemplate = `{
                 ],
                 "responses": {}
             }
+        },
+        "/health": {
+            "get": {
+                "description": "Returns the health status of the application, including the database availability.",
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Check the health status of the application",
+                "operationId": "health-check",
+                "responses": {
+                    "200": {
+                        "description": "Status: Available",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "503": {
+                        "description": "Status: Not available",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
         }
     }
 }`
@@ -111,7 +135,7 @@ var SwaggerInfo = &swag.Spec{
 	BasePath:         "",
 	Schemes:          []string{},
 	Title:            "Swagger kursRates API",
-	Description:      "This is the currency of rates service.",
+	Description:      "A web service that, upon request, collects data from the public API of the national bank and saves the data to the local TEST database",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 	LeftDelim:        "{{",

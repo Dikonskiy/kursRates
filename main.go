@@ -2,7 +2,9 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"kursRates/internal/app"
+	"kursRates/internal/healthcheck"
 	"kursRates/internal/httphandler"
 	"kursRates/internal/initconfig"
 	"kursRates/internal/logerr"
@@ -27,6 +29,7 @@ var (
 	Logger  *logerr.Logerr
 	Cnfg    *models.Config
 	App     *app.Application
+	Health  *healthcheck.Health
 )
 
 func init() {
@@ -39,8 +42,9 @@ func init() {
 
 	Metrics = metrics.NewMetrics()
 	Logger = logerr.NewLogerr(Cnfg.IsProd)
-	Repo = repository.NewRepository(Cnfg.MysqlConnectionString, Logger)
-	Hand = httphandler.NewHandler(Repo, Cnfg, Metrics)
+	Repo = repository.NewRepository(Cnfg.MysqlConnectionString, Logger, Metrics)
+	Health = healthcheck.NewHealth(Repo, Cnfg.APIURL)
+	Hand = httphandler.NewHandler(Repo, Cnfg)
 	App = app.NewApplication(Logger)
 }
 
@@ -87,13 +91,17 @@ func main() {
 		Hand.GetCurrencyHandler(w, r.WithContext(ctx), ctx)
 	})
 
-	r.Handle("/metrics", promhttp.Handler())
+	r.HandleFunc("/live", Health.LiveHealthCheckHandler)
+	r.HandleFunc("/ready", Health.ReadyHealthCheckHandler)
+	go Health.PeriodicHealthCheck()
 
+	r.Handle("/metrics", promhttp.Handler())
 	go func() {
 		if err := http.ListenAndServe(":8081", r); err != nil {
-			Logger.Logerr.Error("Can't start the server", err)
+			fmt.Println("Failed to start the metrics server:", err)
 		}
 	}()
 
 	App.StartServer(r, Cnfg)
+
 }

@@ -67,7 +67,7 @@ func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
 		defer rows.Close()
 
 		duration := time.Since(startTime).Seconds()
-		r.Metrics.ObserveInsertDuration("insert", "success", duration)
+		go r.Metrics.ObserveInsertDuration("insert", "success", duration)
 	}
 	r.Logerr.Info("Items saved:",
 		"All", savedItemCount,
@@ -96,8 +96,8 @@ func (r *Repository) GetData(ctx context.Context, formattedDate, code string) ([
 
 	duration := time.Since(startTime).Seconds()
 	if code == "" {
-		r.Metrics.ObserveSelectDuration("select", "success", duration)
-		r.Metrics.IncSelectCount("select", "success")
+		go r.Metrics.ObserveSelectDuration("select", "success", duration)
+		go r.Metrics.IncSelectCount("select", "success")
 	}
 
 	var results []models.DBItem

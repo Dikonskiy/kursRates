@@ -1,1489 +1,454 @@
-
-{"time":"2023-10-02T15:57:57.5412241+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T15:58:15.7377852+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T15:58:40.3561385+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:13:11.4523641+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:13:30.1721767+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:14:38.8988212+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:15:00.6791073+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:16:40.7570339+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:18:47.3607772+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:22:26.2762428+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:22:36.4368377+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:27:41.3693858+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:28:08.4350439+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:28:48.6023606+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:29:12.1936312+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:30:56.3235692+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:31:13.8413861+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:32:28.199882+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:34:29.0611321+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:35:11.5183065+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:39:36.2529615+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:39:56.6222128+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:40:04.6434291+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:40:41.8732087+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:41:02.6922795+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:41:30.8220084+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:41:45.6123411+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:42:34.1543907+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:42:38.098583+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:42:51.4511533+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:43:10.6893489+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:44:22.0093402+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:47:47.3461653+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:50:57.087107+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:51:06.3689984+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:52:24.6774121+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:52:36.6989587+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-02T16:52:50.2634197+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-02T16:52:57.2239953+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:20:31.6756265+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:21:24.1686835+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-03T09:21:24.3077229+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-03T09:21:24.315378+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-03T09:21:24.3175207+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-03T09:21:24.3200457+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-03T09:21:24.3236653+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-03T09:21:24.3267993+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-03T09:21:24.3308044+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-03T09:21:24.3332738+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-03T09:21:24.3356582+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-03T09:21:24.3379706+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-03T09:21:24.3403266+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-03T09:21:24.3428154+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-03T09:21:24.3773655+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-03T09:21:24.3836755+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-03T09:21:24.3877819+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-03T09:21:24.3922982+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-03T09:21:24.3961835+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-03T09:21:24.398672+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-03T09:21:24.401036+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-03T09:21:24.4043372+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-03T09:21:24.4070534+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-03T09:21:24.4094851+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-03T09:21:24.4112316+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-03T09:21:24.4146124+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-03T09:21:24.4170403+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-03T09:21:24.4187992+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-03T09:21:24.4218763+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-03T09:21:24.4241172+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-03T09:21:24.4258784+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-03T09:21:24.4292166+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-03T09:21:24.4318221+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-03T09:21:24.434091+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-03T09:21:24.4362031+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-03T09:21:24.4383749+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-03T09:21:24.4405931+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-03T09:21:24.4428807+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-03T09:21:24.4452683+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-03T09:21:24.4474409+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-03T09:21:24.4496884+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-03T09:21:24.4496884+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-03T09:21:45.8568865+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-03T09:21:45.8617745+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-03T09:21:45.8633491+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-03T09:21:45.8654398+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-03T09:21:45.8661025+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-03T09:21:45.867573+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-03T09:21:45.8742318+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-03T09:21:45.8782425+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-03T09:21:45.8821683+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-03T09:21:45.8859578+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-03T09:21:45.8896346+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-03T09:21:45.8940103+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-03T09:21:45.8972974+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-03T09:21:45.900384+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-03T09:21:45.9034217+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-03T09:21:45.9075579+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-03T09:21:45.9106364+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-03T09:21:45.9146521+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-03T09:21:45.9176553+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-03T09:21:45.92239+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-03T09:21:45.927363+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-03T09:21:45.9299705+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-03T09:21:45.9323375+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-03T09:21:45.9354495+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-03T09:21:45.9372352+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-03T09:21:45.9407304+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-03T09:21:45.9432812+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-03T09:21:45.9462563+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-03T09:21:45.9486332+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-03T09:21:45.9508119+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-03T09:21:45.9530721+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-03T09:21:45.9559281+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-03T09:21:45.9586197+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-03T09:21:45.9621475+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-03T09:21:45.9647389+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-03T09:21:45.9673473+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-03T09:21:45.9699487+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-03T09:21:45.9735559+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-03T09:21:45.9761469+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-03T09:21:45.9785366+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-03T09:21:45.9785366+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-03T09:23:45.9362473+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:24:12.6434384+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:24:16.0500774+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:24:30.5026274+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:25:29.0830488+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:27:52.1172119+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:28:17.0974121+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:28:42.622092+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:28:45.8192118+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:29:19.6955904+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:29:37.481896+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:31:05.770109+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:31:47.2600485+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:32:41.6106752+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:32:49.414456+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:34:53.0662131+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:35:02.413965+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:36:00.5363726+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:36:06.9600683+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:39:09.3043794+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:39:14.3376929+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:39:45.7614328+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:39:54.7284266+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:41:30.7644192+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:43:43.6634185+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:45:12.740468+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:45:34.9566773+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:46:49.4822442+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:46:57.3134589+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:48:42.156973+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:49:27.7359122+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:50:34.7511875+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:53:01.9459739+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:56:50.1670736+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:57:05.7963374+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T09:59:10.8665989+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T09:59:16.9501659+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T10:01:21.5156341+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T10:01:29.1236315+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T10:03:01.0750228+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T10:03:07.3596008+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T10:03:45.6660919+06:00","level":"ERROR","msg":"No data found with these parameters"}
-{"time":"2023-10-03T10:03:45.6669854+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-03T10:04:05.858958+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-03T10:04:34.8922613+06:00","level":"ERROR","msg":"No data found with these parameters"}
-{"time":"2023-10-03T10:04:34.8922613+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-03T10:04:39.7819527+06:00","level":"ERROR","msg":"No data found with these parameters"}
-{"time":"2023-10-03T10:04:39.7819527+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-03T10:06:30.7225231+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T10:06:56.305768+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T10:07:10.0726527+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T10:07:17.7879351+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T10:07:43.9868344+06:00","level":"ERROR","msg":"No data found with these parameters"}
-{"time":"2023-10-03T10:07:43.9868344+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-03T10:08:03.091257+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T10:08:08.575072+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T10:08:25.0385501+06:00","level":"ERROR","msg":"No data found with these parameters"}
-{"time":"2023-10-03T10:08:25.0385501+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-03T10:09:08.3645672+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T10:09:15.7671159+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T10:09:52.4114027+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T10:09:56.3721093+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T10:10:15.7587607+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T10:10:23.1575077+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T10:10:46.5951678+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-03T10:11:03.7732462+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-03T10:11:11.1327727+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T10:16:32.6765972+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T10:16:48.7335765+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-03T10:16:48.7416425+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-03T10:16:48.7476699+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-03T10:16:48.7642291+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-03T10:16:48.77325+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-03T10:16:48.7805614+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-03T10:16:48.7887618+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-03T10:16:48.7929382+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-03T10:16:48.8048411+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-03T10:16:48.8090792+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-03T10:16:48.8126057+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-03T10:16:48.8165827+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-03T10:16:48.8279287+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-03T10:16:48.8332096+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-03T10:16:48.8463117+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-03T10:16:48.8548752+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-03T10:16:48.8605651+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-03T10:16:48.8642001+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-03T10:16:48.8692158+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-03T10:16:48.8747267+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-03T10:16:48.8827235+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-03T10:16:48.8903776+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-03T10:16:48.8962011+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-03T10:16:48.8994216+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-03T10:16:48.9038109+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-03T10:16:48.9122664+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-03T10:16:48.9156028+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-03T10:16:48.9196716+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-03T10:16:48.9243047+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-03T10:16:48.9332084+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-03T10:16:48.9612092+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-03T10:16:48.9655998+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-03T10:16:48.9769397+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-03T10:16:48.9810745+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-03T10:16:48.9868672+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-03T10:16:48.9942626+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-03T10:16:48.9976686+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-03T10:16:49.0015394+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-03T10:16:49.0074091+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-03T10:16:49.0104921+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-03T10:16:49.0104921+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-03T10:18:46.8663652+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T10:18:51.2479663+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T10:21:03.5396287+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T10:32:58.3815214+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T10:33:15.5684335+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-03T10:33:15.5715853+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-03T10:33:15.5751806+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-03T10:33:15.5774145+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-03T10:33:15.5820279+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-03T10:33:15.5837976+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-03T10:33:15.5872039+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-03T10:33:15.589318+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-03T10:33:15.5924723+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-03T10:33:15.5970573+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-03T10:33:15.5997471+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-03T10:33:15.6030827+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-03T10:33:15.6514002+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-03T10:33:15.6552535+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-03T10:33:15.6606484+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-03T10:33:15.6650406+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-03T10:33:15.669196+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-03T10:33:15.6724939+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-03T10:33:15.6750303+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-03T10:33:15.6796888+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-03T10:33:15.6822538+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-03T10:33:15.6868078+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-03T10:33:15.6897892+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-03T10:33:15.6946836+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-03T10:33:15.697103+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-03T10:33:15.701547+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-03T10:33:15.7057627+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-03T10:33:15.7107526+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-03T10:33:15.7153748+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-03T10:33:15.7192405+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-03T10:33:15.7249354+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-03T10:33:15.7303821+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-03T10:33:15.7348185+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-03T10:33:15.7389532+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-03T10:33:15.7447583+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-03T10:33:15.7488779+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-03T10:33:15.7533189+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-03T10:33:15.7584953+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-03T10:33:15.7643434+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-03T10:33:15.7687307+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-03T10:33:15.769319+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-03T10:34:32.6151015+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T14:27:59.8658373+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T14:54:02.1967644+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T14:56:09.4485755+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T14:56:50.8463201+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T14:56:54.4032481+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T15:50:39.2728645+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T15:50:43.9962559+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T15:53:02.1089472+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-03T15:53:02.1799127+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-03T15:53:02.1863448+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-03T15:53:02.1935423+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-03T15:53:02.1989777+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-03T15:53:02.2068517+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-03T15:53:02.2133131+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-03T15:53:02.2193354+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-03T15:53:02.2242481+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-03T15:53:02.2301454+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-03T15:53:02.2384848+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-03T15:53:02.2422268+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-03T15:53:02.2466052+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-03T15:53:02.2497952+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-03T15:53:02.2537334+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-03T15:53:02.2569684+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-03T15:53:02.2615012+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-03T15:53:02.2670632+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-03T15:53:02.2703547+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-03T15:53:02.2724491+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-03T15:53:02.2751273+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-03T15:53:02.2792778+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-03T15:53:02.2823+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-03T15:53:02.285959+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-03T15:53:02.2886658+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-03T15:53:02.2905661+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-03T15:53:02.2939253+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-03T15:53:02.2971033+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-03T15:53:02.300423+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-03T15:53:02.3027176+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-03T15:53:02.3054602+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-03T15:53:02.3093033+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-03T15:53:02.3133786+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-03T15:53:02.3158912+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-03T15:53:02.319186+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-03T15:53:02.3213687+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-03T15:53:02.323847+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-03T15:53:02.3274452+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-03T15:53:02.3300854+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-03T15:53:02.3319083+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-03T15:53:02.3319083+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-03T16:01:07.0796999+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T16:42:00.586504+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T16:43:32.681861+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T16:43:36.7565065+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T16:44:07.0295799+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T16:44:10.3137814+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-03T16:44:35.7809498+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-03T16:44:35.7972016+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-03T16:44:35.8070715+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-03T16:44:35.8105612+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-03T16:44:35.8156057+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-03T16:44:35.8192679+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-03T16:44:35.8237398+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-03T16:44:35.8279451+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-03T16:44:35.8317882+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-03T16:44:35.8353855+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-03T16:44:35.8404459+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-03T16:44:35.8435676+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-03T16:44:35.8475937+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-03T16:44:35.851777+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-03T16:44:35.8559064+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-03T16:44:35.8587558+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-03T16:44:35.8629551+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-03T16:44:35.8682773+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-03T16:44:35.8715924+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-03T16:44:35.8749411+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-03T16:44:35.8788317+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-03T16:44:35.8835527+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-03T16:44:35.8869684+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-03T16:44:35.890163+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-03T16:44:35.8930594+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-03T16:44:35.8961659+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-03T16:44:35.8997247+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-03T16:44:35.9026809+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-03T16:44:35.9055092+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-03T16:44:35.9080592+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-03T16:44:35.9112777+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-03T16:44:35.9144904+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-03T16:44:35.9177941+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-03T16:44:35.9208066+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-03T16:44:35.925336+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-03T16:44:35.932979+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-03T16:44:35.9376564+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-03T16:44:35.9422874+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-03T16:44:35.9466577+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-03T16:44:35.9520825+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-03T16:44:35.9527528+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-03T16:45:12.0963483+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-03T16:45:12.0983821+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-03T16:45:12.0998291+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-03T16:45:12.100991+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-03T16:45:12.1022878+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-03T16:45:12.1038905+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-03T16:45:12.1061479+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-03T16:45:12.1100467+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-03T16:45:12.1135824+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-03T16:45:12.1171496+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-03T16:45:12.1210024+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-03T16:45:12.1231868+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-03T16:45:12.1249242+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-03T16:45:12.1300022+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-03T16:45:12.1326783+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-03T16:45:12.1355429+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-03T16:45:12.137979+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-03T16:45:12.1407968+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-03T16:45:12.1443421+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-03T16:45:12.1476633+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-03T16:45:12.1509317+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-03T16:45:12.1536507+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-03T16:45:12.1562123+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-03T16:45:12.1600761+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-03T16:45:12.163046+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-03T16:45:12.1664581+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-03T16:45:12.1704925+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-03T16:45:12.1734104+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-03T16:45:12.1773945+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-03T16:45:12.1810132+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-03T16:45:12.185383+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-03T16:45:12.1883904+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-03T16:45:12.1922593+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-03T16:45:12.1955811+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-03T16:45:12.1985656+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-03T16:45:12.2023768+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-03T16:45:12.2051962+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-03T16:45:12.2085953+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-03T16:45:12.2120257+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-03T16:45:12.2169339+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-03T16:45:12.2169866+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-03T17:36:26.8398162+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-03T17:37:18.060407+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T08:53:14.1177283+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T09:00:01.2677919+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-04T09:08:23.0839263+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T09:10:30.3325125+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-04T09:15:34.2372973+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T09:16:13.2962681+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:16:13.3087118+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:16:13.31408+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:16:13.3184071+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:16:13.3245016+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:16:13.3284518+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:16:13.3341483+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:16:13.3402647+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:16:13.3458929+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:16:13.3487324+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:16:13.3564215+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:16:13.3606622+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:16:13.3647129+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:16:13.3715534+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:16:13.3769656+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:16:13.3832273+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:16:13.3879302+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:16:13.3945659+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:16:13.4008868+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:16:13.4062163+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:16:13.4116886+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:16:13.4179535+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:16:13.423402+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:16:13.4279827+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:16:13.4320734+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:16:13.437057+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:16:13.4423941+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:16:13.4487434+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:16:13.454686+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:16:13.4608533+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:16:13.4668063+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:16:13.4723413+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:16:13.4786891+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:16:13.4843875+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:16:13.4906454+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:16:13.4969363+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:16:13.5026483+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:16:13.5089156+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:16:13.5148642+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:16:13.5208255+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:16:13.5208255+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T09:16:31.9355693+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:16:31.9370885+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:16:31.9380066+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:16:31.9391412+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:16:31.9406166+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:16:31.9419905+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:16:31.9454266+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:16:31.9514619+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:16:31.9556742+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:16:31.9610446+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:16:31.968062+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:16:31.9723574+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:16:31.9768714+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:16:31.986347+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:16:31.9904668+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:16:31.9932323+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:16:31.9959428+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:16:32.0004051+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:16:32.004307+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:16:32.0070372+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:16:32.0097221+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:16:32.0121943+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:16:32.0170506+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:16:32.0203976+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:16:32.0234496+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:16:32.026225+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:16:32.0281876+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:16:32.0324577+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:16:32.0364829+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:16:32.0384859+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:16:32.0413181+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:16:32.0444047+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:16:32.0472239+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:16:32.0523742+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:16:32.0552277+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:16:32.0577373+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:16:32.0602551+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:16:32.0621331+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:16:32.0670556+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:16:32.0699015+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:16:32.0700472+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T09:16:35.1934371+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-04T09:16:56.8145188+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-04T09:17:43.104404+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:17:43.1074972+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:17:43.1094154+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:17:43.1112904+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:17:43.1132756+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:17:43.1141363+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:17:43.1185899+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:17:43.1232464+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:17:43.127803+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:17:43.1320747+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:17:43.1355733+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:17:43.1398146+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:17:43.1439475+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:17:43.1470796+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:17:43.150778+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:17:43.1542621+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:17:43.1593887+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:17:43.1635879+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:17:43.1666759+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:17:43.1707045+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:17:43.1753262+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:17:43.1788241+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:17:43.1831981+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:17:43.1871198+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:17:43.192299+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:17:43.1955838+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:17:43.1979088+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:17:43.2005878+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:17:43.2033191+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:17:43.207492+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:17:43.2112789+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:17:43.2132462+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:17:43.2161823+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:17:43.2194478+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:17:43.2232342+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:17:43.2279615+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:17:43.2307225+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:17:43.2349423+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:17:43.2378598+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:17:43.2417725+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:17:43.2425974+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T09:19:13.4129016+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-04T09:19:17.8035094+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T09:19:29.1548943+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:19:29.1580723+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:19:29.1614273+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:19:29.1637734+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:19:29.1685354+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:19:29.1720084+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:19:29.1752397+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:19:29.1784012+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:19:29.1830421+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:19:29.1856214+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:19:29.1882678+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:19:29.1902704+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:19:29.1950412+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:19:29.1969877+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:19:29.2005096+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:19:29.2034301+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:19:29.2054414+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:19:29.2102128+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:19:29.2135203+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:19:29.2161724+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:19:29.2185093+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:19:29.2213885+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:19:29.224163+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:19:29.2280343+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:19:29.2308661+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:19:29.2336603+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:19:29.2361797+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:19:29.2386481+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:19:29.2404584+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:19:29.2455959+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:19:29.2481664+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:19:29.2506471+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:19:29.2531058+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:19:29.255562+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:19:29.2575186+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:19:29.2611446+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:19:29.264524+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:19:29.2668833+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:19:29.2692757+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:19:29.2716025+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:19:29.2717734+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T09:19:37.9786144+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:19:37.981839+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:19:37.9841176+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:19:37.9859021+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:19:37.9865417+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:19:37.9877805+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:19:37.9907799+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:19:37.9973843+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:19:38.0004263+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:19:38.0034701+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:19:38.0065418+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:19:38.010447+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:19:38.0125645+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:19:38.0156591+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:19:38.0170612+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:19:38.0208472+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:19:38.023384+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:19:38.0266725+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:19:38.0284464+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:19:38.0314448+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:19:38.0338734+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:19:38.0363603+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:19:38.0381496+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:19:38.0423469+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:19:38.0443985+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:19:38.0466423+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:19:38.0497681+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:19:38.0522621+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:19:38.0544659+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:19:38.0581192+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:19:38.060432+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:19:38.0628118+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:19:38.0661712+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:19:38.0687046+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:19:38.071058+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:19:38.0734655+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:19:38.0763934+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:19:38.0788198+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:19:38.0822978+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:19:38.0850991+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:19:38.0852318+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T09:19:40.2381866+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:19:40.2417059+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:19:40.2433575+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:19:40.2450108+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:19:40.2467963+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:19:40.2485268+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:19:40.2535044+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:19:40.2563088+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:19:40.259391+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:19:40.2633391+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:19:40.2661699+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:19:40.2683463+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:19:40.2705552+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:19:40.27228+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:19:40.2764625+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:19:40.2791854+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:19:40.2814516+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:19:40.2843295+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:19:40.2864552+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:19:40.2886241+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:19:40.2918532+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:19:40.2943527+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:19:40.2964549+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:19:40.2993578+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:19:40.3011274+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:19:40.3042365+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:19:40.3073147+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:19:40.3102396+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:19:40.3129319+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:19:40.3154621+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:19:40.3173786+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:19:40.3205576+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:19:40.3233918+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:19:40.3264545+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:19:40.3293279+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:19:40.3320092+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:19:40.3344608+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:19:40.3369538+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:19:40.3388115+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:19:40.3433084+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:19:40.3434393+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T09:19:44.6986725+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-04T09:19:52.1711545+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-04T09:20:07.9342871+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:20:07.9373153+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:20:07.9390853+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:20:07.9399096+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:20:07.9412232+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:20:07.9422799+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:20:07.9472681+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:20:07.9498917+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:20:07.9536665+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:20:07.9568096+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:20:07.9613241+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:20:07.9631071+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:20:07.9657153+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:20:07.9677859+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:20:07.9705743+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:20:07.9749905+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:20:07.9773791+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:20:07.9796534+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:20:07.9829052+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:20:07.9849431+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:20:07.9892994+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:20:07.9920228+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:20:07.9943581+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:20:07.9966306+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:20:07.9992984+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:20:08.0015113+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:20:08.0061811+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:20:08.0083173+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:20:08.0112407+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:20:08.0132513+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:20:08.0166775+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:20:08.0196492+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:20:08.023228+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:20:08.0253079+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:20:08.0282342+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:20:08.0300297+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:20:08.033089+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:20:08.0347824+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:20:08.0387106+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:20:08.0410702+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:20:08.0410702+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T09:20:12.9981015+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:20:13.0006044+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:20:13.0029828+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:20:13.0047087+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:20:13.0064083+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:20:13.0071403+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:20:13.0128806+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:20:13.0159727+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:20:13.0189334+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:20:13.0222267+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:20:13.025578+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:20:13.0280881+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:20:13.0306528+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:20:13.0336587+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:20:13.0373384+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:20:13.0418803+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:20:13.0440313+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:20:13.0471475+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:20:13.0500218+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:20:13.0527478+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:20:13.0555011+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:20:13.0582895+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:20:13.0617338+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:20:13.0641205+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:20:13.0659633+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:20:13.0678226+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:20:13.0719848+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:20:13.0744021+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:20:13.0763256+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:20:13.0791997+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:20:13.0817777+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:20:13.0860702+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:20:13.089118+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:20:13.092674+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:20:13.0960426+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:20:13.0984418+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:20:13.102726+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:20:13.1076352+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:20:13.1111238+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:20:13.1148159+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:20:13.114882+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T09:21:55.0989292+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-04T09:22:32.0898005+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T09:22:53.8819211+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T09:24:31.1602077+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-04T09:29:00.5147994+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T09:29:03.6570614+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:29:03.6570614+06:00","level":"INFO","msg":"Items saved:","All":0}
-{"time":"2023-10-04T09:29:09.3110194+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:29:09.3110194+06:00","level":"INFO","msg":"Items saved:","All":0}
-{"time":"2023-10-04T09:29:10.1794341+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:29:10.1794341+06:00","level":"INFO","msg":"Items saved:","All":0}
-{"time":"2023-10-04T09:29:12.0551717+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:29:12.0551717+06:00","level":"INFO","msg":"Items saved:","All":0}
-{"time":"2023-10-04T09:29:27.6306597+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:29:27.6352898+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:29:27.6397869+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:29:27.6441603+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:29:27.6478378+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:29:27.6512626+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:29:27.6551438+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:29:27.6593416+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:29:27.6658945+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:29:27.6698737+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:29:27.673735+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:29:27.6770636+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:29:27.6834419+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:29:27.6874386+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:29:27.691371+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:29:27.6947561+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:29:27.6995385+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:29:27.7037148+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:29:27.7069846+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:29:27.7087818+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:29:27.7135873+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:29:27.7161483+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:29:27.718379+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:29:27.7207455+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:29:27.7226737+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:29:27.7251044+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:29:27.7285051+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:29:27.7315802+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:29:27.7340539+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:29:27.7368558+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:29:27.7391254+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:29:27.7408879+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:29:27.7434949+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:29:27.7457967+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:29:27.7478675+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:29:27.7496475+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:29:27.7523008+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:29:27.7545518+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:29:27.7566438+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:29:27.7587118+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:29:27.7587118+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T09:29:38.0352033+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:29:38.0352033+06:00","level":"INFO","msg":"Items saved:","All":0}
-{"time":"2023-10-04T09:29:55.1320618+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:29:55.1320618+06:00","level":"INFO","msg":"Items saved:","All":0}
-{"time":"2023-10-04T09:32:03.9912228+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-04T09:32:08.1548642+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T09:36:04.4638868+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalbank.kz/rss/get_rates.cfm?fdate=16.08.2024\": context canceled"}
-{"time":"2023-10-04T09:36:05.2880351+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:36:05.2880351+06:00","level":"INFO","msg":"Items saved:","All":0}
-{"time":"2023-10-04T09:36:06.0370898+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:36:06.0370898+06:00","level":"INFO","msg":"Items saved:","All":0}
-{"time":"2023-10-04T09:36:18.2162632+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:36:18.2199418+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:36:18.2237146+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:36:18.2273938+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:36:18.2309468+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:36:18.2355116+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:36:18.238368+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:36:18.242458+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:36:18.246785+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:36:18.2501266+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:36:18.2536475+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:36:18.2568334+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:36:18.2608358+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:36:18.2635732+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:36:18.2661097+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:36:18.2684542+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:36:18.2702131+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:36:18.272307+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:36:18.2765408+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:36:18.2788246+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:36:18.2810476+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:36:18.2832353+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:36:18.2849946+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:36:18.2877987+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:36:18.2901971+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:36:18.2940645+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:36:18.2965772+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:36:18.2987997+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:36:18.3005948+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:36:18.3031875+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:36:18.3050945+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:36:18.3090376+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:36:18.3114767+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:36:18.3137639+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:36:18.315577+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:36:18.3181362+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:36:18.3203168+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:36:18.3221432+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:36:18.326056+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:36:18.3286241+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:36:18.3286241+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T09:40:31.2665319+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-04T09:40:43.1915707+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-04T09:40:52.3057045+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-04T09:41:18.2380623+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:41:18.2420258+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:41:18.2471183+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:41:18.2505184+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:41:18.255675+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:41:18.2593297+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:41:18.2618477+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:41:18.2661515+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:41:18.2705936+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:41:18.2742391+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:41:18.2774594+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:41:18.2804786+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:41:18.2823017+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:41:18.2874194+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:41:18.290384+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:41:18.2937652+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:41:18.2965258+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:41:18.299849+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:41:18.3037832+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:41:18.3088492+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:41:18.3142101+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:41:18.3191311+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:41:18.3236403+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:41:18.3278609+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:41:18.3315144+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:41:18.3374136+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:41:18.3421275+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:41:18.3470483+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:41:18.3508645+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:41:18.3561218+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:41:18.3605163+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:41:18.3653403+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:41:18.3696043+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:41:18.3748046+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:41:18.3803419+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:41:18.3856707+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:41:18.3907141+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:41:18.3962092+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:41:18.4009665+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:41:18.4048747+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:41:18.4048747+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T09:41:18.5988734+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:41:18.6009941+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:41:18.6037038+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:41:18.6055474+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:41:18.6077279+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:41:18.609492+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:41:18.6140435+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:41:18.6174932+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:41:18.6218233+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:41:18.6264822+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:41:18.6298534+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:41:18.6322967+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:41:18.636313+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:41:18.6398604+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:41:18.6423756+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:41:18.6458289+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:41:18.6487513+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:41:18.6525404+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:41:18.6554268+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:41:18.6581469+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:41:18.6607716+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:41:18.6634414+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:41:18.6652265+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:41:18.6689794+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:41:18.6729044+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:41:18.6777534+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:41:18.6824592+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:41:18.6877005+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:41:18.6936261+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:41:18.6990236+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:41:18.7039573+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:41:18.7092023+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:41:18.7146977+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:41:18.7199828+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:41:18.724222+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:41:18.7285509+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:41:18.7324612+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:41:18.7381117+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:41:18.7416534+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:41:18.7465107+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:41:18.7465688+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T09:41:19.0102812+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalbank.kz/rss/get_rates.cfm?fdate=16.08.2023\": context canceled"}
-{"time":"2023-10-04T09:41:19.3546491+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:41:19.3556893+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:41:19.3568827+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:41:19.3579103+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:41:19.3590267+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:41:19.3602278+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:41:19.3628907+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:41:19.3670038+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:41:19.3691492+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:41:19.3721529+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:41:19.3750955+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:41:19.3799068+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:41:19.3867555+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:41:19.3890722+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:41:19.3916343+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:41:19.3949982+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:41:19.3970281+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:41:19.4009189+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:41:19.4059927+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:41:19.4087928+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:41:19.4107033+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:41:19.4137188+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:41:19.4155324+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:41:19.4199986+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:41:19.4226649+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:41:19.4249925+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:41:19.4275662+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:41:19.4299982+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:41:19.4318744+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:41:19.436033+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:41:19.4386994+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:41:19.4409981+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:41:19.4439992+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:41:19.4463925+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:41:19.448297+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:41:19.4524113+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:41:19.4549999+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:41:19.4568944+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:41:19.4599918+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:41:19.4625282+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:41:19.4625282+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T09:46:26.2035867+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-04T09:46:48.9729701+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T09:48:17.4074802+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-04T09:48:20.8563495+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T09:48:31.6588559+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:48:31.6610064+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:48:31.663296+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:48:31.6675112+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:48:31.6712178+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:48:31.6750364+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:48:31.6789611+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:48:31.6836402+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:48:31.6858721+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:48:31.68886+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:48:31.6925645+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:48:31.6976022+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:48:31.7043286+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:48:31.7221456+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:48:31.7848491+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:48:31.7874353+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:48:31.7901133+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:48:31.7929464+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:48:31.795632+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:48:31.7994488+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:48:31.8028097+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:48:31.8052187+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:48:31.8080449+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:48:31.8122576+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:48:31.8159435+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:48:31.8197935+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:48:31.8229074+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:48:31.8253827+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:48:31.8303602+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:48:31.8347099+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:48:31.8386356+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:48:31.840964+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:48:31.8440997+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:48:31.8494004+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:48:31.8530847+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:48:31.8574182+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:48:31.8620593+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:48:31.8679786+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:48:31.8720769+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:48:31.8772369+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:48:31.8779825+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T09:48:37.9415311+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:48:37.945679+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:48:37.9485261+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:48:37.9503769+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:48:37.9524172+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:48:37.9535585+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:48:37.9574479+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:48:37.9611866+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:48:37.9657163+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:48:37.9684811+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:48:37.9709554+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:48:37.9726514+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:48:37.9766933+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:48:37.979318+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:48:37.9822933+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:48:37.9848977+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:48:37.9870991+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:48:37.9892177+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:48:37.9916293+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:48:37.9949137+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:48:37.9966255+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:48:37.9992466+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:48:38.0015562+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:48:38.00365+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:48:38.0056774+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:48:38.0075119+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:48:38.0111584+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:48:38.0129121+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:48:38.0152773+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:48:38.0183395+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:48:38.0204163+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:48:38.022556+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:48:38.0261159+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:48:38.0287003+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:48:38.0315998+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:48:38.0339403+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:48:38.0361178+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:48:38.0383796+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:48:38.0401509+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:48:38.043362+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:48:38.043362+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T09:48:44.0424618+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-04T09:48:49.3109886+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-04T09:49:00.6062362+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:49:00.6083638+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:49:00.6095077+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:49:00.6105773+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:49:00.6119611+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:49:00.6132023+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:49:00.6161829+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:49:00.619436+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:49:00.6230244+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:49:00.6261596+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:49:00.6303491+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:49:00.6326317+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:49:00.6348154+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:49:00.6365998+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:49:00.6395464+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:49:00.6436746+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:49:00.646213+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:49:00.6487822+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:49:00.6512563+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:49:00.6528726+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:49:00.6563485+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:49:00.6596848+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:49:00.6622109+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:49:00.6640673+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:49:00.6672362+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:49:00.6696977+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:49:00.6725395+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:49:00.6756979+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:49:00.6784123+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:49:00.6806983+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:49:00.6828366+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:49:00.6852098+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:49:00.6875286+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:49:00.6916331+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:49:00.6941473+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:49:00.6965516+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:49:00.6983917+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:49:00.7008779+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:49:00.7036923+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:49:00.7067028+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:49:00.7068724+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T09:50:31.5577407+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:50:31.5601106+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:50:31.5610551+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:50:31.5621672+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:50:31.5633419+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:50:31.5645293+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:50:31.5682919+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:50:31.5718545+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:50:31.5750572+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:50:31.5780505+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:50:31.5827391+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:50:31.5852519+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:50:31.5872455+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:50:31.5892325+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:50:31.5913946+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:50:31.5938459+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:50:31.5982311+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:50:31.6012507+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:50:31.6031368+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:50:31.6056243+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:50:31.6079984+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:50:31.6112453+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:50:31.6143602+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:50:31.6169046+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:50:31.6193795+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:50:31.6217353+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:50:31.6240802+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:50:31.6259409+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:50:31.6302475+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:50:31.6332048+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:50:31.6357436+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:50:31.6382045+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:50:31.6405559+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:50:31.6424028+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:50:31.6468307+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:50:31.6494752+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:50:31.6519565+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:50:31.6544116+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:50:31.6562095+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:50:31.6585511+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:50:31.6593712+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T09:52:51.0048955+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T09:52:51.0083958+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T09:52:51.0111152+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T09:52:51.0133357+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T09:52:51.0158524+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T09:52:51.0178199+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T09:52:51.021187+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T09:52:51.0250328+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T09:52:51.0289897+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T09:52:51.0336914+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T09:52:51.0380009+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T09:52:51.0420398+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T09:52:51.0466051+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T09:52:51.0506202+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T09:52:51.054197+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T09:52:51.057739+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T09:52:51.0618632+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T09:52:51.0652037+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T09:52:51.0687685+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T09:52:51.0721481+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T09:52:51.0772703+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T09:52:51.0820658+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T09:52:51.0858155+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T09:52:51.0893358+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T09:52:51.0935476+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T09:52:51.09786+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T09:52:51.1019425+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T09:52:51.1054708+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T09:52:51.1103142+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T09:52:51.1140668+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T09:52:51.1176216+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T09:52:51.1215106+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T09:52:51.1249645+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T09:52:51.1289908+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T09:52:51.1331169+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T09:52:51.1363047+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T09:52:51.1403817+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T09:52:51.1452641+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T09:52:51.1490279+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T09:52:51.1531367+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T09:52:51.1531367+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T10:23:09.3569305+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-04T10:23:13.6387163+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T10:33:34.9420224+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-04T10:33:39.8139211+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T10:34:06.7680183+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T10:34:06.7702803+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T10:34:06.7752337+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T10:34:06.7786237+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T10:34:06.7834462+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T10:34:06.7873825+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T10:34:06.7924567+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T10:34:06.7965992+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T10:34:06.8014826+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T10:34:06.8059995+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T10:34:06.8099781+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T10:34:06.8153424+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T10:34:06.8189587+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T10:34:06.8220333+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T10:34:06.8253605+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T10:34:06.8310485+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T10:34:06.8344174+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T10:34:06.8387594+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T10:34:06.8425102+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T10:34:06.8454537+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T10:34:06.8518216+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T10:34:06.8549751+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T10:34:06.8584673+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T10:34:06.8627752+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T10:34:06.8675993+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T10:34:06.8707926+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T10:34:06.8758411+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T10:34:06.8787716+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T10:34:06.8827075+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T10:34:06.8880395+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T10:34:06.8909214+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T10:34:06.8944319+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T10:34:06.9001794+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T10:34:06.9040506+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T10:34:06.9090785+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T10:34:06.9136831+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T10:34:06.9178217+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T10:34:06.9219922+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T10:34:06.9264223+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T10:34:06.9299696+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T10:34:06.9308171+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T10:34:07.8210363+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-04T10:34:24.4533268+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-04T10:34:24.45652+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-04T10:34:24.4586744+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-04T10:34:24.4605124+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-04T10:34:24.4624467+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-04T10:34:24.4641293+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-04T10:34:24.4682151+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-04T10:34:24.4726361+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-04T10:34:24.475913+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-04T10:34:24.4788689+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-04T10:34:24.4849879+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-04T10:34:24.487786+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-04T10:34:24.4899135+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-04T10:34:24.49142+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-04T10:34:24.4936505+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-04T10:34:24.4978093+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-04T10:34:24.5002246+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-04T10:34:24.5024809+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-04T10:34:24.5046229+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-04T10:34:24.5066687+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-04T10:34:24.5084421+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-04T10:34:24.5116699+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-04T10:34:24.5147204+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-04T10:34:24.5169631+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-04T10:34:24.5191384+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-04T10:34:24.5214381+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-04T10:34:24.5235296+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-04T10:34:24.52532+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-04T10:34:24.5294581+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-04T10:34:24.5318795+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-04T10:34:24.534119+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-04T10:34:24.5362875+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-04T10:34:24.5385391+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-04T10:34:24.5406713+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-04T10:34:24.5429247+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-04T10:34:24.5452467+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-04T10:34:24.5476743+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-04T10:34:24.5497911+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-04T10:34:24.5520399+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-04T10:34:24.5542692+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-04T10:34:24.5542692+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-04T10:34:25.6930382+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-04T10:45:18.7209521+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-04T11:03:40.8373776+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T11:06:11.6282509+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-04T11:06:15.1968166+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T11:06:53.570206+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-04T11:14:29.2924651+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T11:14:39.4021159+06:00","level":"INFO","msg":"Status","!BADKEY":"Available"}
-{"time":"2023-10-04T11:19:51.1314401+06:00","level":"INFO","msg":"caught signal","!BADKEY":{"signal":"interrupt"}}
-{"time":"2023-10-04T11:19:55.0341523+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T11:20:03.3695217+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
-{"time":"2023-10-04T11:20:16.5672386+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T11:21:55.4387993+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
-{"time":"2023-10-04T11:22:05.5342029+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T11:22:32.9858613+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T12:09:05.1040542+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
-{"time":"2023-10-04T15:40:01.316409+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T15:40:23.5528579+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T16:20:04.6335406+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
-{"time":"2023-10-04T16:20:32.1150113+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T16:20:43.5118792+06:00","level":"ERROR","msg":"Failed to check APIURL:","!BADKEY":"Get \"https://nationalban.kz/rss/get_rates.cfm\": dial tcp: lookup nationalban.kz: no such host"}
-{"time":"2023-10-04T16:20:43.5118792+06:00","level":"INFO","msg":"Health checker","Status":"Not available"}
-{"time":"2023-10-04T16:20:44.9772197+06:00","level":"ERROR","msg":"Failed to check APIURL:","!BADKEY":"Get \"https://nationalban.kz/rss/get_rates.cfm\": dial tcp: lookup nationalban.kz: no such host"}
-{"time":"2023-10-04T16:20:44.9772197+06:00","level":"INFO","msg":"Health checker","Status":"Not available"}
-{"time":"2023-10-04T16:20:55.4921132+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
-{"time":"2023-10-04T16:20:59.4637648+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T16:21:07.4496992+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T16:21:08.3722178+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:33:39.4228589+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
-{"time":"2023-10-04T17:33:44.1132133+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T17:34:02.4881122+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:34:03.0230495+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:34:03.0966721+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:34:31.310873+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:34:31.9108464+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:34:32.4307867+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:35:01.3072467+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:35:01.9139683+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:35:02.441638+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:35:31.3130848+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:35:31.9231283+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:35:32.4308384+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:36:01.3083362+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:36:01.9120906+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:36:02.4303869+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:36:31.3151074+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:36:31.9230304+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:36:32.4315812+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:37:01.3120309+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:37:01.9186086+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:37:02.4327433+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:37:31.3164402+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:37:31.9206248+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:37:32.4327313+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:38:01.3108524+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:38:01.9156469+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:38:02.4408612+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:38:31.3190985+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:38:31.9246739+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:38:32.453812+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:39:01.3107611+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:39:01.9142699+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:39:02.4415856+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:39:31.317686+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:39:31.9109338+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:39:32.4386409+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:40:01.3128983+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:40:01.9161981+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:40:02.4308418+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:40:29.1770037+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
-{"time":"2023-10-04T17:40:32.695327+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T17:41:10.1337666+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:41:39.8030632+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:42:09.7948608+06:00","level":"INFO","msg":"Health checker","Status":"Available"}
-{"time":"2023-10-04T17:42:17.2217557+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
-{"time":"2023-10-04T17:42:20.8685539+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-04T17:42:28.4277417+06:00","level":"ERROR","msg":"Failed to check APIURL:","!BADKEY":"Get \"https://nationalban.kz/rss/get_rates.cfm\": dial tcp: lookup nationalban.kz: no such host"}
-{"time":"2023-10-04T17:42:28.4277417+06:00","level":"INFO","msg":"Health checker","Status":"Not available"}
-{"time":"2023-10-04T17:54:19.1933996+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
-{"time":"2023-10-06T11:07:48.049612+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-06T11:09:05.9149423+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalban.kz/rss/get_rates.cfm?fdate=16.08.2023\": dial tcp: lookup nationalban.kz: no such host"}
-{"time":"2023-10-06T11:09:07.0751286+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalban.kz/rss/get_rates.cfm?fdate=16.08.2023\": dial tcp: lookup nationalban.kz: no such host"}
-{"time":"2023-10-06T11:09:07.0800862+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalban.kz/rss/get_rates.cfm?fdate=16.08.2023\": dial tcp: lookup nationalban.kz: no such host"}
-{"time":"2023-10-06T11:09:07.0909483+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalban.kz/rss/get_rates.cfm?fdate=16.08.2023\": dial tcp: lookup nationalban.kz: no such host"}
-{"time":"2023-10-06T11:09:08.9263037+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalban.kz/rss/get_rates.cfm?fdate=16.08.2023\": dial tcp: lookup nationalban.kz: no such host"}
-{"time":"2023-10-06T11:09:10.4156625+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalban.kz/rss/get_rates.cfm?fdate=16.08.2023\": dial tcp: lookup nationalban.kz: no such host"}
-{"time":"2023-10-06T11:09:10.4210715+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalban.kz/rss/get_rates.cfm?fdate=16.08.2023\": dial tcp: lookup nationalban.kz: no such host"}
-{"time":"2023-10-06T11:09:10.4281715+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalban.kz/rss/get_rates.cfm?fdate=16.08.2023\": dial tcp: lookup nationalban.kz: no such host"}
-{"time":"2023-10-06T11:09:17.4630473+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalban.kz/rss/get_rates.cfm?fdate=16.08.2023\": dial tcp: lookup nationalban.kz: no such host"}
-{"time":"2023-10-06T11:09:39.0004028+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
-{"time":"2023-10-06T11:09:45.6603749+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-06T11:10:05.203177+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalbank.kz/rss/get_rates.cfm?fdate=16.08.2023\": net/http: TLS handshake timeout"}
-{"time":"2023-10-06T11:10:05.6797765+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalbank.kz/rss/get_rates.cfm?fdate=16.08.2023\": context canceled"}
-{"time":"2023-10-06T11:10:32.0925338+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-06T11:10:32.2241739+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-06T11:10:32.2438641+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-06T11:10:32.2673346+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-06T11:10:32.2826616+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-06T11:10:32.2950474+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-06T11:10:32.3130628+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-06T11:10:32.3239072+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-06T11:10:32.3373165+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-06T11:10:32.3450958+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-06T11:10:32.3669567+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-06T11:10:32.3731648+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-06T11:10:32.3807431+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-06T11:10:32.3876475+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-06T11:10:32.3977678+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-06T11:10:32.4038388+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-06T11:10:32.4113992+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-06T11:10:32.4170047+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-06T11:10:32.4230651+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-06T11:10:32.4323679+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-06T11:10:32.4425961+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-06T11:10:32.4505062+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-06T11:10:32.4575938+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-06T11:10:32.465255+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-06T11:10:32.4720003+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-06T11:10:32.4773954+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-06T11:10:32.4844164+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-06T11:10:32.4905062+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-06T11:10:32.4958085+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-06T11:10:32.5024733+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-06T11:10:32.5106347+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-06T11:10:32.5141047+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-06T11:10:32.5204152+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-06T11:10:32.5288729+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-06T11:10:32.533979+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-06T11:10:32.5396491+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-06T11:10:32.5444092+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-06T11:10:32.5493199+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-06T11:10:32.5560614+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-06T11:10:32.5615435+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-06T11:10:32.5615435+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-06T17:50:17.2316509+06:00","level":"INFO","msg":"caught signal","signal":"terminated"}
-{"time":"2023-10-09T09:24:17.3780994+06:00","level":"INFO","msg":"Readyz probe is negative by default..."}
-{"time":"2023-10-09T09:24:17.3833187+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-09T09:24:27.3926321+06:00","level":"INFO","msg":"Readyz probe is positive."}
-{"time":"2023-10-09T10:16:31.584703+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
-{"time":"2023-10-09T10:16:36.5929783+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-09T10:18:03.8724276+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
-{"time":"2023-10-09T10:18:07.4652909+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-09T10:19:58.2796986+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
-{"time":"2023-10-09T10:20:01.8600589+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-09T10:21:41.3028966+06:00","level":"INFO","msg":"Data was showed"}
-{"time":"2023-10-09T12:28:39.7775119+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
-{"time":"2023-10-09T17:09:30.7723927+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-09T17:20:51.9011516+06:00","level":"INFO","msg":"Success: true"}
-{"time":"2023-10-09T17:20:51.917194+06:00","level":"INFO","msg":"Item saved","count":1}
-{"time":"2023-10-09T17:20:51.926741+06:00","level":"INFO","msg":"Item saved","count":2}
-{"time":"2023-10-09T17:20:51.9314685+06:00","level":"INFO","msg":"Item saved","count":3}
-{"time":"2023-10-09T17:20:51.9361927+06:00","level":"INFO","msg":"Item saved","count":4}
-{"time":"2023-10-09T17:20:51.9414767+06:00","level":"INFO","msg":"Item saved","count":5}
-{"time":"2023-10-09T17:20:51.946194+06:00","level":"INFO","msg":"Item saved","count":6}
-{"time":"2023-10-09T17:20:51.950086+06:00","level":"INFO","msg":"Item saved","count":7}
-{"time":"2023-10-09T17:20:51.9542993+06:00","level":"INFO","msg":"Item saved","count":8}
-{"time":"2023-10-09T17:20:51.9613691+06:00","level":"INFO","msg":"Item saved","count":9}
-{"time":"2023-10-09T17:20:51.9691453+06:00","level":"INFO","msg":"Item saved","count":10}
-{"time":"2023-10-09T17:20:52.0165153+06:00","level":"INFO","msg":"Item saved","count":11}
-{"time":"2023-10-09T17:20:52.0215901+06:00","level":"INFO","msg":"Item saved","count":12}
-{"time":"2023-10-09T17:20:52.0252669+06:00","level":"INFO","msg":"Item saved","count":13}
-{"time":"2023-10-09T17:20:52.0300286+06:00","level":"INFO","msg":"Item saved","count":14}
-{"time":"2023-10-09T17:20:52.0351523+06:00","level":"INFO","msg":"Item saved","count":15}
-{"time":"2023-10-09T17:20:52.039816+06:00","level":"INFO","msg":"Item saved","count":16}
-{"time":"2023-10-09T17:20:52.0463884+06:00","level":"INFO","msg":"Item saved","count":17}
-{"time":"2023-10-09T17:20:52.0510536+06:00","level":"INFO","msg":"Item saved","count":18}
-{"time":"2023-10-09T17:20:52.0550823+06:00","level":"INFO","msg":"Item saved","count":19}
-{"time":"2023-10-09T17:20:52.0594745+06:00","level":"INFO","msg":"Item saved","count":20}
-{"time":"2023-10-09T17:20:52.0633231+06:00","level":"INFO","msg":"Item saved","count":21}
-{"time":"2023-10-09T17:20:52.0672597+06:00","level":"INFO","msg":"Item saved","count":22}
-{"time":"2023-10-09T17:20:52.070123+06:00","level":"INFO","msg":"Item saved","count":23}
-{"time":"2023-10-09T17:20:52.0747966+06:00","level":"INFO","msg":"Item saved","count":24}
-{"time":"2023-10-09T17:20:52.0789187+06:00","level":"INFO","msg":"Item saved","count":25}
-{"time":"2023-10-09T17:20:52.0846895+06:00","level":"INFO","msg":"Item saved","count":26}
-{"time":"2023-10-09T17:20:52.0883449+06:00","level":"INFO","msg":"Item saved","count":27}
-{"time":"2023-10-09T17:20:52.0912578+06:00","level":"INFO","msg":"Item saved","count":28}
-{"time":"2023-10-09T17:20:52.0935366+06:00","level":"INFO","msg":"Item saved","count":29}
-{"time":"2023-10-09T17:20:52.0965322+06:00","level":"INFO","msg":"Item saved","count":30}
-{"time":"2023-10-09T17:20:52.1001967+06:00","level":"INFO","msg":"Item saved","count":31}
-{"time":"2023-10-09T17:20:52.103697+06:00","level":"INFO","msg":"Item saved","count":32}
-{"time":"2023-10-09T17:20:52.1058397+06:00","level":"INFO","msg":"Item saved","count":33}
-{"time":"2023-10-09T17:20:52.1087562+06:00","level":"INFO","msg":"Item saved","count":34}
-{"time":"2023-10-09T17:20:52.1130004+06:00","level":"INFO","msg":"Item saved","count":35}
-{"time":"2023-10-09T17:20:52.114973+06:00","level":"INFO","msg":"Item saved","count":36}
-{"time":"2023-10-09T17:20:52.1182689+06:00","level":"INFO","msg":"Item saved","count":37}
-{"time":"2023-10-09T17:20:52.1206977+06:00","level":"INFO","msg":"Item saved","count":38}
-{"time":"2023-10-09T17:20:52.1229756+06:00","level":"INFO","msg":"Item saved","count":39}
-{"time":"2023-10-09T17:20:52.1231043+06:00","level":"INFO","msg":"Items saved:","All":39}
-{"time":"2023-10-09T17:57:40.7776794+06:00","level":"INFO","msg":"caught signal","signal":"terminated"}
-{"time":"2023-10-10T09:58:40.203658+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-10T09:58:56.7121198+06:00","level":"ERROR","msg":"Liveness checker","Status":"Live"}
-{"time":"2023-10-10T09:59:01.6385109+06:00","level":"ERROR","msg":"Readiness checker","Status":"Ready"}
-{"time":"2023-10-10T10:04:47.4813571+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
-{"time":"2023-10-10T10:04:51.2667152+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-10T10:04:58.6769794+06:00","level":"ERROR","msg":"Readiness checker","Status":"Ready"}
-{"time":"2023-10-10T10:05:02.1573915+06:00","level":"ERROR","msg":"Liveness checker","Status":"Live"}
-{"time":"2023-10-10T10:06:12.016247+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
-{"time":"2023-10-10T10:10:24.262615+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-10T10:10:34.8255493+06:00","level":"ERROR","msg":"Liveness checker","Status":"Not Live"}
-{"time":"2023-10-10T10:10:52.0725217+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
-{"time":"2023-10-10T10:10:56.7879764+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
-{"time":"2023-10-10T10:11:05.3579201+06:00","level":"ERROR","msg":"Liveness checker","Status":"Live"}
-{"time":"2023-10-10T10:11:10.8857548+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-10T14:18:09.7718258+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-10T14:18:52.5459783+06:00","level":"ERROR","msg":"Readiness checker","Status":"Ready"}
+{"time":"2023-10-10T14:19:16.2642992+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-10-10T14:19:16.3191339+06:00","level":"INFO","msg":"Item saved","count":1}
+{"time":"2023-10-10T14:19:16.32515+06:00","level":"INFO","msg":"Item saved","count":2}
+{"time":"2023-10-10T14:19:16.331443+06:00","level":"INFO","msg":"Item saved","count":3}
+{"time":"2023-10-10T14:19:16.3368054+06:00","level":"INFO","msg":"Item saved","count":4}
+{"time":"2023-10-10T14:19:16.3445656+06:00","level":"INFO","msg":"Item saved","count":5}
+{"time":"2023-10-10T14:19:16.3503717+06:00","level":"INFO","msg":"Item saved","count":6}
+{"time":"2023-10-10T14:19:16.3549069+06:00","level":"INFO","msg":"Item saved","count":7}
+{"time":"2023-10-10T14:19:16.3589442+06:00","level":"INFO","msg":"Item saved","count":8}
+{"time":"2023-10-10T14:19:16.3624288+06:00","level":"INFO","msg":"Item saved","count":9}
+{"time":"2023-10-10T14:19:16.3690576+06:00","level":"INFO","msg":"Item saved","count":10}
+{"time":"2023-10-10T14:19:16.3730419+06:00","level":"INFO","msg":"Item saved","count":11}
+{"time":"2023-10-10T14:19:16.3758359+06:00","level":"INFO","msg":"Item saved","count":12}
+{"time":"2023-10-10T14:19:16.3786916+06:00","level":"INFO","msg":"Item saved","count":13}
+{"time":"2023-10-10T14:19:16.3813566+06:00","level":"INFO","msg":"Item saved","count":14}
+{"time":"2023-10-10T14:19:16.3853657+06:00","level":"INFO","msg":"Item saved","count":15}
+{"time":"2023-10-10T14:19:16.3894955+06:00","level":"INFO","msg":"Item saved","count":16}
+{"time":"2023-10-10T14:19:16.3948192+06:00","level":"INFO","msg":"Item saved","count":17}
+{"time":"2023-10-10T14:19:16.3987253+06:00","level":"INFO","msg":"Item saved","count":18}
+{"time":"2023-10-10T14:19:16.4013466+06:00","level":"INFO","msg":"Item saved","count":19}
+{"time":"2023-10-10T14:19:16.4050257+06:00","level":"INFO","msg":"Item saved","count":20}
+{"time":"2023-10-10T14:19:16.4088416+06:00","level":"INFO","msg":"Item saved","count":21}
+{"time":"2023-10-10T14:19:16.4108028+06:00","level":"INFO","msg":"Item saved","count":22}
+{"time":"2023-10-10T14:19:16.4145931+06:00","level":"INFO","msg":"Item saved","count":23}
+{"time":"2023-10-10T14:19:16.416778+06:00","level":"INFO","msg":"Item saved","count":24}
+{"time":"2023-10-10T14:19:16.420354+06:00","level":"INFO","msg":"Item saved","count":25}
+{"time":"2023-10-10T14:19:16.4226204+06:00","level":"INFO","msg":"Item saved","count":26}
+{"time":"2023-10-10T14:19:16.426292+06:00","level":"INFO","msg":"Item saved","count":27}
+{"time":"2023-10-10T14:19:16.4295597+06:00","level":"INFO","msg":"Item saved","count":28}
+{"time":"2023-10-10T14:19:16.4327157+06:00","level":"INFO","msg":"Item saved","count":29}
+{"time":"2023-10-10T14:19:16.4358446+06:00","level":"INFO","msg":"Item saved","count":30}
+{"time":"2023-10-10T14:19:16.4385867+06:00","level":"INFO","msg":"Item saved","count":31}
+{"time":"2023-10-10T14:19:16.4414347+06:00","level":"INFO","msg":"Item saved","count":32}
+{"time":"2023-10-10T14:19:16.4486789+06:00","level":"INFO","msg":"Item saved","count":33}
+{"time":"2023-10-10T14:19:16.4554651+06:00","level":"INFO","msg":"Item saved","count":34}
+{"time":"2023-10-10T14:19:16.4588746+06:00","level":"INFO","msg":"Item saved","count":35}
+{"time":"2023-10-10T14:19:16.4610181+06:00","level":"INFO","msg":"Item saved","count":36}
+{"time":"2023-10-10T14:19:16.4634659+06:00","level":"INFO","msg":"Item saved","count":37}
+{"time":"2023-10-10T14:19:16.4658847+06:00","level":"INFO","msg":"Item saved","count":38}
+{"time":"2023-10-10T14:19:16.4688725+06:00","level":"INFO","msg":"Item saved","count":39}
+{"time":"2023-10-10T14:19:16.4690159+06:00","level":"INFO","msg":"Items saved:","All":39}
+{"time":"2023-10-10T14:19:21.1336755+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-10-10T14:19:21.1377628+06:00","level":"INFO","msg":"Item saved","count":1}
+{"time":"2023-10-10T14:19:21.1412481+06:00","level":"INFO","msg":"Item saved","count":2}
+{"time":"2023-10-10T14:19:21.1432095+06:00","level":"INFO","msg":"Item saved","count":3}
+{"time":"2023-10-10T14:19:21.1455925+06:00","level":"INFO","msg":"Item saved","count":4}
+{"time":"2023-10-10T14:19:21.1476973+06:00","level":"INFO","msg":"Item saved","count":5}
+{"time":"2023-10-10T14:19:21.1514649+06:00","level":"INFO","msg":"Item saved","count":6}
+{"time":"2023-10-10T14:19:21.1549415+06:00","level":"INFO","msg":"Item saved","count":7}
+{"time":"2023-10-10T14:19:21.158477+06:00","level":"INFO","msg":"Item saved","count":8}
+{"time":"2023-10-10T14:19:21.1628355+06:00","level":"INFO","msg":"Item saved","count":9}
+{"time":"2023-10-10T14:19:21.1669125+06:00","level":"INFO","msg":"Item saved","count":10}
+{"time":"2023-10-10T14:19:21.1709615+06:00","level":"INFO","msg":"Item saved","count":11}
+{"time":"2023-10-10T14:19:21.1757985+06:00","level":"INFO","msg":"Item saved","count":12}
+{"time":"2023-10-10T14:19:21.1818908+06:00","level":"INFO","msg":"Item saved","count":13}
+{"time":"2023-10-10T14:19:21.1855734+06:00","level":"INFO","msg":"Item saved","count":14}
+{"time":"2023-10-10T14:19:21.1893841+06:00","level":"INFO","msg":"Item saved","count":15}
+{"time":"2023-10-10T14:19:21.1919583+06:00","level":"INFO","msg":"Item saved","count":16}
+{"time":"2023-10-10T14:19:21.1962061+06:00","level":"INFO","msg":"Item saved","count":17}
+{"time":"2023-10-10T14:19:21.1999736+06:00","level":"INFO","msg":"Item saved","count":18}
+{"time":"2023-10-10T14:19:21.2038639+06:00","level":"INFO","msg":"Item saved","count":19}
+{"time":"2023-10-10T14:19:21.2081694+06:00","level":"INFO","msg":"Item saved","count":20}
+{"time":"2023-10-10T14:19:21.2113713+06:00","level":"INFO","msg":"Item saved","count":21}
+{"time":"2023-10-10T14:19:21.2147289+06:00","level":"INFO","msg":"Item saved","count":22}
+{"time":"2023-10-10T14:19:21.2172794+06:00","level":"INFO","msg":"Item saved","count":23}
+{"time":"2023-10-10T14:19:21.2197051+06:00","level":"INFO","msg":"Item saved","count":24}
+{"time":"2023-10-10T14:19:21.2255464+06:00","level":"INFO","msg":"Item saved","count":25}
+{"time":"2023-10-10T14:19:21.2285392+06:00","level":"INFO","msg":"Item saved","count":26}
+{"time":"2023-10-10T14:19:21.2311331+06:00","level":"INFO","msg":"Item saved","count":27}
+{"time":"2023-10-10T14:19:21.2332154+06:00","level":"INFO","msg":"Item saved","count":28}
+{"time":"2023-10-10T14:19:21.2364426+06:00","level":"INFO","msg":"Item saved","count":29}
+{"time":"2023-10-10T14:19:21.2408729+06:00","level":"INFO","msg":"Item saved","count":30}
+{"time":"2023-10-10T14:19:21.2438628+06:00","level":"INFO","msg":"Item saved","count":31}
+{"time":"2023-10-10T14:19:21.2459036+06:00","level":"INFO","msg":"Item saved","count":32}
+{"time":"2023-10-10T14:19:21.2491156+06:00","level":"INFO","msg":"Item saved","count":33}
+{"time":"2023-10-10T14:19:21.2514749+06:00","level":"INFO","msg":"Item saved","count":34}
+{"time":"2023-10-10T14:19:21.2542489+06:00","level":"INFO","msg":"Item saved","count":35}
+{"time":"2023-10-10T14:19:21.2585469+06:00","level":"INFO","msg":"Item saved","count":36}
+{"time":"2023-10-10T14:19:21.2619117+06:00","level":"INFO","msg":"Item saved","count":37}
+{"time":"2023-10-10T14:19:21.2649874+06:00","level":"INFO","msg":"Item saved","count":38}
+{"time":"2023-10-10T14:19:21.2676175+06:00","level":"INFO","msg":"Item saved","count":39}
+{"time":"2023-10-10T14:19:21.2677687+06:00","level":"INFO","msg":"Items saved:","All":39}
+{"time":"2023-10-10T14:19:48.2229875+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-10-10T14:19:48.2273325+06:00","level":"INFO","msg":"Item saved","count":1}
+{"time":"2023-10-10T14:19:48.2312417+06:00","level":"INFO","msg":"Item saved","count":2}
+{"time":"2023-10-10T14:19:48.2337216+06:00","level":"INFO","msg":"Item saved","count":3}
+{"time":"2023-10-10T14:19:48.2357825+06:00","level":"INFO","msg":"Item saved","count":4}
+{"time":"2023-10-10T14:19:48.2376107+06:00","level":"INFO","msg":"Item saved","count":5}
+{"time":"2023-10-10T14:19:48.2440804+06:00","level":"INFO","msg":"Item saved","count":6}
+{"time":"2023-10-10T14:19:48.2468196+06:00","level":"INFO","msg":"Item saved","count":7}
+{"time":"2023-10-10T14:19:48.2485062+06:00","level":"INFO","msg":"Item saved","count":8}
+{"time":"2023-10-10T14:19:48.2507466+06:00","level":"INFO","msg":"Item saved","count":9}
+{"time":"2023-10-10T14:19:48.2552221+06:00","level":"INFO","msg":"Item saved","count":10}
+{"time":"2023-10-10T14:19:48.2584288+06:00","level":"INFO","msg":"Item saved","count":11}
+{"time":"2023-10-10T14:19:48.2606686+06:00","level":"INFO","msg":"Item saved","count":12}
+{"time":"2023-10-10T14:19:48.2630509+06:00","level":"INFO","msg":"Item saved","count":13}
+{"time":"2023-10-10T14:19:48.2660276+06:00","level":"INFO","msg":"Item saved","count":14}
+{"time":"2023-10-10T14:19:48.2709205+06:00","level":"INFO","msg":"Item saved","count":15}
+{"time":"2023-10-10T14:19:48.2758893+06:00","level":"INFO","msg":"Item saved","count":16}
+{"time":"2023-10-10T14:19:48.278536+06:00","level":"INFO","msg":"Item saved","count":17}
+{"time":"2023-10-10T14:19:48.2805479+06:00","level":"INFO","msg":"Item saved","count":18}
+{"time":"2023-10-10T14:19:48.2841255+06:00","level":"INFO","msg":"Item saved","count":19}
+{"time":"2023-10-10T14:19:48.2878361+06:00","level":"INFO","msg":"Item saved","count":20}
+{"time":"2023-10-10T14:19:48.2907218+06:00","level":"INFO","msg":"Item saved","count":21}
+{"time":"2023-10-10T14:19:48.2931753+06:00","level":"INFO","msg":"Item saved","count":22}
+{"time":"2023-10-10T14:19:48.2955623+06:00","level":"INFO","msg":"Item saved","count":23}
+{"time":"2023-10-10T14:19:48.2980026+06:00","level":"INFO","msg":"Item saved","count":24}
+{"time":"2023-10-10T14:19:48.300807+06:00","level":"INFO","msg":"Item saved","count":25}
+{"time":"2023-10-10T14:19:48.3046833+06:00","level":"INFO","msg":"Item saved","count":26}
+{"time":"2023-10-10T14:19:48.3072711+06:00","level":"INFO","msg":"Item saved","count":27}
+{"time":"2023-10-10T14:19:48.3099153+06:00","level":"INFO","msg":"Item saved","count":28}
+{"time":"2023-10-10T14:19:48.311828+06:00","level":"INFO","msg":"Item saved","count":29}
+{"time":"2023-10-10T14:19:48.3156336+06:00","level":"INFO","msg":"Item saved","count":30}
+{"time":"2023-10-10T14:19:48.3191479+06:00","level":"INFO","msg":"Item saved","count":31}
+{"time":"2023-10-10T14:19:48.3222581+06:00","level":"INFO","msg":"Item saved","count":32}
+{"time":"2023-10-10T14:19:48.3246296+06:00","level":"INFO","msg":"Item saved","count":33}
+{"time":"2023-10-10T14:19:48.3270148+06:00","level":"INFO","msg":"Item saved","count":34}
+{"time":"2023-10-10T14:19:48.3298243+06:00","level":"INFO","msg":"Item saved","count":35}
+{"time":"2023-10-10T14:19:48.3321787+06:00","level":"INFO","msg":"Item saved","count":36}
+{"time":"2023-10-10T14:19:48.3349301+06:00","level":"INFO","msg":"Item saved","count":37}
+{"time":"2023-10-10T14:19:48.3378009+06:00","level":"INFO","msg":"Item saved","count":38}
+{"time":"2023-10-10T14:19:48.3410112+06:00","level":"INFO","msg":"Item saved","count":39}
+{"time":"2023-10-10T14:19:48.3411614+06:00","level":"INFO","msg":"Items saved:","All":39}
+{"time":"2023-10-10T14:20:28.2945454+06:00","level":"INFO","msg":"Data was showed"}
+{"time":"2023-10-10T16:23:30.5072417+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-10-10T16:23:30.5435404+06:00","level":"INFO","msg":"Item saved","count":1}
+{"time":"2023-10-10T16:23:30.5515232+06:00","level":"INFO","msg":"Item saved","count":2}
+{"time":"2023-10-10T16:23:30.5569858+06:00","level":"INFO","msg":"Item saved","count":3}
+{"time":"2023-10-10T16:23:30.5616042+06:00","level":"INFO","msg":"Item saved","count":4}
+{"time":"2023-10-10T16:23:30.5656979+06:00","level":"INFO","msg":"Item saved","count":5}
+{"time":"2023-10-10T16:23:30.5718033+06:00","level":"INFO","msg":"Item saved","count":6}
+{"time":"2023-10-10T16:23:30.5763815+06:00","level":"INFO","msg":"Item saved","count":7}
+{"time":"2023-10-10T16:23:30.5811816+06:00","level":"INFO","msg":"Item saved","count":8}
+{"time":"2023-10-10T16:23:30.5853984+06:00","level":"INFO","msg":"Item saved","count":9}
+{"time":"2023-10-10T16:23:30.590404+06:00","level":"INFO","msg":"Item saved","count":10}
+{"time":"2023-10-10T16:23:30.5936375+06:00","level":"INFO","msg":"Item saved","count":11}
+{"time":"2023-10-10T16:23:30.5966473+06:00","level":"INFO","msg":"Item saved","count":12}
+{"time":"2023-10-10T16:23:30.6003874+06:00","level":"INFO","msg":"Item saved","count":13}
+{"time":"2023-10-10T16:23:30.6053328+06:00","level":"INFO","msg":"Item saved","count":14}
+{"time":"2023-10-10T16:23:30.6086778+06:00","level":"INFO","msg":"Item saved","count":15}
+{"time":"2023-10-10T16:23:30.6117911+06:00","level":"INFO","msg":"Item saved","count":16}
+{"time":"2023-10-10T16:23:30.6143432+06:00","level":"INFO","msg":"Item saved","count":17}
+{"time":"2023-10-10T16:23:30.6171604+06:00","level":"INFO","msg":"Item saved","count":18}
+{"time":"2023-10-10T16:23:30.6214251+06:00","level":"INFO","msg":"Item saved","count":19}
+{"time":"2023-10-10T16:23:30.625186+06:00","level":"INFO","msg":"Item saved","count":20}
+{"time":"2023-10-10T16:23:30.6282636+06:00","level":"INFO","msg":"Item saved","count":21}
+{"time":"2023-10-10T16:23:30.6315496+06:00","level":"INFO","msg":"Item saved","count":22}
+{"time":"2023-10-10T16:23:30.6366026+06:00","level":"INFO","msg":"Item saved","count":23}
+{"time":"2023-10-10T16:23:30.6395047+06:00","level":"INFO","msg":"Item saved","count":24}
+{"time":"2023-10-10T16:23:30.6418724+06:00","level":"INFO","msg":"Item saved","count":25}
+{"time":"2023-10-10T16:23:30.6457769+06:00","level":"INFO","msg":"Item saved","count":26}
+{"time":"2023-10-10T16:23:30.6478928+06:00","level":"INFO","msg":"Item saved","count":27}
+{"time":"2023-10-10T16:23:30.652241+06:00","level":"INFO","msg":"Item saved","count":28}
+{"time":"2023-10-10T16:23:30.6546958+06:00","level":"INFO","msg":"Item saved","count":29}
+{"time":"2023-10-10T16:23:30.6576022+06:00","level":"INFO","msg":"Item saved","count":30}
+{"time":"2023-10-10T16:23:30.6609521+06:00","level":"INFO","msg":"Item saved","count":31}
+{"time":"2023-10-10T16:23:30.6628928+06:00","level":"INFO","msg":"Item saved","count":32}
+{"time":"2023-10-10T16:23:30.6668687+06:00","level":"INFO","msg":"Item saved","count":33}
+{"time":"2023-10-10T16:23:30.6720687+06:00","level":"INFO","msg":"Item saved","count":34}
+{"time":"2023-10-10T16:23:30.6750346+06:00","level":"INFO","msg":"Item saved","count":35}
+{"time":"2023-10-10T16:23:30.6781475+06:00","level":"INFO","msg":"Item saved","count":36}
+{"time":"2023-10-10T16:23:30.6803307+06:00","level":"INFO","msg":"Item saved","count":37}
+{"time":"2023-10-10T16:23:30.6852478+06:00","level":"INFO","msg":"Item saved","count":38}
+{"time":"2023-10-10T16:23:30.688345+06:00","level":"INFO","msg":"Item saved","count":39}
+{"time":"2023-10-10T16:23:30.6885044+06:00","level":"INFO","msg":"Items saved:","All":39}
+{"time":"2023-10-10T16:23:32.061359+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-10-10T16:23:32.0640323+06:00","level":"INFO","msg":"Item saved","count":1}
+{"time":"2023-10-10T16:23:32.0669011+06:00","level":"INFO","msg":"Item saved","count":2}
+{"time":"2023-10-10T16:23:32.0686118+06:00","level":"INFO","msg":"Item saved","count":3}
+{"time":"2023-10-10T16:23:32.0705999+06:00","level":"INFO","msg":"Item saved","count":4}
+{"time":"2023-10-10T16:23:32.0722895+06:00","level":"INFO","msg":"Item saved","count":5}
+{"time":"2023-10-10T16:23:32.0765495+06:00","level":"INFO","msg":"Item saved","count":6}
+{"time":"2023-10-10T16:23:32.0794467+06:00","level":"INFO","msg":"Item saved","count":7}
+{"time":"2023-10-10T16:23:32.0839014+06:00","level":"INFO","msg":"Item saved","count":8}
+{"time":"2023-10-10T16:23:32.0876372+06:00","level":"INFO","msg":"Item saved","count":9}
+{"time":"2023-10-10T16:23:32.090595+06:00","level":"INFO","msg":"Item saved","count":10}
+{"time":"2023-10-10T16:23:32.0944922+06:00","level":"INFO","msg":"Item saved","count":11}
+{"time":"2023-10-10T16:23:32.0975735+06:00","level":"INFO","msg":"Item saved","count":12}
+{"time":"2023-10-10T16:23:32.1003714+06:00","level":"INFO","msg":"Item saved","count":13}
+{"time":"2023-10-10T16:23:32.1041393+06:00","level":"INFO","msg":"Item saved","count":14}
+{"time":"2023-10-10T16:23:32.1089415+06:00","level":"INFO","msg":"Item saved","count":15}
+{"time":"2023-10-10T16:23:32.1122248+06:00","level":"INFO","msg":"Item saved","count":16}
+{"time":"2023-10-10T16:23:32.1140142+06:00","level":"INFO","msg":"Item saved","count":17}
+{"time":"2023-10-10T16:23:32.118221+06:00","level":"INFO","msg":"Item saved","count":18}
+{"time":"2023-10-10T16:23:32.1207613+06:00","level":"INFO","msg":"Item saved","count":19}
+{"time":"2023-10-10T16:23:32.1237383+06:00","level":"INFO","msg":"Item saved","count":20}
+{"time":"2023-10-10T16:23:32.126867+06:00","level":"INFO","msg":"Item saved","count":21}
+{"time":"2023-10-10T16:23:32.1293728+06:00","level":"INFO","msg":"Item saved","count":22}
+{"time":"2023-10-10T16:23:32.1315621+06:00","level":"INFO","msg":"Item saved","count":23}
+{"time":"2023-10-10T16:23:32.1365902+06:00","level":"INFO","msg":"Item saved","count":24}
+{"time":"2023-10-10T16:23:32.1401949+06:00","level":"INFO","msg":"Item saved","count":25}
+{"time":"2023-10-10T16:23:32.1433951+06:00","level":"INFO","msg":"Item saved","count":26}
+{"time":"2023-10-10T16:23:32.146717+06:00","level":"INFO","msg":"Item saved","count":27}
+{"time":"2023-10-10T16:23:32.1519026+06:00","level":"INFO","msg":"Item saved","count":28}
+{"time":"2023-10-10T16:23:32.1554828+06:00","level":"INFO","msg":"Item saved","count":29}
+{"time":"2023-10-10T16:23:32.157705+06:00","level":"INFO","msg":"Item saved","count":30}
+{"time":"2023-10-10T16:23:32.1623791+06:00","level":"INFO","msg":"Item saved","count":31}
+{"time":"2023-10-10T16:23:32.165314+06:00","level":"INFO","msg":"Item saved","count":32}
+{"time":"2023-10-10T16:23:32.1672247+06:00","level":"INFO","msg":"Item saved","count":33}
+{"time":"2023-10-10T16:23:32.170874+06:00","level":"INFO","msg":"Item saved","count":34}
+{"time":"2023-10-10T16:23:32.1735544+06:00","level":"INFO","msg":"Item saved","count":35}
+{"time":"2023-10-10T16:23:32.1760583+06:00","level":"INFO","msg":"Item saved","count":36}
+{"time":"2023-10-10T16:23:32.1790036+06:00","level":"INFO","msg":"Item saved","count":37}
+{"time":"2023-10-10T16:23:32.1821307+06:00","level":"INFO","msg":"Item saved","count":38}
+{"time":"2023-10-10T16:23:32.1851231+06:00","level":"INFO","msg":"Item saved","count":39}
+{"time":"2023-10-10T16:23:32.1852617+06:00","level":"INFO","msg":"Items saved:","All":39}
+{"time":"2023-10-10T16:23:32.4594207+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-10-10T16:23:32.4614922+06:00","level":"INFO","msg":"Item saved","count":1}
+{"time":"2023-10-10T16:23:32.4625018+06:00","level":"INFO","msg":"Item saved","count":2}
+{"time":"2023-10-10T16:23:32.4637055+06:00","level":"INFO","msg":"Item saved","count":3}
+{"time":"2023-10-10T16:23:32.4647948+06:00","level":"INFO","msg":"Item saved","count":4}
+{"time":"2023-10-10T16:23:32.465837+06:00","level":"INFO","msg":"Item saved","count":5}
+{"time":"2023-10-10T16:23:32.4703301+06:00","level":"INFO","msg":"Item saved","count":6}
+{"time":"2023-10-10T16:23:32.473775+06:00","level":"INFO","msg":"Item saved","count":7}
+{"time":"2023-10-10T16:23:32.4776022+06:00","level":"INFO","msg":"Item saved","count":8}
+{"time":"2023-10-10T16:23:32.4814261+06:00","level":"INFO","msg":"Item saved","count":9}
+{"time":"2023-10-10T16:23:32.4850442+06:00","level":"INFO","msg":"Item saved","count":10}
+{"time":"2023-10-10T16:23:32.4903657+06:00","level":"INFO","msg":"Item saved","count":11}
+{"time":"2023-10-10T16:23:32.4936433+06:00","level":"INFO","msg":"Item saved","count":12}
+{"time":"2023-10-10T16:23:32.4962612+06:00","level":"INFO","msg":"Item saved","count":13}
+{"time":"2023-10-10T16:23:32.4980841+06:00","level":"INFO","msg":"Item saved","count":14}
+{"time":"2023-10-10T16:23:32.5031219+06:00","level":"INFO","msg":"Item saved","count":15}
+{"time":"2023-10-10T16:23:32.5062104+06:00","level":"INFO","msg":"Item saved","count":16}
+{"time":"2023-10-10T16:23:32.5097189+06:00","level":"INFO","msg":"Item saved","count":17}
+{"time":"2023-10-10T16:23:32.5125614+06:00","level":"INFO","msg":"Item saved","count":18}
+{"time":"2023-10-10T16:23:32.5143667+06:00","level":"INFO","msg":"Item saved","count":19}
+{"time":"2023-10-10T16:23:32.51888+06:00","level":"INFO","msg":"Item saved","count":20}
+{"time":"2023-10-10T16:23:32.5218631+06:00","level":"INFO","msg":"Item saved","count":21}
+{"time":"2023-10-10T16:23:32.5255421+06:00","level":"INFO","msg":"Item saved","count":22}
+{"time":"2023-10-10T16:23:32.5280115+06:00","level":"INFO","msg":"Item saved","count":23}
+{"time":"2023-10-10T16:23:32.5297986+06:00","level":"INFO","msg":"Item saved","count":24}
+{"time":"2023-10-10T16:23:32.5323488+06:00","level":"INFO","msg":"Item saved","count":25}
+{"time":"2023-10-10T16:23:32.5371625+06:00","level":"INFO","msg":"Item saved","count":26}
+{"time":"2023-10-10T16:23:32.5400609+06:00","level":"INFO","msg":"Item saved","count":27}
+{"time":"2023-10-10T16:23:32.5428748+06:00","level":"INFO","msg":"Item saved","count":28}
+{"time":"2023-10-10T16:23:32.5449224+06:00","level":"INFO","msg":"Item saved","count":29}
+{"time":"2023-10-10T16:23:32.5472324+06:00","level":"INFO","msg":"Item saved","count":30}
+{"time":"2023-10-10T16:23:32.5516499+06:00","level":"INFO","msg":"Item saved","count":31}
+{"time":"2023-10-10T16:23:32.5553403+06:00","level":"INFO","msg":"Item saved","count":32}
+{"time":"2023-10-10T16:23:32.558489+06:00","level":"INFO","msg":"Item saved","count":33}
+{"time":"2023-10-10T16:23:32.5607608+06:00","level":"INFO","msg":"Item saved","count":34}
+{"time":"2023-10-10T16:23:32.5651197+06:00","level":"INFO","msg":"Item saved","count":35}
+{"time":"2023-10-10T16:23:32.5703266+06:00","level":"INFO","msg":"Item saved","count":36}
+{"time":"2023-10-10T16:23:32.5726132+06:00","level":"INFO","msg":"Item saved","count":37}
+{"time":"2023-10-10T16:23:32.5773842+06:00","level":"INFO","msg":"Item saved","count":38}
+{"time":"2023-10-10T16:23:32.5809269+06:00","level":"INFO","msg":"Item saved","count":39}
+{"time":"2023-10-10T16:23:32.5809269+06:00","level":"INFO","msg":"Items saved:","All":39}
+{"time":"2023-10-10T16:23:32.8395679+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalbank.kz/rss/get_rates.cfm?fdate=10.10.2023\": context canceled"}
+{"time":"2023-10-10T16:23:33.0520178+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalbank.kz/rss/get_rates.cfm?fdate=10.10.2023\": context canceled"}
+{"time":"2023-10-10T16:23:33.230971+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalbank.kz/rss/get_rates.cfm?fdate=10.10.2023\": context canceled"}
+{"time":"2023-10-10T16:23:33.3984843+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalbank.kz/rss/get_rates.cfm?fdate=10.10.2023\": context canceled"}
+{"time":"2023-10-10T16:23:33.5639115+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalbank.kz/rss/get_rates.cfm?fdate=10.10.2023\": context canceled"}
+{"time":"2023-10-10T16:23:33.7302846+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalbank.kz/rss/get_rates.cfm?fdate=10.10.2023\": context canceled"}
+{"time":"2023-10-10T16:23:33.8940998+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalbank.kz/rss/get_rates.cfm?fdate=10.10.2023\": context canceled"}
+{"time":"2023-10-10T16:23:34.0652707+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalbank.kz/rss/get_rates.cfm?fdate=10.10.2023\": context canceled"}
+{"time":"2023-10-10T16:23:34.5178673+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-10-10T16:23:34.5202292+06:00","level":"INFO","msg":"Item saved","count":1}
+{"time":"2023-10-10T16:23:34.5217618+06:00","level":"INFO","msg":"Item saved","count":2}
+{"time":"2023-10-10T16:23:34.5227507+06:00","level":"INFO","msg":"Item saved","count":3}
+{"time":"2023-10-10T16:23:34.5239859+06:00","level":"INFO","msg":"Item saved","count":4}
+{"time":"2023-10-10T16:23:34.5251172+06:00","level":"INFO","msg":"Item saved","count":5}
+{"time":"2023-10-10T16:23:34.5278455+06:00","level":"INFO","msg":"Item saved","count":6}
+{"time":"2023-10-10T16:23:34.5317918+06:00","level":"INFO","msg":"Item saved","count":7}
+{"time":"2023-10-10T16:23:34.5371295+06:00","level":"INFO","msg":"Item saved","count":8}
+{"time":"2023-10-10T16:23:34.5404804+06:00","level":"INFO","msg":"Item saved","count":9}
+{"time":"2023-10-10T16:23:34.5446789+06:00","level":"INFO","msg":"Item saved","count":10}
+{"time":"2023-10-10T16:23:34.5468984+06:00","level":"INFO","msg":"Item saved","count":11}
+{"time":"2023-10-10T16:23:34.5505301+06:00","level":"INFO","msg":"Item saved","count":12}
+{"time":"2023-10-10T16:23:34.5529602+06:00","level":"INFO","msg":"Item saved","count":13}
+{"time":"2023-10-10T16:23:34.5569955+06:00","level":"INFO","msg":"Item saved","count":14}
+{"time":"2023-10-10T16:23:34.5608787+06:00","level":"INFO","msg":"Item saved","count":15}
+{"time":"2023-10-10T16:23:34.5648746+06:00","level":"INFO","msg":"Item saved","count":16}
+{"time":"2023-10-10T16:23:34.5683577+06:00","level":"INFO","msg":"Item saved","count":17}
+{"time":"2023-10-10T16:23:34.5722484+06:00","level":"INFO","msg":"Item saved","count":18}
+{"time":"2023-10-10T16:23:34.5749873+06:00","level":"INFO","msg":"Item saved","count":19}
+{"time":"2023-10-10T16:23:34.5768896+06:00","level":"INFO","msg":"Item saved","count":20}
+{"time":"2023-10-10T16:23:34.5807289+06:00","level":"INFO","msg":"Item saved","count":21}
+{"time":"2023-10-10T16:23:34.5824764+06:00","level":"INFO","msg":"Item saved","count":22}
+{"time":"2023-10-10T16:23:34.5873622+06:00","level":"INFO","msg":"Item saved","count":23}
+{"time":"2023-10-10T16:23:34.5899157+06:00","level":"INFO","msg":"Item saved","count":24}
+{"time":"2023-10-10T16:23:34.5917833+06:00","level":"INFO","msg":"Item saved","count":25}
+{"time":"2023-10-10T16:23:34.5953298+06:00","level":"INFO","msg":"Item saved","count":26}
+{"time":"2023-10-10T16:23:34.5978144+06:00","level":"INFO","msg":"Item saved","count":27}
+{"time":"2023-10-10T16:23:34.600661+06:00","level":"INFO","msg":"Item saved","count":28}
+{"time":"2023-10-10T16:23:34.6049654+06:00","level":"INFO","msg":"Item saved","count":29}
+{"time":"2023-10-10T16:23:34.6072824+06:00","level":"INFO","msg":"Item saved","count":30}
+{"time":"2023-10-10T16:23:34.6114463+06:00","level":"INFO","msg":"Item saved","count":31}
+{"time":"2023-10-10T16:23:34.6147798+06:00","level":"INFO","msg":"Item saved","count":32}
+{"time":"2023-10-10T16:23:34.6178372+06:00","level":"INFO","msg":"Item saved","count":33}
+{"time":"2023-10-10T16:23:34.6210963+06:00","level":"INFO","msg":"Item saved","count":34}
+{"time":"2023-10-10T16:23:34.62409+06:00","level":"INFO","msg":"Item saved","count":35}
+{"time":"2023-10-10T16:23:34.6260559+06:00","level":"INFO","msg":"Item saved","count":36}
+{"time":"2023-10-10T16:23:34.6293552+06:00","level":"INFO","msg":"Item saved","count":37}
+{"time":"2023-10-10T16:23:34.6320292+06:00","level":"INFO","msg":"Item saved","count":38}
+{"time":"2023-10-10T16:23:34.6360748+06:00","level":"INFO","msg":"Item saved","count":39}
+{"time":"2023-10-10T16:23:34.6360748+06:00","level":"INFO","msg":"Items saved:","All":39}
+{"time":"2023-10-10T16:23:35.0219156+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalbank.kz/rss/get_rates.cfm?fdate=10.10.2023\": context canceled"}
+{"time":"2023-10-10T16:23:35.196169+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalbank.kz/rss/get_rates.cfm?fdate=10.10.2023\": context canceled"}
+{"time":"2023-10-10T16:23:35.3447049+06:00","level":"ERROR","msg":"Failed to GET URL","!BADKEY":"Get \"https://nationalbank.kz/rss/get_rates.cfm?fdate=10.10.2023\": context canceled"}
+{"time":"2023-10-10T16:23:35.7238901+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-10-10T16:23:35.726307+06:00","level":"INFO","msg":"Item saved","count":1}
+{"time":"2023-10-10T16:23:35.7274238+06:00","level":"INFO","msg":"Item saved","count":2}
+{"time":"2023-10-10T16:23:35.7284961+06:00","level":"INFO","msg":"Item saved","count":3}
+{"time":"2023-10-10T16:23:35.7296042+06:00","level":"INFO","msg":"Item saved","count":4}
+{"time":"2023-10-10T16:23:35.7307854+06:00","level":"INFO","msg":"Item saved","count":5}
+{"time":"2023-10-10T16:23:35.7346497+06:00","level":"INFO","msg":"Item saved","count":6}
+{"time":"2023-10-10T16:23:35.7398612+06:00","level":"INFO","msg":"Item saved","count":7}
+{"time":"2023-10-10T16:23:35.7440028+06:00","level":"INFO","msg":"Item saved","count":8}
+{"time":"2023-10-10T16:23:35.7467952+06:00","level":"INFO","msg":"Item saved","count":9}
+{"time":"2023-10-10T16:23:35.7485251+06:00","level":"INFO","msg":"Item saved","count":10}
+{"time":"2023-10-10T16:23:35.7543805+06:00","level":"INFO","msg":"Item saved","count":11}
+{"time":"2023-10-10T16:23:35.7567317+06:00","level":"INFO","msg":"Item saved","count":12}
+{"time":"2023-10-10T16:23:35.7592954+06:00","level":"INFO","msg":"Item saved","count":13}
+{"time":"2023-10-10T16:23:35.7615786+06:00","level":"INFO","msg":"Item saved","count":14}
+{"time":"2023-10-10T16:23:35.7641053+06:00","level":"INFO","msg":"Item saved","count":15}
+{"time":"2023-10-10T16:23:35.7663605+06:00","level":"INFO","msg":"Item saved","count":16}
+{"time":"2023-10-10T16:23:35.770689+06:00","level":"INFO","msg":"Item saved","count":17}
+{"time":"2023-10-10T16:23:35.7727043+06:00","level":"INFO","msg":"Item saved","count":18}
+{"time":"2023-10-10T16:23:35.7760494+06:00","level":"INFO","msg":"Item saved","count":19}
+{"time":"2023-10-10T16:23:35.7779341+06:00","level":"INFO","msg":"Item saved","count":20}
+{"time":"2023-10-10T16:23:35.7808119+06:00","level":"INFO","msg":"Item saved","count":21}
+{"time":"2023-10-10T16:23:35.7842577+06:00","level":"INFO","msg":"Item saved","count":22}
+{"time":"2023-10-10T16:23:35.7873004+06:00","level":"INFO","msg":"Item saved","count":23}
+{"time":"2023-10-10T16:23:35.7900296+06:00","level":"INFO","msg":"Item saved","count":24}
+{"time":"2023-10-10T16:23:35.792794+06:00","level":"INFO","msg":"Item saved","count":25}
+{"time":"2023-10-10T16:23:35.7953224+06:00","level":"INFO","msg":"Item saved","count":26}
+{"time":"2023-10-10T16:23:35.7971839+06:00","level":"INFO","msg":"Item saved","count":27}
+{"time":"2023-10-10T16:23:35.8016629+06:00","level":"INFO","msg":"Item saved","count":28}
+{"time":"2023-10-10T16:23:35.8047211+06:00","level":"INFO","msg":"Item saved","count":29}
+{"time":"2023-10-10T16:23:35.8074925+06:00","level":"INFO","msg":"Item saved","count":30}
+{"time":"2023-10-10T16:23:35.8094412+06:00","level":"INFO","msg":"Item saved","count":31}
+{"time":"2023-10-10T16:23:35.8123679+06:00","level":"INFO","msg":"Item saved","count":32}
+{"time":"2023-10-10T16:23:35.8148616+06:00","level":"INFO","msg":"Item saved","count":33}
+{"time":"2023-10-10T16:23:35.8184101+06:00","level":"INFO","msg":"Item saved","count":34}
+{"time":"2023-10-10T16:23:35.8215231+06:00","level":"INFO","msg":"Item saved","count":35}
+{"time":"2023-10-10T16:23:35.8240185+06:00","level":"INFO","msg":"Item saved","count":36}
+{"time":"2023-10-10T16:23:35.8258692+06:00","level":"INFO","msg":"Item saved","count":37}
+{"time":"2023-10-10T16:23:35.8289193+06:00","level":"INFO","msg":"Item saved","count":38}
+{"time":"2023-10-10T16:23:35.8313418+06:00","level":"INFO","msg":"Item saved","count":39}
+{"time":"2023-10-10T16:23:35.8313418+06:00","level":"INFO","msg":"Items saved:","All":39}
+{"time":"2023-10-10T17:58:02.250861+06:00","level":"INFO","msg":"caught signal","signal":"terminated"}
+{"time":"2023-10-11T11:13:15.1765941+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-11T11:14:31.6040471+06:00","level":"INFO","msg":"Success: true"}
+{"time":"2023-10-11T11:14:31.6305115+06:00","level":"INFO","msg":"Item saved","count":1}
+{"time":"2023-10-11T11:14:31.6408929+06:00","level":"INFO","msg":"Item saved","count":2}
+{"time":"2023-10-11T11:14:31.6489749+06:00","level":"INFO","msg":"Item saved","count":3}
+{"time":"2023-10-11T11:14:31.6589484+06:00","level":"INFO","msg":"Item saved","count":4}
+{"time":"2023-10-11T11:14:31.6655648+06:00","level":"INFO","msg":"Item saved","count":5}
+{"time":"2023-10-11T11:14:31.6700903+06:00","level":"INFO","msg":"Item saved","count":6}
+{"time":"2023-10-11T11:14:31.674622+06:00","level":"INFO","msg":"Item saved","count":7}
+{"time":"2023-10-11T11:14:31.6803457+06:00","level":"INFO","msg":"Item saved","count":8}
+{"time":"2023-10-11T11:14:31.6877306+06:00","level":"INFO","msg":"Item saved","count":9}
+{"time":"2023-10-11T11:14:31.6923885+06:00","level":"INFO","msg":"Item saved","count":10}
+{"time":"2023-10-11T11:14:31.6967724+06:00","level":"INFO","msg":"Item saved","count":11}
+{"time":"2023-10-11T11:14:31.7011944+06:00","level":"INFO","msg":"Item saved","count":12}
+{"time":"2023-10-11T11:14:31.7054032+06:00","level":"INFO","msg":"Item saved","count":13}
+{"time":"2023-10-11T11:14:31.7091209+06:00","level":"INFO","msg":"Item saved","count":14}
+{"time":"2023-10-11T11:14:31.713072+06:00","level":"INFO","msg":"Item saved","count":15}
+{"time":"2023-10-11T11:14:31.7163401+06:00","level":"INFO","msg":"Item saved","count":16}
+{"time":"2023-10-11T11:14:31.720114+06:00","level":"INFO","msg":"Item saved","count":17}
+{"time":"2023-10-11T11:14:31.7234796+06:00","level":"INFO","msg":"Item saved","count":18}
+{"time":"2023-10-11T11:14:31.7303666+06:00","level":"INFO","msg":"Item saved","count":19}
+{"time":"2023-10-11T11:14:31.7340159+06:00","level":"INFO","msg":"Item saved","count":20}
+{"time":"2023-10-11T11:14:31.7368508+06:00","level":"INFO","msg":"Item saved","count":21}
+{"time":"2023-10-11T11:14:31.7397411+06:00","level":"INFO","msg":"Item saved","count":22}
+{"time":"2023-10-11T11:14:31.7436259+06:00","level":"INFO","msg":"Item saved","count":23}
+{"time":"2023-10-11T11:14:31.7465907+06:00","level":"INFO","msg":"Item saved","count":24}
+{"time":"2023-10-11T11:14:31.750937+06:00","level":"INFO","msg":"Item saved","count":25}
+{"time":"2023-10-11T11:14:31.7553581+06:00","level":"INFO","msg":"Item saved","count":26}
+{"time":"2023-10-11T11:14:31.7577837+06:00","level":"INFO","msg":"Item saved","count":27}
+{"time":"2023-10-11T11:14:31.7629463+06:00","level":"INFO","msg":"Item saved","count":28}
+{"time":"2023-10-11T11:14:31.7660147+06:00","level":"INFO","msg":"Item saved","count":29}
+{"time":"2023-10-11T11:14:31.769151+06:00","level":"INFO","msg":"Item saved","count":30}
+{"time":"2023-10-11T11:14:31.7718606+06:00","level":"INFO","msg":"Item saved","count":31}
+{"time":"2023-10-11T11:14:31.7752474+06:00","level":"INFO","msg":"Item saved","count":32}
+{"time":"2023-10-11T11:14:31.7784257+06:00","level":"INFO","msg":"Item saved","count":33}
+{"time":"2023-10-11T11:14:31.7820045+06:00","level":"INFO","msg":"Item saved","count":34}
+{"time":"2023-10-11T11:14:31.7864678+06:00","level":"INFO","msg":"Item saved","count":35}
+{"time":"2023-10-11T11:14:31.7884399+06:00","level":"INFO","msg":"Item saved","count":36}
+{"time":"2023-10-11T11:14:31.7924243+06:00","level":"INFO","msg":"Item saved","count":37}
+{"time":"2023-10-11T11:14:31.795733+06:00","level":"INFO","msg":"Item saved","count":38}
+{"time":"2023-10-11T11:14:31.7988827+06:00","level":"INFO","msg":"Item saved","count":39}
+{"time":"2023-10-11T11:14:31.7990277+06:00","level":"INFO","msg":"Items saved:","All":39}
+{"time":"2023-10-11T15:18:13.436155+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-11T15:18:19.7131952+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-11T15:18:36.0474509+06:00","level":"ERROR","msg":"Liveness checker","Status":"Live"}
+{"time":"2023-10-11T15:18:39.3430157+06:00","level":"ERROR","msg":"Readiness checker","Status":"Ready"}
+{"time":"2023-10-11T15:18:46.0801536+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-11T15:18:58.0969562+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-11T15:19:08.3498241+06:00","level":"ERROR","msg":"Readiness checker","Status":"Ready"}
+{"time":"2023-10-11T15:19:10.3895387+06:00","level":"ERROR","msg":"Readiness checker","Status":"Ready"}
+{"time":"2023-10-11T15:19:12.4633106+06:00","level":"ERROR","msg":"Liveness checker","Status":"Not Live"}
+{"time":"2023-10-11T15:19:13.2589+06:00","level":"ERROR","msg":"Liveness checker","Status":"Not Live"}
+{"time":"2023-10-11T15:20:26.9868377+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-11T15:20:30.5431452+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-11T15:20:38.4720656+06:00","level":"ERROR","msg":"Liveness checker","Status":"Not Live"}
+{"time":"2023-10-11T15:20:42.5332465+06:00","level":"ERROR","msg":"Readiness checker","Status":"Not Ready"}
+{"time":"2023-10-11T15:20:43.3581442+06:00","level":"ERROR","msg":"Readiness checker","Status":"Not Ready"}
+{"time":"2023-10-11T15:20:47.0319745+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-11T15:20:57.5117565+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-11T15:21:06.0619618+06:00","level":"ERROR","msg":"Readiness checker","Status":"Ready"}
+{"time":"2023-10-11T15:21:08.6920509+06:00","level":"ERROR","msg":"Liveness checker","Status":"Live"}
+{"time":"2023-10-11T15:27:36.9424206+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-11T15:27:41.9407015+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-11T15:28:50.6142133+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-11T15:28:54.5056425+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-11T15:28:59.8377754+06:00","level":"INFO","msg":"API is ready"}
+{"time":"2023-10-11T15:28:59.8377754+06:00","level":"INFO","msg":"API is live"}
+{"time":"2023-10-11T15:29:04.835572+06:00","level":"INFO","msg":"API is ready"}
+{"time":"2023-10-11T15:29:04.835572+06:00","level":"INFO","msg":"API is live"}
+{"time":"2023-10-11T15:29:09.8370914+06:00","level":"INFO","msg":"API is ready"}
+{"time":"2023-10-11T15:29:09.8370914+06:00","level":"INFO","msg":"API is live"}
+{"time":"2023-10-11T15:29:14.8351723+06:00","level":"INFO","msg":"API is ready"}
+{"time":"2023-10-11T15:29:14.8351723+06:00","level":"INFO","msg":"API is live"}
+{"time":"2023-10-11T15:29:19.8431686+06:00","level":"INFO","msg":"API is ready"}
+{"time":"2023-10-11T15:29:19.8431686+06:00","level":"INFO","msg":"API is live"}
+{"time":"2023-10-11T15:29:24.834384+06:00","level":"INFO","msg":"API is ready"}
+{"time":"2023-10-11T15:29:24.834384+06:00","level":"INFO","msg":"API is live"}
+{"time":"2023-10-11T15:29:28.3563127+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-11T15:29:38.1985356+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-11T15:29:43.3273472+06:00","level":"ERROR","msg":"API is not ready"}
+{"time":"2023-10-11T15:29:43.3273472+06:00","level":"ERROR","msg":"API is not live"}
+{"time":"2023-10-11T15:29:48.332656+06:00","level":"ERROR","msg":"API is not ready"}
+{"time":"2023-10-11T15:29:48.332656+06:00","level":"ERROR","msg":"API is not live"}
+{"time":"2023-10-11T15:29:53.3240912+06:00","level":"ERROR","msg":"API is not ready"}
+{"time":"2023-10-11T15:29:53.3240912+06:00","level":"ERROR","msg":"API is not live"}
+{"time":"2023-10-11T15:29:54.2450069+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-11T15:31:34.9665801+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-11T15:31:40.2769704+06:00","level":"INFO","msg":"API is ready"}
+{"time":"2023-10-11T15:31:40.2779908+06:00","level":"INFO","msg":"API is live"}
+{"time":"2023-10-11T15:31:45.2748282+06:00","level":"INFO","msg":"API is ready"}
+{"time":"2023-10-11T15:31:45.2751831+06:00","level":"INFO","msg":"API is live"}
+{"time":"2023-10-11T15:31:50.284076+06:00","level":"INFO","msg":"API is ready"}
+{"time":"2023-10-11T15:31:50.2849061+06:00","level":"INFO","msg":"API is live"}
+{"time":"2023-10-11T15:31:50.4308597+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-11T15:32:03.5558687+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-11T15:32:08.5811338+06:00","level":"ERROR","msg":"API is not ready"}
+{"time":"2023-10-11T15:32:08.5811338+06:00","level":"ERROR","msg":"API is not live"}
+{"time":"2023-10-11T15:32:13.5664133+06:00","level":"ERROR","msg":"API is not ready"}
+{"time":"2023-10-11T15:32:13.5664133+06:00","level":"ERROR","msg":"API is not live"}
+{"time":"2023-10-11T15:32:13.7886907+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-11T15:33:24.2116335+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-11T15:33:29.5232111+06:00","level":"INFO","msg":"API is ready"}
+{"time":"2023-10-11T15:33:29.5242236+06:00","level":"INFO","msg":"API is live"}
+{"time":"2023-10-11T15:33:34.4829552+06:00","level":"INFO","msg":"API is ready"}
+{"time":"2023-10-11T15:33:34.4832161+06:00","level":"INFO","msg":"API is live"}
+{"time":"2023-10-11T15:33:38.9806601+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-11T15:37:18.0219047+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-11T15:39:20.0314202+06:00","level":"ERROR","msg":"Liveness checker","Status":"Live"}
+{"time":"2023-10-11T15:41:49.1142022+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}
+{"time":"2023-10-11T15:41:54.5927338+06:00","level":"INFO","msg":"Listening on port","8080":"..."}
+{"time":"2023-10-11T15:42:14.1111904+06:00","level":"INFO","msg":"caught signal","signal":"interrupt"}

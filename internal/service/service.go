@@ -50,8 +50,8 @@ func (s *Service) GetData(ctx context.Context, data string, APIURL string) *mode
 	duration := time.Since(start)
 	statusCode := fmt.Sprintf("%d", resp.StatusCode)
 
-	s.Metrics.IncRequestCount("URL", statusCode)
-	s.Metrics.ObserveRequestDuration("URL", statusCode, duration.Seconds())
+	go s.Metrics.IncRequestCount("URL", statusCode)
+	go s.Metrics.ObserveRequestDuration("URL", statusCode, duration.Seconds())
 
 	xmlData, err := io.ReadAll(resp.Body)
 	if err != nil {

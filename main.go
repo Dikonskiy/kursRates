@@ -93,6 +93,7 @@ func main() {
 
 	r.HandleFunc("/live", Health.LiveHealthCheckHandler)
 	r.HandleFunc("/ready", Health.ReadyHealthCheckHandler)
+	go Health.PeriodicHealthCheck()
 
 	r.Handle("/metrics", promhttp.Handler())
 	go func() {

@@ -46,6 +46,7 @@ func init() {
 	Health = healthcheck.NewHealth(Repo, Cnfg.APIURL)
 	Hand = httphandler.NewHandler(Repo, Cnfg)
 	App = app.NewApplication(Logger)
+	go Hand.StartScheduler(context.TODO())
 }
 
 // @title Swagger kursRates API

@@ -115,3 +115,43 @@ func (r *Repository) GetData(ctx context.Context, formattedDate, code string) ([
 
 	return results, nil
 }
+
+func (r *Repository) scheduler(ctx context.Context, formattedDate string, rates models.Rates) error {
+	var count int
+	err := r.Db.QueryRowContext(ctx, "SELECT COUNT(*) FROM R_CURRENCY WHERE A_DATE = ?", formattedDate).Scan(&count)
+	if err != nil {
+		return err
+	}
+
+	for _, item := range rates.Items {
+		value, errr := strconv.ParseFloat(item.Value, 64)
+		if errr != nil {
+			r.Logerr.Error("Failed to convert float:", errr)
+			continue
+		}
+		if count > 0 {
+			_, err = r.Db.ExecContext(ctx, "UPDATE R_CURRENCY SET TITLE = ?, VALUE = ?, U_DATE = NOW() WHERE A_DATE = ? AND CODE = ?", item.Title, value, formattedDate, item.Code)
+			if err != nil {
+				return err
+			}
+		} else {
+			_, err = r.Db.ExecContext(ctx, "INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)", item.Title, item.Code, value, formattedDate)
+			if err != nil {
+				return err
+			}
+		}
+	}
+	return nil
+}
+
+func (r *Repository) HourTick(ctx context.Context, formattedDate string, rates models.Rates) {
+	ticker := time.NewTicker(time.Minute)
+
+	for range ticker.C {
+		err := r.scheduler(ctx, formattedDate, rates)
+		if err != nil {
+			r.Logerr.Error("Can't update the date:", err)
+		}
+	}
+
+}

@@ -11,7 +11,7 @@ type Health struct {
 	mu     sync.RWMutex
 	ready  bool
 	live   bool
-	Repo   repository.Repository
+	Repo   *repository.Repository
 	APIURL string
 }
 
@@ -19,7 +19,7 @@ func NewHealth(repo *repository.Repository, apiurl string) *Health {
 	return &Health{
 		ready:  true,
 		live:   true,
-		Repo:   *repo,
+		Repo:   repo,
 		APIURL: apiurl,
 	}
 }

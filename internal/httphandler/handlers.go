@@ -112,7 +112,5 @@ func (h *Handler) StartScheduler(ctx context.Context) {
 		h.R.Logerr.Error("Cannot parse the Data")
 	}
 
-	var service = service.NewService(h.R.Logerr, h.R.Metrics)
-
-	h.R.HourTick(ctx, formattedDate, *service.GetData(ctx, date, h.Cnfg.APIURL))
+	h.R.HourTick(date, formattedDate, ctx, h.Cnfg.APIURL)
 }

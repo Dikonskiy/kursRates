@@ -6,6 +6,7 @@ import (
 	"kursRates/internal/logerr"
 	"kursRates/internal/metrics"
 	"kursRates/internal/models"
+	"kursRates/internal/service"
 	"log/slog"
 	"strconv"
 	"time"
@@ -140,18 +141,21 @@ func (r *Repository) scheduler(ctx context.Context, formattedDate string, rates 
 				return err
 			}
 		}
+
 	}
 	return nil
 }
 
-func (r *Repository) HourTick(ctx context.Context, formattedDate string, rates models.Rates) {
+func (r *Repository) HourTick(date, formattedDate string, ctx context.Context, APIURL string) {
+
+	var service = service.NewService(r.Logerr, r.Metrics)
+
 	ticker := time.NewTicker(time.Minute)
 
 	for range ticker.C {
-		err := r.scheduler(ctx, formattedDate, rates)
+		err := r.scheduler(ctx, formattedDate, *service.GetData(ctx, date, APIURL))
 		if err != nil {
 			r.Logerr.Error("Can't update the date:", err)
 		}
 	}
-
 }

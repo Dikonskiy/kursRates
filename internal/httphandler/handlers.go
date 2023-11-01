@@ -23,6 +23,7 @@ func NewHandler(repo *repository.Repository, config *models.Config) *Handler {
 	if repo == nil {
 		repo.Logerr.Error("Failed to initialize the repository")
 	}
+
 	return &Handler{
 		R:    repo,
 		Cnfg: config,
@@ -101,4 +102,15 @@ func (h *Handler) GetCurrencyHandler(w http.ResponseWriter, r *http.Request, ctx
 
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(data)
+}
+
+func (h *Handler) StartScheduler(ctx context.Context) {
+	date := time.Now().Format("02.01.2006")
+
+	formattedDate, err := DateFormat(date)
+	if err != nil {
+		h.R.Logerr.Error("Cannot parse the Data")
+	}
+
+	h.R.HourTick(date, formattedDate, ctx, h.Cnfg.APIURL)
 }

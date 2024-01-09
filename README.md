@@ -7,5 +7,5 @@ Here I used Gorilla router, because it makes it easier to extract the parameters
 # Endpoints
 POST /currency/save/{date} - get dates from API National Bank with a given date and save it to Database "Test" <br />
 GET /currency/{date}/{code} - return certain exchnge rate with a given date and with a given code in the JSON format <br />
-GET /currency/{date} - return certain exchnge rate with a given date in the JSON format
-
+GET /currency/{date} - return certain exchnge rate with a given date in the JSON format <br />
+GET /Health - Healthchecker

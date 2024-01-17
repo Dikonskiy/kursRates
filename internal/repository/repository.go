@@ -117,6 +117,43 @@ func (r *Repository) GetData(ctx context.Context, formattedDate, code string) ([
 	return results, nil
 }
 
+func (r *Repository) DeleteData(ctx context.Context, formattedDate, code string) (int64, error) {
+	var query string
+	var params []interface{}
+
+	if code == "" {
+		query = "DELETE FROM R_CURRENCY WHERE A_DATE = ?"
+		params = []interface{}{formattedDate}
+	} else {
+		query = "DELETE FROM R_CURRENCY WHERE A_DATE = ? AND CODE = ?"
+		params = []interface{}{formattedDate, code}
+	}
+
+	startTime := time.Now()
+
+	result, err := r.Db.ExecContext(ctx, query, params...)
+	if err != nil {
+		return 0, err
+	}
+
+	rowsAffected, err := result.RowsAffected()
+	if err != nil {
+		return 0, err
+	}
+
+	duration := time.Since(startTime).Seconds()
+	if code == "" {
+		go r.Metrics.ObserveDeleteDuration("delete", "success", duration)
+		go r.Metrics.IncDeleteCount("delete", "success")
+	}
+
+	if rowsAffected == 0 {
+		r.Logerr.Error("No data deleted with these parameters")
+	}
+
+	return rowsAffected, nil
+}
+
 func (r *Repository) scheduler(ctx context.Context, formattedDate string, rates models.Rates) error {
 	var count int
 	err := r.Db.QueryRowContext(ctx, "SELECT COUNT(*) FROM R_CURRENCY WHERE A_DATE = ?", formattedDate).Scan(&count)

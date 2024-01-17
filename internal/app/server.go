@@ -87,6 +87,20 @@ func (a *Application) StartServer() {
 		Hand.GetCurrencyHandler(w, r.WithContext(ctx), ctx)
 	})
 
+	r.HandleFunc("/delete/{date}/{code}", func(w http.ResponseWriter, r *http.Request) {
+		ctx, cancel := context.WithDeadline(r.Context(), time.Now().Add(30*time.Second))
+		defer cancel()
+
+		Hand.DeleteCurrencyHandler(w, r.WithContext(ctx), ctx)
+	})
+
+	r.HandleFunc("/delete/{date}", func(w http.ResponseWriter, r *http.Request) {
+		ctx, cancel := context.WithDeadline(r.Context(), time.Now().Add(30*time.Second))
+		defer cancel()
+
+		Hand.DeleteCurrencyHandler(w, r.WithContext(ctx), ctx)
+	})
+
 	r.HandleFunc("/live", Health.LiveHealthCheckHandler)
 	r.HandleFunc("/ready", Health.ReadyHealthCheckHandler)
 	go Health.PeriodicHealthCheck()

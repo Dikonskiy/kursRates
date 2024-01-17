@@ -104,6 +104,28 @@ func (h *Handler) GetCurrencyHandler(w http.ResponseWriter, r *http.Request, ctx
 	json.NewEncoder(w).Encode(data)
 }
 
+func (h *Handler) DeleteCurrencyHandler(w http.ResponseWriter, r *http.Request, ctx context.Context) {
+	vars := mux.Vars(r)
+	date := vars["date"]
+	code := vars["code"]
+
+	formattedDate, err := DateFormat(date)
+	if err != nil {
+		h.RespondWithError(w, http.StatusBadRequest, "Failed to parse the date", err)
+		return
+	}
+
+	data, err := h.R.DeleteData(ctx, formattedDate, code)
+	if err != nil {
+		h.RespondWithError(w, http.StatusInternalServerError, "Failed to retrieve data", err)
+		return
+	}
+	h.R.Logerr.Info("Data was showed")
+
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(data)
+}
+
 func (h *Handler) StartScheduler(ctx context.Context) {
 	date := time.Now().Format("02.01.2006")
 

@@ -2,36 +2,39 @@ package healthcheck
 
 import (
 	"kursRates/internal/repository"
+	"log/slog"
 	"net/http"
 	"sync"
 	"time"
 )
 
 type Health struct {
+	log    *slog.Logger
 	mu     sync.RWMutex
 	ready  bool
 	live   bool
-	Repo   *repository.Repository
-	APIURL string
+	repo   *repository.Repository
+	apiUrl string
 }
 
-func NewHealth(repo *repository.Repository, apiurl string) *Health {
+func NewHealth(log *slog.Logger, repo *repository.Repository, apiurl string) *Health {
 	return &Health{
+		log:    log,
 		ready:  true,
 		live:   true,
-		Repo:   repo,
-		APIURL: apiurl,
+		repo:   repo,
+		apiUrl: apiurl,
 	}
 }
 
 func (h *Health) ReadinessCheck() bool {
-	return h.Repo.Db != nil
+	return h.repo.GetDb() != nil
 }
 
 func (h *Health) LivenessCheck() bool {
-	if err := h.Repo.Db.Ping(); err != nil {
+	if err := h.repo.GetDb().Ping(); err != nil {
 		return false
-	} else if _, err := http.Get(h.APIURL); err != nil {
+	} else if _, err := http.Get(h.apiUrl); err != nil {
 		return false
 	}
 	return true
@@ -46,14 +49,14 @@ func (h *Health) ReadyHealthCheckHandler(w http.ResponseWriter, r *http.Request)
 
 	if !h.ready {
 		w.WriteHeader(http.StatusServiceUnavailable)
-		h.Repo.Logerr.Error("Readiness checker", "Status", "Not Ready")
+		h.log.Error("Readiness checker", "Status", "Not Ready")
 		w.Write([]byte("Status: Not Ready"))
 		return
 	}
 
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte("Status: Ready"))
-	h.Repo.Logerr.Info("Readiness checker", "Status", "Ready")
+	h.log.Info("Readiness checker", "Status", "Ready")
 }
 
 func (h *Health) LiveHealthCheckHandler(w http.ResponseWriter, r *http.Request) {
@@ -64,14 +67,14 @@ func (h *Health) LiveHealthCheckHandler(w http.ResponseWriter, r *http.Request) 
 
 	if !h.live {
 		w.WriteHeader(http.StatusServiceUnavailable)
-		h.Repo.Logerr.Error("Liveness checker", "Status", "Not Live")
+		h.log.Error("Liveness checker", "Status", "Not Live")
 		w.Write([]byte("Status: Not Live"))
 		return
 	}
 
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte("Status: Live"))
-	h.Repo.Logerr.Info("Liveness checker", "Status", "Live")
+	h.log.Info("Liveness checker", "Status", "Live")
 }
 
 func (h *Health) PeriodicHealthCheck() {
@@ -83,15 +86,15 @@ func (h *Health) PeriodicHealthCheck() {
 		readiness := h.ReadinessCheck()
 
 		if liveness && readiness {
-			h.Repo.Logerr.Info("Readiness checker", "Status", "Ready")
+			h.log.Info("Readiness checker", "Status", "Ready")
 		} else {
-			h.Repo.Logerr.Error("Readiness checker", "Status", "Not Ready")
+			h.log.Error("Readiness checker", "Status", "Not Ready")
 		}
 
 		if liveness {
-			h.Repo.Logerr.Info("Liveness checker", "Status", "Live")
+			h.log.Info("Liveness checker", "Status", "Live")
 		} else {
-			h.Repo.Logerr.Error("Liveness checker", "Status", "Not Live")
+			h.log.Error("Liveness checker", "Status", "Not Live")
 		}
 	}
 }

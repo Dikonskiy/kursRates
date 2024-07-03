@@ -3,7 +3,6 @@ package repository
 import (
 	"context"
 	"database/sql"
-	"kursRates/internal/logerr"
 	"kursRates/internal/metrics"
 	"kursRates/internal/models"
 	"kursRates/internal/service"
@@ -13,15 +12,15 @@ import (
 )
 
 type Repository struct {
-	Db      *sql.DB
-	Logerr  *slog.Logger
-	Metrics *metrics.Metrics
+	db      *sql.DB
+	logerr  *slog.Logger
+	metrics *metrics.Metrics
 }
 
-func NewRepository(MysqlConnectionString string, logerr *logerr.Logerr, metrics *metrics.Metrics) *Repository {
+func NewRepository(MysqlConnectionString string, logerr *slog.Logger, metrics *metrics.Metrics) *Repository {
 	db, err := sql.Open("mysql", MysqlConnectionString)
 	if err != nil {
-		logerr.Logerr.Error("Failed initialize database connection")
+		logerr.Error("Failed initialize database connection")
 		return nil
 	}
 
@@ -35,9 +34,9 @@ func NewRepository(MysqlConnectionString string, logerr *logerr.Logerr, metrics 
 	}
 
 	return &Repository{
-		Db:      db,
-		Logerr:  logerr.Logerr,
-		Metrics: metrics,
+		db:      db,
+		logerr:  logerr,
+		metrics: metrics,
 	}
 }
 
@@ -50,27 +49,27 @@ func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
 	for _, item := range rates.Items {
 		value, err := strconv.ParseFloat(item.Value, 64)
 		if err != nil {
-			r.Logerr.Error("Failed to convert float: %s", err)
+			r.logerr.Error("Failed to convert float: %s", err)
 			continue
 		}
 
 		startTime := time.Now()
 
-		rows, err := r.Db.QueryContext(ctx, "INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)", item.Title, item.Code, value, formattedDate)
+		rows, err := r.db.QueryContext(ctx, "INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)", item.Title, item.Code, value, formattedDate)
 		if err != nil {
-			r.Logerr.Error("Failed to insert in the database:", err)
+			r.logerr.Error("Failed to insert in the database:", err)
 		} else {
 			savedItemCount++
-			r.Logerr.Info("Item saved",
+			r.logerr.Info("Item saved",
 				"count", savedItemCount,
 			)
 		}
 		defer rows.Close()
 
 		duration := time.Since(startTime).Seconds()
-		go r.Metrics.ObserveInsertDuration("insert", "success", duration)
+		go r.metrics.ObserveInsertDuration("insert", "success", duration)
 	}
-	r.Logerr.Info("Items saved:",
+	r.logerr.Info("Items saved:",
 		"All", savedItemCount,
 	)
 }
@@ -89,7 +88,7 @@ func (r *Repository) GetData(ctx context.Context, formattedDate, code string) ([
 
 	startTime := time.Now()
 
-	rows, err := r.Db.QueryContext(ctx, query, params...)
+	rows, err := r.db.QueryContext(ctx, query, params...)
 	if err != nil {
 		return nil, err
 	}
@@ -97,8 +96,8 @@ func (r *Repository) GetData(ctx context.Context, formattedDate, code string) ([
 
 	duration := time.Since(startTime).Seconds()
 	if code == "" {
-		go r.Metrics.ObserveSelectDuration("select", "success", duration)
-		go r.Metrics.IncSelectCount("select", "success")
+		go r.metrics.ObserveSelectDuration("select", "success", duration)
+		go r.metrics.IncSelectCount("select", "success")
 	}
 
 	var results []models.DBItem
@@ -111,13 +110,56 @@ func (r *Repository) GetData(ctx context.Context, formattedDate, code string) ([
 	}
 
 	if len(results) == 0 {
-		r.Logerr.Error("No data found with these parameters")
+		r.logerr.Error("No data found with these parameters")
 	}
 
 	return results, nil
 }
 
-func (r *Repository) DeleteData(ctx context.Context, formattedDate, code string) (int64, error) {
+func (r *Repository) scheduler(ctx context.Context, formattedDate string, rates models.Rates) error {
+	var count int
+	err := r.db.QueryRowContext(ctx, "SELECT COUNT(*) FROM R_CURRENCY WHERE A_DATE = ?", formattedDate).Scan(&count)
+	if err != nil {
+		return err
+	}
+
+	for _, item := range rates.Items {
+		value, errr := strconv.ParseFloat(item.Value, 64)
+		if errr != nil {
+			r.logerr.Error("Failed to convert float:", errr)
+			continue
+		}
+		if count > 0 {
+			_, err = r.db.ExecContext(ctx, "UPDATE R_CURRENCY SET TITLE = ?, VALUE = ?, U_DATE = NOW() WHERE A_DATE = ? AND CODE = ?", item.Title, value, formattedDate, item.Code)
+			if err != nil {
+				return err
+			}
+		} else {
+			_, err = r.db.ExecContext(ctx, "INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)", item.Title, item.Code, value, formattedDate)
+			if err != nil {
+				return err
+			}
+		}
+
+	}
+	return nil
+}
+
+func (r *Repository) HourTick(date, formattedDate string, ctx context.Context, APIURL string) {
+
+	var service = service.NewService(r.logerr, r.metrics)
+
+	ticker := time.NewTicker(time.Minute)
+
+	for range ticker.C {
+		err := r.scheduler(ctx, formattedDate, *service.GetData(ctx, date, APIURL))
+		if err != nil {
+			r.logerr.Error("Can't update the date:", err)
+		}
+	}
+}
+
+func (r *Repository) DeleteData(ctx context.Context, formattedDate, code string) ([]models.DBItem, error) {
 	var query string
 	var params []interface{}
 
@@ -131,68 +173,34 @@ func (r *Repository) DeleteData(ctx context.Context, formattedDate, code string)
 
 	startTime := time.Now()
 
-	result, err := r.Db.ExecContext(ctx, query, params...)
+	rows, err := r.db.QueryContext(ctx, query, params...)
 	if err != nil {
-		return 0, err
+		return nil, err
 	}
-
-	rowsAffected, err := result.RowsAffected()
-	if err != nil {
-		return 0, err
-	}
+	defer rows.Close()
 
 	duration := time.Since(startTime).Seconds()
 	if code == "" {
-		go r.Metrics.ObserveDeleteDuration("delete", "success", duration)
-		go r.Metrics.IncDeleteCount("delete", "success")
+		go r.metrics.ObserveSelectDuration("select", "success", duration)
+		go r.metrics.IncSelectCount("select", "success")
 	}
 
-	if rowsAffected == 0 {
-		r.Logerr.Error("No data deleted with these parameters")
+	var results []models.DBItem
+	for rows.Next() {
+		var item models.DBItem
+		if err := rows.Scan(&item.ID, &item.Title, &item.Code, &item.Value, &item.Date); err != nil {
+			return nil, err
+		}
+		results = append(results, item)
 	}
 
-	return rowsAffected, nil
+	if len(results) == 0 {
+		r.logerr.Error("No data found with these parameters")
+	}
+
+	return results, nil
 }
 
-func (r *Repository) scheduler(ctx context.Context, formattedDate string, rates models.Rates) error {
-	var count int
-	err := r.Db.QueryRowContext(ctx, "SELECT COUNT(*) FROM R_CURRENCY WHERE A_DATE = ?", formattedDate).Scan(&count)
-	if err != nil {
-		return err
-	}
-
-	for _, item := range rates.Items {
-		value, errr := strconv.ParseFloat(item.Value, 64)
-		if errr != nil {
-			r.Logerr.Error("Failed to convert float:", errr)
-			continue
-		}
-		if count > 0 {
-			_, err = r.Db.ExecContext(ctx, "UPDATE R_CURRENCY SET TITLE = ?, VALUE = ?, U_DATE = NOW() WHERE A_DATE = ? AND CODE = ?", item.Title, value, formattedDate, item.Code)
-			if err != nil {
-				return err
-			}
-		} else {
-			_, err = r.Db.ExecContext(ctx, "INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)", item.Title, item.Code, value, formattedDate)
-			if err != nil {
-				return err
-			}
-		}
-
-	}
-	return nil
-}
-
-func (r *Repository) HourTick(date, formattedDate string, ctx context.Context, APIURL string) {
-
-	var service = service.NewService(r.Logerr, r.Metrics)
-
-	ticker := time.NewTicker(time.Minute)
-
-	for range ticker.C {
-		err := r.scheduler(ctx, formattedDate, *service.GetData(ctx, date, APIURL))
-		if err != nil {
-			r.Logerr.Error("Can't update the date:", err)
-		}
-	}
+func (r *Repository) GetDb() *sql.DB {
+	return r.db
 }

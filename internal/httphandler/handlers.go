@@ -7,6 +7,8 @@ import (
 	"kursRates/internal/models"
 	"kursRates/internal/repository"
 	"kursRates/internal/service"
+	"kursRates/internal/metrics"
+	"log/slog"
 
 	"net/http"
 	"time"
@@ -15,18 +17,22 @@ import (
 )
 
 type Handler struct {
-	R    *repository.Repository
-	Cnfg *models.Config
+	log *slog.Logger
+	r    *repository.Repository
+	cnfg *models.Config
+	metrics *metrics.Metrics
 }
 
-func NewHandler(repo *repository.Repository, config *models.Config) *Handler {
+func NewHandler(log *slog.Logger, repo *repository.Repository, config *models.Config, metrics *metrics.Metrics) *Handler {
 	if repo == nil {
-		repo.Logerr.Error("Failed to initialize the repository")
+		log.Error("Failed to initialize the repository")
 	}
 
 	return &Handler{
-		R:    repo,
-		Cnfg: config,
+		log: log,
+		r:    repo,
+		cnfg: config,
+		metrics: metrics,
 	}
 }
 
@@ -41,7 +47,7 @@ func DateFormat(date string) (string, error) {
 
 func (h *Handler) RespondWithError(w http.ResponseWriter, status int, errorMsg string, err error) {
 	http.Error(w, errorMsg, status)
-	h.R.Logerr.Error(errorMsg+": ", err)
+	h.log.Error(errorMsg+": ", err)
 }
 
 // @Summary Save currency data
@@ -50,7 +56,7 @@ func (h *Handler) RespondWithError(w http.ResponseWriter, status int, errorMsg s
 // @Accept json
 // @Param date path string true "Date in DD.MM.YYYY format"
 // @Router /currency/save/{date} [post]
-func (h *Handler) SaveCurrencyHandler(w http.ResponseWriter, r *http.Request, ctx context.Context) {
+func (h *Handler) SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	date := vars["date"]
 
@@ -60,14 +66,14 @@ func (h *Handler) SaveCurrencyHandler(w http.ResponseWriter, r *http.Request, ct
 		return
 	}
 
-	var service = service.NewService(h.R.Logerr, h.R.Metrics)
+	var service = service.NewService(h.log, h.metrics)
 
-	go h.R.InsertData(*service.GetData(ctx, date, h.Cnfg.APIURL), formattedDate)
+	go h.r.InsertData(*service.GetData(r.Context(), date, h.cnfg.APIURL), formattedDate)
 
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")
 	w.Write([]byte(`{"success": true}`))
-	h.R.Logerr.Info("Success: true")
+	h.log.Info("Success: true")
 }
 
 // @Summary Get currency data by date
@@ -82,7 +88,7 @@ func (h *Handler) SaveCurrencyHandler(w http.ResponseWriter, r *http.Request, ct
 // @Accept json
 // @Param code path string true "Currency code (e.g., USD)"
 // @Router /currency/{date}/{code} [get]
-func (h *Handler) GetCurrencyHandler(w http.ResponseWriter, r *http.Request, ctx context.Context) {
+func (h *Handler) GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	date := vars["date"]
 	code := vars["code"]
@@ -93,12 +99,12 @@ func (h *Handler) GetCurrencyHandler(w http.ResponseWriter, r *http.Request, ctx
 		return
 	}
 
-	data, err := h.R.GetData(ctx, formattedDate, code)
+	data, err := h.r.GetData(r.Context(), formattedDate, code)
 	if err != nil {
 		h.RespondWithError(w, http.StatusInternalServerError, "Failed to retrieve data", err)
 		return
 	}
-	h.R.Logerr.Info("Data was showed")
+	h.log.Info("Data was showed")
 
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(data)
@@ -109,8 +115,30 @@ func (h *Handler) StartScheduler(ctx context.Context) {
 
 	formattedDate, err := DateFormat(date)
 	if err != nil {
-		h.R.Logerr.Error("Cannot parse the Data")
+		h.log.Error("Cannot parse the Data")
 	}
 
-	h.R.HourTick(date, formattedDate, ctx, h.Cnfg.APIURL)
+	h.r.HourTick(date, formattedDate, ctx, h.cnfg.APIURL)
+}
+
+func (h *Handler) DeleteCurrencyHandler(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	date := vars["date"]
+	code := vars["code"]
+
+	formattedDate, err := DateFormat(date)
+	if err != nil {
+		h.RespondWithError(w, http.StatusBadRequest, "Failed to delete the date", err)
+		return
+	}
+
+	data, err := h.r.DeleteData(r.Context(), formattedDate, code)
+	if err != nil {
+		h.RespondWithError(w, http.StatusInternalServerError, "Failed to retrieve data", err)
+		return
+	}
+	h.log.Info("Data was deleted")
+
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(data)
 }

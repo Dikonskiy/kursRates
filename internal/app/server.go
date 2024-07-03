@@ -9,11 +9,11 @@ import (
 	"kursRates/internal/initconfig"
 	"kursRates/internal/logerr"
 	"kursRates/internal/metrics"
-	"kursRates/internal/models"
 	"kursRates/internal/repository"
 	"log"
 	"log/slog"
 	"net/http"
+	"net/http/pprof"
 	"os"
 	"os/signal"
 	"syscall"
@@ -31,33 +31,26 @@ func NewApplication() *Application {
 	return &Application{}
 }
 
-var (
-	Metrics *metrics.Metrics
-	Repo    *repository.Repository
-	Hand    *httphandler.Handler
-	Logger  *logerr.Logerr
-	Cnfg    *models.Config
-	Health  *healthcheck.Health
-)
-
-func init() {
-	var err error
-	Cnfg, err = initconfig.InitConfig("config.json")
+func (a *Application) StartServer() {
+	cnfg, err := initconfig.InitConfig("config.json")
 	if err != nil {
-		Logger.Logerr.Error("Failed to initialize the configuration:", err)
 		return
 	}
 
-	Metrics = metrics.NewMetrics()
-	Logger = logerr.NewLogerr(Cnfg.IsProd)
-	Repo = repository.NewRepository(Cnfg.MysqlConnectionString, Logger, Metrics)
-	Health = healthcheck.NewHealth(Repo, Cnfg.APIURL)
-	Hand = httphandler.NewHandler(Repo, Cnfg)
-	go Hand.StartScheduler(context.TODO())
-}
+	metrics := metrics.NewMetrics()
+	logger := logerr.Logger(cnfg.IsProd)
+	repo := repository.NewRepository(cnfg.MysqlConnectionString, logger, metrics)
+	health := healthcheck.NewHealth(logger, repo, cnfg.APIURL)
+	hand := httphandler.NewHandler(logger, repo, cnfg, metrics)
+	go hand.StartScheduler(context.TODO())
 
-func (a *Application) StartServer() {
 	r := mux.NewRouter()
+
+	r.HandleFunc("/debug/pprof/", pprof.Index)
+	r.HandleFunc("/debug/pprof/cmdline", pprof.Cmdline)
+	r.HandleFunc("/debug/pprof/profile", pprof.Profile)
+	r.HandleFunc("/debug/pprof/symbol", pprof.Symbol)
+	r.HandleFunc("/debug/pprof/trace", pprof.Trace)
 
 	r.PathPrefix("/swagger/").Handler(httpSwagger.Handler(
 		httpSwagger.URL("swagger/doc.json"),
@@ -70,26 +63,40 @@ func (a *Application) StartServer() {
 		ctx, cancel := context.WithDeadline(r.Context(), time.Now().Add(30*time.Second))
 		defer cancel()
 
-		Hand.SaveCurrencyHandler(w, r.WithContext(ctx), ctx)
+		hand.SaveCurrencyHandler(w, r.WithContext(ctx))
 	})
 
 	r.HandleFunc("/currency/{date}/{code}", func(w http.ResponseWriter, r *http.Request) {
 		ctx, cancel := context.WithDeadline(r.Context(), time.Now().Add(30*time.Second))
 		defer cancel()
 
-		Hand.GetCurrencyHandler(w, r.WithContext(ctx), ctx)
+		hand.GetCurrencyHandler(w, r.WithContext(ctx))
 	})
 
 	r.HandleFunc("/currency/{date}", func(w http.ResponseWriter, r *http.Request) {
 		ctx, cancel := context.WithDeadline(r.Context(), time.Now().Add(30*time.Second))
 		defer cancel()
 
-		Hand.GetCurrencyHandler(w, r.WithContext(ctx), ctx)
+		hand.GetCurrencyHandler(w, r.WithContext(ctx))
 	})
 
-	r.HandleFunc("/live", Health.LiveHealthCheckHandler)
-	r.HandleFunc("/ready", Health.ReadyHealthCheckHandler)
-	go Health.PeriodicHealthCheck()
+	r.HandleFunc("/currency/delete/{date}/{code}", func(w http.ResponseWriter, r *http.Request) {
+		ctx, cancel := context.WithDeadline(r.Context(), time.Now().Add(30*time.Second))
+		defer cancel()
+
+		hand.DeleteCurrencyHandler(w, r.WithContext(ctx))
+	})
+
+	r.HandleFunc("/currency/delete/{date}", func(w http.ResponseWriter, r *http.Request) {
+		ctx, cancel := context.WithDeadline(r.Context(), time.Now().Add(30*time.Second))
+		defer cancel()
+
+		hand.DeleteCurrencyHandler(w, r.WithContext(ctx))
+	})
+
+	r.HandleFunc("/live", health.LiveHealthCheckHandler)
+	r.HandleFunc("/ready", health.ReadyHealthCheckHandler)
+	go health.PeriodicHealthCheck()
 
 	r.Handle("/metrics", promhttp.Handler())
 	go func() {
@@ -99,7 +106,7 @@ func (a *Application) StartServer() {
 	}()
 
 	server := &http.Server{
-		Addr:         ":" + Cnfg.ListenPort,
+		Addr:         ":" + cnfg.ListenPort,
 		ReadTimeout:  10 * time.Second,
 		WriteTimeout: 10 * time.Second,
 		Handler:      r,
@@ -107,10 +114,10 @@ func (a *Application) StartServer() {
 
 	quit := make(chan os.Signal, 1)
 
-	go shutdown(quit, *Logger.Logerr)
+	go shutdown(quit, *logger)
 
-	log.Println("Listening on port", Cnfg.ListenPort, "...")
-	Logger.Logerr.Info("Listening on port", Cnfg.ListenPort, "...")
+	log.Println("Listening on port", cnfg.ListenPort, "...")
+	logger.Info("Listening on port", cnfg.ListenPort, "...")
 	log.Fatal(server.ListenAndServe())
 }
 

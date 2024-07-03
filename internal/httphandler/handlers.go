@@ -4,10 +4,10 @@ package httphandler
 import (
 	"context"
 	"encoding/json"
+	"kursRates/internal/metrics"
 	"kursRates/internal/models"
 	"kursRates/internal/repository"
 	"kursRates/internal/service"
-	"kursRates/internal/metrics"
 	"log/slog"
 
 	"net/http"
@@ -17,22 +17,24 @@ import (
 )
 
 type Handler struct {
-	log *slog.Logger
-	r    *repository.Repository
-	cnfg *models.Config
+	log     *slog.Logger
+	r       *repository.Repository
+	cnfg    *models.Config
 	metrics *metrics.Metrics
+	service *service.Service
 }
 
-func NewHandler(log *slog.Logger, repo *repository.Repository, config *models.Config, metrics *metrics.Metrics) *Handler {
+func NewHandler(log *slog.Logger, repo *repository.Repository, config *models.Config, metrics *metrics.Metrics, service *service.Service) *Handler {
 	if repo == nil {
 		log.Error("Failed to initialize the repository")
 	}
 
 	return &Handler{
-		log: log,
-		r:    repo,
-		cnfg: config,
+		log:     log,
+		r:       repo,
+		cnfg:    config,
 		metrics: metrics,
+		service: service,
 	}
 }
 
@@ -66,9 +68,9 @@ func (h *Handler) SaveCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var service = service.NewService(h.log, h.metrics)
+	rates := h.service.GetData(r.Context(), date, h.cnfg.APIURL)
 
-	go h.r.InsertData(*service.GetData(r.Context(), date, h.cnfg.APIURL), formattedDate)
+	h.r.InsertData(rates, formattedDate)
 
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")

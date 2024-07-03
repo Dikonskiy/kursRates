@@ -15,9 +15,10 @@ type Repository struct {
 	db      *sql.DB
 	logerr  *slog.Logger
 	metrics *metrics.Metrics
+	service *service.Service
 }
 
-func NewRepository(MysqlConnectionString string, logerr *slog.Logger, metrics *metrics.Metrics) *Repository {
+func NewRepository(MysqlConnectionString string, logerr *slog.Logger, metrics *metrics.Metrics, service *service.Service) *Repository {
 	db, err := sql.Open("mysql", MysqlConnectionString)
 	if err != nil {
 		logerr.Error("Failed initialize database connection")
@@ -37,6 +38,7 @@ func NewRepository(MysqlConnectionString string, logerr *slog.Logger, metrics *m
 		db:      db,
 		logerr:  logerr,
 		metrics: metrics,
+		service: service,
 	}
 }
 
@@ -146,13 +148,10 @@ func (r *Repository) scheduler(ctx context.Context, formattedDate string, rates 
 }
 
 func (r *Repository) HourTick(date, formattedDate string, ctx context.Context, APIURL string) {
-
-	var service = service.NewService(r.logerr, r.metrics)
-
 	ticker := time.NewTicker(time.Minute)
 
 	for range ticker.C {
-		err := r.scheduler(ctx, formattedDate, *service.GetData(ctx, date, APIURL))
+		err := r.scheduler(ctx, formattedDate, r.service.GetData(ctx, date, APIURL))
 		if err != nil {
 			r.logerr.Error("Can't update the date:", err)
 		}

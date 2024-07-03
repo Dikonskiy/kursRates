@@ -10,6 +10,7 @@ import (
 	"kursRates/internal/logerr"
 	"kursRates/internal/metrics"
 	"kursRates/internal/repository"
+	"kursRates/internal/service"
 	"log"
 	"log/slog"
 	"net/http"
@@ -39,10 +40,11 @@ func (a *Application) StartServer() {
 
 	metrics := metrics.NewMetrics()
 	logger := logerr.Logger(cnfg.IsProd)
-	repo := repository.NewRepository(cnfg.MysqlConnectionString, logger, metrics)
+	service := service.NewService(logger, metrics)
+	repo := repository.NewRepository(cnfg.MysqlConnectionString, logger, metrics, service)
 	health := healthcheck.NewHealth(logger, repo, cnfg.APIURL)
-	hand := httphandler.NewHandler(logger, repo, cnfg, metrics)
-	go hand.StartScheduler(context.TODO())
+	hand := httphandler.NewHandler(logger, repo, cnfg, metrics, service)
+	hand.StartScheduler(context.TODO())
 
 	r := mux.NewRouter()
 

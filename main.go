@@ -24,5 +24,4 @@ func main() {
 	app := app.NewApplication()
 
 	app.StartServer()
-
 }

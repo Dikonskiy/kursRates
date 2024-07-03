@@ -110,6 +110,28 @@ func (h *Handler) GetCurrencyHandler(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(data)
 }
 
+func (h *Handler) DeleteCurrencyHandler(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	date := vars["date"]
+	code := vars["code"]
+
+	formattedDate, err := DateFormat(date)
+	if err != nil {
+		h.RespondWithError(w, http.StatusBadRequest, "Failed to parse the date", err)
+		return
+	}
+
+	data, err := h.r.DeleteData(r.Context(), formattedDate, code)
+	if err != nil {
+		h.RespondWithError(w, http.StatusInternalServerError, "Failed to retrieve data", err)
+		return
+	}
+	h.log.Info("Data was showed")
+
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(data)
+}
+
 func (h *Handler) StartScheduler(ctx context.Context) {
 	date := time.Now().Format("02.01.2006")
 
@@ -119,26 +141,4 @@ func (h *Handler) StartScheduler(ctx context.Context) {
 	}
 
 	h.r.HourTick(date, formattedDate, ctx, h.cnfg.APIURL)
-}
-
-func (h *Handler) DeleteCurrencyHandler(w http.ResponseWriter, r *http.Request) {
-	vars := mux.Vars(r)
-	date := vars["date"]
-	code := vars["code"]
-
-	formattedDate, err := DateFormat(date)
-	if err != nil {
-		h.RespondWithError(w, http.StatusBadRequest, "Failed to delete the date", err)
-		return
-	}
-
-	data, err := h.r.DeleteData(r.Context(), formattedDate, code)
-	if err != nil {
-		h.RespondWithError(w, http.StatusInternalServerError, "Failed to retrieve data", err)
-		return
-	}
-	h.log.Info("Data was deleted")
-
-	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(data)
 }

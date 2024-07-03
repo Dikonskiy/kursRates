@@ -8,6 +8,8 @@ type Metrics struct {
 	SelectDuration  *prometheus.HistogramVec
 	SelectCount     *prometheus.CounterVec
 	InsertDuration  *prometheus.HistogramVec
+	DeleteDuration  *prometheus.HistogramVec
+	DeleteCount     *prometheus.CounterVec
 }
 
 func NewMetrics() *Metrics {
@@ -54,11 +56,30 @@ func NewMetrics() *Metrics {
 		[]string{"method", "status"},
 	)
 
+	deleteDuration := prometheus.NewHistogramVec(
+		prometheus.HistogramOpts{
+			Name:    "db_delete_duration_seconds",
+			Help:    "Duration of database delete queries in seconds",
+			Buckets: prometheus.DefBuckets,
+		},
+		[]string{"method", "status"},
+	)
+
+	deleteCount := prometheus.NewCounterVec(
+		prometheus.CounterOpts{
+			Name: "db_delete_count_total",
+			Help: "Total number of database delete queries",
+		},
+		[]string{"method", "status"},
+	)
+
 	prometheus.MustRegister(requestCount)
 	prometheus.MustRegister(requestDuration)
 	prometheus.MustRegister(selectDuration)
 	prometheus.MustRegister(selectCount)
 	prometheus.MustRegister(insertDuration)
+	prometheus.MustRegister(deleteDuration)
+	prometheus.MustRegister(deleteCount)
 
 	return &Metrics{
 		RequestCount:    requestCount,
@@ -66,6 +87,8 @@ func NewMetrics() *Metrics {
 		SelectDuration:  selectDuration,
 		SelectCount:     selectCount,
 		InsertDuration:  insertDuration,
+		DeleteDuration:  deleteDuration,
+		DeleteCount:     deleteCount,
 	}
 }
 
@@ -87,4 +110,12 @@ func (m *Metrics) IncSelectCount(method, status string) {
 
 func (m *Metrics) ObserveInsertDuration(method, status string, duration float64) {
 	m.InsertDuration.WithLabelValues(method, status).Observe(duration)
+}
+
+func (m *Metrics) IncDeleteCount(method, status string) {
+	m.DeleteCount.WithLabelValues(method, status).Inc()
+}
+
+func (m *Metrics) ObserveDeleteDuration(method, status string, duration float64) {
+	m.DeleteDuration.WithLabelValues(method, status).Observe(duration)
 }

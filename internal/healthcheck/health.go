@@ -1,7 +1,7 @@
 package healthcheck
 
 import (
-	"kursRates/internal/repository"
+	"database/sql"
 	"log/slog"
 	"net/http"
 	"sync"
@@ -13,26 +13,26 @@ type Health struct {
 	mu     sync.RWMutex
 	ready  bool
 	live   bool
-	repo   *repository.Repository
+	db     *sql.DB
 	apiUrl string
 }
 
-func NewHealth(log *slog.Logger, repo *repository.Repository, apiurl string) *Health {
+func NewHealth(log *slog.Logger, db *sql.DB, apiurl string) *Health {
 	return &Health{
 		log:    log,
 		ready:  true,
 		live:   true,
-		repo:   repo,
+		db:     db,
 		apiUrl: apiurl,
 	}
 }
 
 func (h *Health) ReadinessCheck() bool {
-	return h.repo.GetDb() != nil
+	return h.db != nil
 }
 
 func (h *Health) LivenessCheck() bool {
-	if err := h.repo.GetDb().Ping(); err != nil {
+	if err := h.db.Ping(); err != nil {
 		return false
 	} else if _, err := http.Get(h.apiUrl); err != nil {
 		return false

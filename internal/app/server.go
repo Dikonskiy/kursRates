@@ -42,9 +42,9 @@ func (a *Application) StartServer() {
 	logger := logerr.Logger(cnfg.IsProd)
 	service := service.NewService(logger, metrics)
 	repo := repository.NewRepository(cnfg.MysqlConnectionString, logger, metrics, service)
-	health := healthcheck.NewHealth(logger, repo, cnfg.APIURL)
+	health := healthcheck.NewHealth(logger, repo.GetDb(), cnfg.APIURL)
 	hand := httphandler.NewHandler(logger, repo, cnfg, metrics, service)
-	hand.StartScheduler(context.TODO())
+	go hand.StartScheduler(context.TODO())
 
 	r := mux.NewRouter()
 

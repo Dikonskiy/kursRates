@@ -14,7 +14,7 @@ func InitConfig(filename string) (config *models.Config, err error) {
 	defer file.Close()
 
 	decoder := json.NewDecoder(file)
-	if err := decoder.Decode(&config); err != nil {
+	if err = decoder.Decode(&config); err != nil {
 		return nil, err
 	}
 

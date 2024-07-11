@@ -60,6 +60,7 @@ func (r *Repository) InsertData(rates models.Rates, formattedDate string) {
 		rows, err := r.db.QueryContext(ctx, "INSERT INTO R_CURRENCY (TITLE, CODE, VALUE, A_DATE) VALUES (?, ?, ?, ?)", item.Title, item.Code, value, formattedDate)
 		if err != nil {
 			r.logerr.Error("Failed to insert in the database:", err)
+			return
 		} else {
 			savedItemCount++
 			r.logerr.Info("Item saved",

@@ -1,6 +1,6 @@
 {
   "listenPort": "8080",
-  "mysqlConnectionString": "kursUser:kursPswd@tcp(127.0.0.1:3306)/TEST",
+  "mysqlConnectionString": "root:123456@tcp(127.0.0.1:3306)/db",
   "apiURL": "https://nationalbank.kz/rss/get_rates.cfm",
   "isProd":true
 }
